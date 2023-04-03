@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
-    <!-- Google Fonts -->
+    <!-- Google Noto Sans Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Russo+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <!-- Fontawesome CSS -->
@@ -22,287 +22,143 @@
       referrerpolicy="no-referrer"
     />
     <!-- Bootstrap CSS only -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
-    />
+    /> -->
+    <!-- SASS COMPILE CSS -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- Custom Js -->
+    <link rel="stylesheet" href="./dist/css/home.css" />
+    <!-- Custom JS -->
     <script src="js/app.js" defer></script>
     <!-- Website Title -->
-    <title>Task Management</title>
+    <title>Skyber-City Guide Website</title>
   </head>
 
   <body>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2 px-xl-5">
-            <div class="card border-0 shadow-lg">
-              <!-- TOP BANNER IMAGE -->
-              <div class="card-top position-relative">
-                <h2
-                  class="d-flex align-items-center justify-content-center fw-semibold"
+    <!-- START -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/images/logo-skyber.svg" alt="" srcset=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-                  Task Management
-                </h2>
-                <!-- Date & Time -->
-                <div
-                  class="info d-flex gap-2 align-items-center justify-content-between position-absolute bottom-0 p-3"
+                  New York
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Los Angeles</a></li>
+                  <li><a class="dropdown-item" href="#">Chicago</a></li>
+                  <li><a class="dropdown-item" href="#">Houston</a></li>
+                  <li><a class="dropdown-item" href="#">Philadelphia</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-                  <p class="text-white mb-0" id="date">Thur 9</p>
-                  <p class="text-white mb-0 pb-0" id="time">6:23 AM</p>
-                </div>
-              </div>
+                  Explore
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
 
-              <div class="card-body p-md-4">
-                <!-- TASK FORM -->
-                <form class="task-form">
-                  <div class="todo-input d-flex gap-3 mb-2">
-                    <input
-                      type="text"
-                      id="task-input"
-                      placeholder="Note"
-                      class="form-control"
-                    />
-                    <button class="btn" type="submit">
-                      <i class="fa-solid fa-plus text-white"></i>
-                    </button>
-                  </div>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Catalog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Categories</a></li>
+                  <li><a class="dropdown-item" href="#">Filters</a></li>
+                  <li><a class="dropdown-item" href="#">City-Map</a></li>
+                </ul>
+              </li>
 
-                  <!-- Task Priority -->
-                  <div class="d-flex gap-3">
-                    <select
-                      class="task-priority form-select"
-                      aria-label="Default select example"
-                    >
-                      <option value="default" disabled selected>
-                        Task Priority
-                      </option>
-                      <option value="Emergency">Emergency</option>
-                      <option value="Regular">Regular</option>
-                      <option value="Urgent">Urgent</option>
-                    </select>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Accounts
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Log In</a></li>
+                  <li><a class="dropdown-item" href="#">Personal Info</a></li>
+                  <li><a class="dropdown-item" href="#">Favorites</a></li>
+                  <li><a class="dropdown-item" href="#">Reviews</a></li>
+                  <li><a class="dropdown-item" href="#">Notification</a></li>
+                </ul>
+              </li>
+            </ul>
 
-                    <!-- Task Assigned -->
-                    <select
-                      class="task-assigned form-select"
-                      aria-label="Default select example"
-                    >
-                      <option value="default" disabled selected>
-                        Task Assigned
-                      </option>
-                      <option value="Shuvo">Shuvo</option>
-                      <option value="Nabed">Nabed</option>
-                      <option value="Al Amin">Al Amin</option>
-                    </select>
-                  </div>
-                </form>
-                <hr />
-
-                <!-- SEARCH INPUT -->
-                <input
-                  type="text"
-                  id="search"
-                  class="search-input form-control mt-2 mb-4"
-                  placeholder="Search Task .."
-                />
-
-                <!-- FILTER/TODO LIST -->
-                <div class="row">
-                  <!-- LEFT FILTER -->
-                  <div class="col-4 col-xl-3">
-                    <div class="filter-task">
-                      <h4 class="fw-bolder fs-5">FILTER:</h4>
-
-                      <!-- STATUS FILTER -->
-                      <div class="filter-status">
-                        <p class="filter-title mb-2">Status</p>
-
-                        <div class="form-check status-check">
-                          <input
-                            class="form-check-input mt-0 status-filter"
-                            type="checkbox"
-                            value="all"
-                            name="statusfilter"
-                            id="all-task "
-                          />
-                          <label class="form-check-label" for="all-task">
-                            All Task
-                          </label>
-                        </div>
-
-                        <div class="form-check status-check">
-                          <input
-                            class="form-check-input mt-0 status-filter"
-                            type="checkbox"
-                            value="open"
-                            name="statusfilter"
-                            id="open-task"
-                          />
-                          <label class="form-check-label" for="open-task">
-                            Open Task
-                          </label>
-                        </div>
-
-                        <div class="form-check status-check">
-                          <input
-                            class="form-check-input mt-0 status-filter"
-                            type="checkbox"
-                            name="statusfilter"
-                            value="complete"
-                            id="complete-task "
-                          />
-                          <label class="form-check-label" for="complete">
-                            Complete Task
-                          </label>
-                        </div>
-                        <!-- End Filter Status -->
-                      </div>
-                      <hr class="me-3" />
-
-                      <!-- TASK PRIORITY FILTER -->
-                      <div class="filter-status">
-                        <p class="filter-title mb-2">Task Priority</p>
-
-                        <div class="form-check status-check">
-                          <input
-                            class="form-check-input mt-0 priorityFilter"
-                            type="checkbox"
-                            value="emergency"
-                            name="statusfilter"
-                            id="emergency"
-                          />
-                          <label class="form-check-label" for="emergency">
-                            Emergency Task
-                          </label>
-                        </div>
-
-                        <div class="form-check status-check">
-                          <input
-                            class="form-check-input mt-0 priorityFilter"
-                            type="checkbox"
-                            value="regular"
-                            name="statusfilter"
-                            id="regular"
-                          />
-                          <label class="form-check-label" for="regular">
-                            Regular Task
-                          </label>
-                        </div>
-
-                        <div class="form-check status-check">
-                          <input
-                            class="form-check-input mt-0 priorityFilter"
-                            type="checkbox"
-                            name="statusfilter"
-                            value="urgent"
-                            id="urgent"
-                          />
-                          <label class="form-check-label" for="urgent">
-                            Urgent Task
-                          </label>
-                        </div>
-                      </div>
-                      <hr class="me-3" />
-
-                      <!-- TASK ASSIGNED FILTER -->
-                      <div class="filter-status">
-                        <p class="filter-title mb-2">Task Assigned</p>
-
-                        <div class="form-check">
-                          <input
-                            class="form-check-input mt-0 assignedFilter"
-                            type="checkbox"
-                            value="shuvo"
-                            name="statusfilter"
-                            id="shuvo"
-                          />
-                          <label class="form-check-label" for="shuvo">
-                            Shuvo
-                          </label>
-                        </div>
-
-                        <div class="form-check">
-                          <input
-                            class="form-check-input mt-0 assignedFilter"
-                            type="checkbox"
-                            value="nabed"
-                            name="nabed"
-                            id="nabed"
-                          />
-                          <label class="form-check-label" for="nabed">
-                            Nabed
-                          </label>
-                        </div>
-
-                        <div class="form-check">
-                          <input
-                            class="form-check-input mt-0 assignedFilter"
-                            type="checkbox"
-                            name="statusfilter"
-                            value="al amin"
-                            id="alamin"
-                          />
-                          <label class="form-check-label" for="alamin">
-                            Al Amin
-                          </label>
-                        </div>
-                      </div>
-                      <!-- End Filter -->
-                    </div>
-                  </div>
-
-                  <!-- TO DO LIST-->
-                  <div class="col-8 col-xl-9">
-                    <div class="task-list ms-2">
-                      <!-- Single To Do-->
-                      <!-- <div class="task-item">
-                        <div class="d-flex gap-3">
-                          <input
-                            id="complete"
-                            class="form-check-input"
-                            type="checkbox"
-                          />
-
-                          <div>
-                            <h5 class="task-title">Ract Template</h5>
-                            <span class="badge text-bg-primary">Emergency</span>
-                            <span class="badge text-bg-primary"
-                              >Assigned For Shuvo</span
-                            >
-                            <p class="task-createAt text-muted">
-                              Today at 8:00PM
-                            </p>
-                          </div>
-                        </div>
-
-                        <div class="task-actions d-flex align-items-center">
-                          <i
-                            id="edit"
-                            class="fa-solid fa-pen-to-square text-success edit-btn"
-                          ></i>
-                          <i
-                            id="delete"
-                            class="fa-solid fa-trash text-danger delete-btn"
-                          ></i>
-                        </div>
-                      </div> -->
-                      <!-- End Task  -->
-                    </div>
-                  </div>
-                </div>
-                <!-- End Card Body -->
-              </div>
-            </div>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
           </div>
         </div>
+      </nav>
+    </header>
+    <!-- END -->
+
+    <!-- START -->
+    <section>
+      <div class="container">
+        <div class="row"></div>
       </div>
     </section>
-    <!-- TO-DO LIST END -->
+    <!-- END -->
 
     <!-- Bootstrap JS JavaScript Bundle with Popper -->
     <script

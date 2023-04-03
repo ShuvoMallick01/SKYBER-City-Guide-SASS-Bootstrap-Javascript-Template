@@ -1,0 +1,27 @@
+/* 
+Template: City Guide Boostrap Javascript Template
+Author: Shuvo Mallick
+Description: City Guide Boostrap Javascript Template
+Version: 1.0.0
+Keywords:'city Guide Template', 'bootstrap template', 'javascript'
+*/
+
+/* ===== SCSS FILE INDEX ===== */
+/* --- style.scss --- */
+/* --- title --- */
+/* ===== SCSS FILE INDEX ===== */
+
+/* ===== IMPORT INDEX ===== */
+@import "../scss/partials/_variables";
+@import "../scss/partials/_mixins";
+@import "../scss/partials/_classes";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+/* ===== IMPORT INDEX ===== */
+.navbar {
+  .navbar-brand {
+    width: 100px;
+    img {
+      width: 100%;
+    }
+  }
+}

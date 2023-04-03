@@ -1,0 +1,26 @@
+$gray-600: #9691a4;
+
+// scss-docs-start theme-color-variables
+$primary: #fd5631 !default;
+$primary-hover: #fd390e !default;
+$secondary: $gray-600 !default;
+$accent: #5d3cf2 !default;
+$gradient: linear-gradient(26.21deg, #5d3cf2 0%, #fd5631 108.88%) !default;
+$success: #07c98b !default;
+$info: #3c76f2 !default;
+$warning: #fdbc31 !default;
+$danger: #f23c49 !default;
+// $light: $gray-100 !default;
+// $dark: $gray-900 !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+) !default;
+// scss-docs-end theme-colors-map
