@@ -30,6 +30,8 @@
     /> -->
     <!-- SASS COMPILE CSS -->
     <link rel="stylesheet" href="./dist/css/style.css" />
+    <!-- ICON FONTS CSS -->
+    <link rel="stylesheet" href="./assets/icons.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./dist/css/home.css" />
     <!-- Custom JS -->
@@ -63,7 +65,7 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown me-lg-2">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -71,8 +73,10 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  New York
+                  <i class="icon-pin align-baseline me-1 text-primary"></i>New
+                  York
                 </a>
+
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Los Angeles</a></li>
                   <li><a class="dropdown-item" href="#">Chicago</a></li>
@@ -183,17 +187,18 @@
               </li>
             </ul>
 
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            <div class="">
+              <a class="btn btn-sm text-primary" href="" data-bs-toggle="modal"
+                ><i class="icon-Property-1default align-baseline me-1"></i> Sign
+                in</a
+              >
+              <a
+                class="btn btn-primary btn-sm text-white"
+                href=""
+                data-bs-toggle="modal"
+                ><i class="icon-plus me-1 align-baseline"></i>Add business</a
+              >
+            </div>
           </div>
         </div>
       </nav>

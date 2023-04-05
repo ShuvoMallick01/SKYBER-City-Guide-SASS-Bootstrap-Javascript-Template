@@ -13,6 +13,7 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 
 /* ===== IMPORT INDEX ===== */
 @import "../scss/partials/_variables";
+@import "../scss/partials/utilities";
 @import "../scss/partials/_mixins";
 @import "../scss/partials/_classes";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -28,16 +29,24 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
   }
 
   .navbar-nav {
-    li {
-      a {
-        @include text-16-700;
-        color: $gray-800;
-      }
-      gap: 30px;
+    gap: 1.5rem;
+
+    a {
+      @include base-text-16-700;
+      color: $gray-800;
+    }
+
+    .nav-item > a {
+      padding: 0px;
+    }
+
+    .me-lg-2 {
+      padding-right: 1.5rem !important;
+      border-right: 1px solid $gray-300 !important;
+      padding: 0px;
     }
   }
 }
-
 // === NAVBAR END ===
 
 // === START ===
