@@ -17,11 +17,73 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 @import "../scss/partials/_classes";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 /* ===== IMPORT INDEX ===== */
-.navbar {
+
+// === NAVBAR START ===
+.custom-navbar {
   .navbar-brand {
-    width: 100px;
+    width: 115px;
     img {
       width: 100%;
     }
   }
+
+  .navbar-nav {
+    li {
+      a {
+        @include text-16-700;
+        color: $gray-800;
+      }
+      gap: 30px;
+    }
+  }
 }
+
+// === NAVBAR END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
+
+// === START ===
+// === END ===
