@@ -12,10 +12,10 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 /* ===== SCSS FILE INDEX ===== */
 
 /* ===== IMPORT INDEX ===== */
-@import "../scss/partials/_variables";
+@import "../scss/partials/variables";
 @import "../scss/partials/utilities";
-@import "../scss/partials/_mixins";
-@import "../scss/partials/_classes";
+@import "../scss/partials/mixins";
+@import "../scss/partials/classes";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 /* ===== IMPORT INDEX ===== */
 
@@ -45,12 +45,45 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
       border-right: 1px solid $gray-300 !important;
       padding: 0px;
     }
+
+    .nav-item {
+      .dropdown-menu {
+        margin-top: 10px;
+
+        a:hover {
+          background-color: transparent !important;
+        }
+      }
+      .dropdown-menu a {
+        @include base-des-16-400;
+      }
+
+      a:hover {
+        color: $primary !important;
+      }
+
+      .active {
+        color: $primary;
+      }
+    }
   }
 }
 // === NAVBAR END ===
 
-// === START ===
-// === END ===
+// === BANNER/HERO START ===
+.banner {
+  .left-side {
+    h1 {
+      font-weight: 700;
+      font-size: 48px;
+    }
+    .dropdown > a {
+      font-weight: 700;
+      font-size: 48px;
+    }
+  }
+}
+// === BANNER/HERO END ===
 
 // === START ===
 // === END ===

@@ -37,13 +37,13 @@ $btn-link-hover-color: $link-hover-color;
 // $btn-link-disabled-color: $gray-600;
 
 // // Allows for customizing button radius independently from global border radius
+// $border-radius: 40px;
 $border-radius-sm: 40px;
-$border-radius: 40px;
-$border-radius-lg: 40px;
+// $border-radius-lg: 40px;
 
-$btn-border-radius: $border-radius;
+// $btn-border-radius: $border-radius;
 $btn-border-radius-sm: $border-radius-sm;
-$btn-border-radius-lg: $border-radius-lg;
+// $btn-border-radius-lg: $border-radius-lg;
 
 // $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
 //   border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -59,22 +59,40 @@ $btn-border-radius-lg: $border-radius-lg;
 // ==== BOOTSTRAP END ====
 
 // === BUTTON START ===
-.btn {
-}
-
-.btn-primary {
-}
-
 .btn-sm {
   padding: 8px 20px;
 }
+
+.btn-primary {
+  background-color: $primary !important;
+
+  &:hover {
+    background-color: $primary-hover !important;
+  }
+}
+
+.btn-primary-outline {
+  &:focus {
+    outline: none !important;
+    border: none !important;
+  }
+}
 // === BUTTON END ===
 
-// === START ===
-// === END ===
+// === FONT START ===
+.fs-base-16 {
+  font-size: 16px;
+  font-weight: 700;
+}
 
-// === START ===
-// === END ===
+.fs-large-des-18 {
+  font-size: 18px;
+  font-weight: 400;
+}
+// === FONT END ===
+
+// === ICONS START ===
+// === ICONS END ===
 
 // === START ===
 // === END ===
