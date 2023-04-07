@@ -142,32 +142,125 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
     .icon-box {
       width: 48px;
       height: 48px;
-      background-color: #5d3cf21a;
       border-radius: 40px;
 
       i {
         font-size: 22px !important;
         font-weight: 500;
       }
+    }
 
-      &:hover {
-        color: $white;
-        background-color: $accent;
-        transition: 300ms all ease;
-      }
+    &:hover {
+      box-shadow: $box-shadow !important;
     }
 
     h3 {
       @include small-text-14-700;
       color: $gray-900;
     }
+  }
 
-    &:hover {
-      box-shadow: $box-shadow !important;
+  .accommodation,
+  .more {
+    .icon-box {
+      background-color: #5d3cf21a;
+
+      i {
+        color: $accent;
+      }
+    }
+
+    &:hover .icon-box {
+      background-color: $accent !important;
+      transition: 300ms all ease;
+    }
+
+    &:hover i {
+      color: $white;
+      transition: 300ms all ease;
+    }
+  }
+
+  .food-drink {
+    .icon-box {
+      background-color: #fdbc311a;
+
+      i {
+        color: $warning;
+      }
+    }
+
+    &:hover .icon-box {
+      background-color: $warning !important;
+      transition: 300ms all ease;
+    }
+
+    &:hover i {
+      color: $white;
+      transition: 300ms all ease;
+    }
+  }
+
+  .shopping {
+    .icon-box {
+      background-color: #fd56311a;
+
+      i {
+        color: $primary;
+      }
+    }
+
+    &:hover .icon-box {
+      background-color: $primary !important;
+      transition: 300ms all ease;
+    }
+
+    &:hover i {
+      color: $white;
+      transition: 300ms all ease;
+    }
+  }
+
+  .art-history {
+    .icon-box {
+      background-color: #07c98b1a;
+
+      i {
+        color: $success;
+      }
+    }
+
+    &:hover .icon-box {
+      background-color: $success !important;
+      transition: 300ms all ease;
+    }
+
+    &:hover i {
+      color: $white;
+      transition: 300ms all ease;
+    }
+  }
+
+  .entertainment {
+    .icon-box {
+      background-color: #f23c491a;
+
+      i {
+        color: $danger;
+      }
+    }
+
+    &:hover .icon-box {
+      background-color: $danger !important;
+      transition: 300ms all ease;
+    }
+
+    &:hover i {
+      color: $white;
+      transition: 300ms all ease;
     }
   }
 }
-
 // === CATEGORIES END ===
 
 // === START ===
