@@ -1,0 +1,22 @@
+/* ==== Desktop ==== */
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
+}
+
+/* ==== Tablets ==== */
+/* 'lg' applies to medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+}
+
+/* ==== landscape Phone ==== */
+/* 'md' applies to small device (landscape phones, loess then 768px) */
+@media (max-width: 768px) {
+  .rounded-md-pill {
+    border-radius: 50rem !important;
+  }
+}
+
+/* ==== Mobile responsive start ====
+/* sm applies to x-small devices (portrait phones, less than 576px)  */
+@media (max-width: 576px) {
+}

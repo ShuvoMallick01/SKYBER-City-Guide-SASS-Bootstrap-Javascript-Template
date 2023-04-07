@@ -11,12 +11,57 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 /* --- title --- */
 /* ===== SCSS FILE INDEX ===== */
 /* ===== IMPORT INDEX ===== */
+input[type=text],
+[type=date] {
+  outline: none !important;
+  box-shadow: none !important;
+}
+input[type=text]:focus,
+[type=date]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-check:checked + .btn,
+:not(.btn-check) + .btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+  border: transparent;
+}
+
+.dropdown-menu a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.dropdown-toggle::after {
+  all: unset;
+  content: "\e913" !important;
+  font-family: "icomoon" !important;
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 0 !important;
+  vertical-align: 0 !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: 0 !important;
+  border-left: transparent !important;
+}
+
 .btn-sm, .btn-group-sm > .btn {
   padding: 8px 20px;
 }
 
+.btn-lg, .btn-group-lg > .btn {
+  padding: 14px 32px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
 .btn-primary {
   background-color: #fd5631 !important;
+  color: #fff !important;
 }
 .btn-primary:hover {
   background-color: #fd390e !important;
@@ -35,8 +80,38 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 .fs-large-des-18 {
   font-size: 18px;
   font-weight: 400;
+  color: #666276;
 }
 
+.me-n5 {
+  margin-right: -3rem;
+}
+
+.border-end {
+  border-right: 1px solid #efecf3 !important;
+}
+
+hr {
+  margin: 0 0;
+  color: #efecf3;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 1;
+}
+
+/* ==== Desktop ==== */
+/* `xl` applies to large devices (desktops, less than 1200px) */
+/* ==== Tablets ==== */
+/* 'lg' applies to medium devices (tablets, less than 992px) */
+/* ==== landscape Phone ==== */
+/* 'md' applies to small device (landscape phones, loess then 768px) */
+@media (max-width: 768px) {
+  .rounded-md-pill {
+    border-radius: 50rem !important;
+  }
+}
+/* ==== Mobile responsive start ====
+/* sm applies to x-small devices (portrait phones, less than 576px)  */
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -64,7 +139,7 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
   --bs-gray-400: #ced4da;
   --bs-gray-500: #adb5bd;
   --bs-gray-600: #9691a4;
-  --bs-gray-700: #495057;
+  --bs-gray-700: #666276;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #fd5631;
@@ -3572,7 +3647,7 @@ textarea.form-control-lg {
   --bs-nav-tabs-border-color: #dee2e6;
   --bs-nav-tabs-border-radius: 0.375rem;
   --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
-  --bs-nav-tabs-link-active-color: #495057;
+  --bs-nav-tabs-link-active-color: #666276;
   --bs-nav-tabs-link-active-bg: #fff;
   --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
@@ -4696,8 +4771,8 @@ textarea.form-control-lg {
   --bs-list-group-border-radius: 0.375rem;
   --bs-list-group-item-padding-x: 1rem;
   --bs-list-group-item-padding-y: 0.5rem;
-  --bs-list-group-action-color: #495057;
-  --bs-list-group-action-hover-color: #495057;
+  --bs-list-group-action-color: #666276;
+  --bs-list-group-action-hover-color: #666276;
   --bs-list-group-action-hover-bg: #f8f9fa;
   --bs-list-group-action-active-color: #212529;
   --bs-list-group-action-active-bg: #e9ecef;
@@ -10677,13 +10752,50 @@ textarea.form-control-lg {
   color: #fd5631;
 }
 
+.banner .left-side {
+  z-index: 2;
+}
 .banner .left-side h1, .banner .left-side .h1 {
   font-weight: 700;
   font-size: 48px;
 }
+.banner .left-side h1 .dropdown-toggle::after, .banner .left-side .h1 .dropdown-toggle::after {
+  font-size: 20px !important;
+  margin-left: 5px !important;
+}
 .banner .left-side .dropdown > a {
   font-weight: 700;
   font-size: 48px;
+}
+.banner .left-side .form-group {
+  padding: 0.4rem;
+  border: 1px solid #e9ecef;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #9691a4;
+  font-weight: 400;
+  margin-right: -100px;
+}
+.banner .left-side .form-group input {
+  font-weight: 400;
+  font-size: 16px;
+}
+.banner .left-side .form-group .input-group:first-child {
+  width: 110% !important;
+}
+.banner .left-side .form-group .input-group button {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9691a4;
+}
+.banner .right-side .first-img {
+  width: 440px;
+}
+.banner .right-side .first-img .img {
+  width: 100%;
+}
+.banner .right-side .second-row-imgs {
+  margin-top: -200px;
 }
 
 /*# sourceMappingURL=style.css.map */

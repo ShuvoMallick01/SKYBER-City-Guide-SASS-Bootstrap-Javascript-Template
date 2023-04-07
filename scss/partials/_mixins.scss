@@ -58,6 +58,12 @@
   font-size: 10px;
   font-weight: 400;
 }
+
+// form text
+@mixin placeholder {
+  font-weight: 400;
+  font-size: 16px;
+}
 // === TEXT MIXIN END ===
 
 // === BUTTON MIXIN START ===

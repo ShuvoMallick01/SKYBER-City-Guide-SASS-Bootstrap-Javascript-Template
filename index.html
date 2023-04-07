@@ -212,9 +212,9 @@
     <!-- BANNER/HERO START -->
     <section class="banner py-5 mb-lg-3">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <!-- left side -->
-          <div class="left-side col-lg-5 pe-lg-0">
+          <div class="left-side col-lg-5 pe-lg-0 order-lg-1">
             <h1 class="display-5 mb-4 text-lg-start text-center">
               Start Exploring
               <span class="dropdown display-5 d-inline-block">
@@ -242,11 +242,80 @@
             </p>
 
             <!-- Search Form -->
-            <div class=""></div>
+            <div class="me-lg-n5">
+              <form
+                class="form-group d-block shadow-sm d-flex gap-2 align-content-center rounded-md-pill"
+              >
+                <div class="input-group d-flex align-items-center">
+                  <span><i class="icon-search ms-2"></i></span>
+                  <input
+                    type="text"
+                    class="form-control border-0 border-end"
+                    name=""
+                    id=""
+                    placeholder="What are you looking for?"
+                  />
+                </div>
+
+                <div class="input-group">
+                  <button
+                    class="btn dropdown-toggle py-0"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="icon-list"></i>
+                    All categories
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Accomodation</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <button
+                  class="btn btn-primary btn-lg rounded-pill"
+                  type="button"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
           </div>
 
           <!-- right side -->
-          <div class="col-lg-7"></div>
+          <div class="right-side col-lg-7 mb-lg-0 mb-4 pb-2 pb-lg-0 order-lg-2">
+            <div class="row first-img m-auto">
+              <img
+                class="d-block m-auto img-fluid"
+                src="./assets/images/banner/banner-img-3.png"
+                alt="Hero image"
+              />
+            </div>
+
+            <div class="row">
+              <div
+                class="second-row-imgs d-flex gap-3 align-items-end justify-content-between"
+              >
+                <div class="col">
+                  <img
+                    class="d-block mx-auto"
+                    src="./assets/images/banner/banner-img-2.png"
+                    alt="Hero image"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    class="d-block mx-auto"
+                    src="./assets/images/banner/banner-img-1.png"
+                    alt="Hero image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

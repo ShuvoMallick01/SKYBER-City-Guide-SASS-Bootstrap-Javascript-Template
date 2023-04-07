@@ -13,9 +13,11 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 
 /* ===== IMPORT INDEX ===== */
 @import "../scss/partials/variables";
-@import "../scss/partials/utilities";
 @import "../scss/partials/mixins";
+@import "../scss/partials/reset";
+@import "../scss/partials/utilities";
 @import "../scss/partials/classes";
+@import "../scss/partials/responsive";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 /* ===== IMPORT INDEX ===== */
 
@@ -73,13 +75,60 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 // === BANNER/HERO START ===
 .banner {
   .left-side {
+    z-index: 2;
     h1 {
       font-weight: 700;
       font-size: 48px;
+
+      .dropdown-toggle::after {
+        font-size: 20px !important;
+        margin-left: 5px !important;
+      }
     }
     .dropdown > a {
       font-weight: 700;
       font-size: 48px;
+    }
+
+    .form-group {
+      padding: 0.4rem;
+      border: 1px solid $gray-200;
+      background-color: $white;
+      border-radius: 50px;
+      color: $gray-600;
+      font-weight: 400;
+      margin-right: -100px;
+
+      input {
+        @include placeholder;
+      }
+
+      .input-group:first-child {
+        width: 110% !important;
+      }
+
+      .input-group {
+        button {
+          @include base-des-16-400;
+          color: $gray-600;
+        }
+      }
+
+      .form-control {
+        // padding: 0.825rem 1.25rem;
+      }
+    }
+  }
+
+  .right-side {
+    .first-img {
+      width: 440px;
+      .img {
+        width: 100%;
+      }
+    }
+    .second-row-imgs {
+      margin-top: -200px;
     }
   }
 }

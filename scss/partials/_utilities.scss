@@ -63,8 +63,16 @@ $btn-border-radius-sm: $border-radius-sm;
   padding: 8px 20px;
 }
 
+.btn-lg {
+  padding: 14px 32px !important;
+  //   @include base-text-16-700;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
 .btn-primary {
   background-color: $primary !important;
+  color: $white !important;
 
   &:hover {
     background-color: $primary-hover !important;
@@ -88,19 +96,30 @@ $btn-border-radius-sm: $border-radius-sm;
 .fs-large-des-18 {
   font-size: 18px;
   font-weight: 400;
+  color: $gray-700;
 }
 // === FONT END ===
 
-// === ICONS START ===
-// === ICONS END ===
+// === MARGIN START ===
+.me-n5 {
+  margin-right: -3rem;
+}
+// === MARGIN END ===
+
+// === BORDER START ===
+.border-end {
+  border-right: 1px solid #efecf3 !important;
+}
+// === BORDER END ===
 
 // === START ===
-// === END ===
-
-// === START ===
-// === END ===
-
-// === START ===
+hr {
+  margin: 0 0;
+  color: #efecf3;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 1;
+}
 // === END ===
 
 // === START ===
