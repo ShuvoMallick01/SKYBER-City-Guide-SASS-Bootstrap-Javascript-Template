@@ -122,11 +122,25 @@ hr {
 }
 // === END ===
 
-// === START ===
-// === END ===
+// === COLOR START ===
+.text-accent {
+  color: $accent;
+}
+// === COLOR END ===
 
-// === START ===
-// === END ===
+// === SHADOW START ===
+.shadow {
+  box-shadow: $box-shadow !important;
+}
+
+.shadow-sm {
+  box-shadow: $box-shadow-sm !important;
+}
+
+.shadow-lg {
+  box-shadow: $box-shadow-lg !important;
+}
+// === SHADOW END ===
 
 // === START ===
 // === END ===

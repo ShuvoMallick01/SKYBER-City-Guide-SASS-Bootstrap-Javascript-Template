@@ -134,8 +134,41 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 }
 // === BANNER/HERO END ===
 
-// === START ===
-// === END ===
+// === CATEGORIES START ===
+.categories {
+  .category {
+    cursor: pointer;
+
+    .icon-box {
+      width: 48px;
+      height: 48px;
+      background-color: #5d3cf21a;
+      border-radius: 40px;
+
+      i {
+        font-size: 22px !important;
+        font-weight: 500;
+      }
+
+      &:hover {
+        color: $white;
+        background-color: $accent;
+        transition: 300ms all ease;
+      }
+    }
+
+    h3 {
+      @include small-text-14-700;
+      color: $gray-900;
+    }
+
+    &:hover {
+      box-shadow: $box-shadow !important;
+    }
+  }
+}
+
+// === CATEGORIES END ===
 
 // === START ===
 // === END ===

@@ -188,16 +188,16 @@
             </ul>
 
             <!-- right side buttons -->
-            <div class="">
+            <div class="d-flex flex-nowrap">
               <a
-                class="btn btn-sm btn-primary-outline text-primary"
+                class="btn btn-sm btn-primary-outline text-primary text-nowrap"
                 href="#"
                 data-bs-toggle="modal"
                 ><i class="icon-Property-1default align-baseline me-1"></i> Sign
                 in</a
               >
               <a
-                class="btn btn-primary btn-sm text-white"
+                class="btn btn-primary btn-sm text-white text-nowrap"
                 href="#"
                 data-bs-toggle="modal"
                 ><i class="icon-plus me-1 align-baseline"></i>Add business</a
@@ -213,8 +213,40 @@
     <section class="banner py-5 mb-lg-3">
       <div class="container">
         <div class="row align-items-center">
+          <!-- right side -->
+          <div class="right-side col-lg-7 mb-lg-0 mb-4 pb-2 pb-lg-0 order-lg-2">
+            <div class="row first-img m-auto">
+              <img
+                class="d-block m-auto img-fluid"
+                src="./assets/images/banner/banner-img-3.png"
+                alt="Hero image"
+              />
+            </div>
+
+            <div class="row">
+              <div
+                class="second-row-imgs d-flex gap-3 align-items-end justify-content-between"
+              >
+                <div class="col">
+                  <img
+                    class="d-block mx-auto img-fluid"
+                    src="./assets/images/banner/banner-img-2.png"
+                    alt="Hero image"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    class="d-block mx-auto img-fluid"
+                    src="./assets/images/banner/banner-img-1.png"
+                    alt="Hero image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- left side -->
-          <div class="left-side col-lg-5 pe-lg-0 order-lg-1">
+          <div class="left-side col-lg-5 pe-lg-0 order-lg-1 mb-0 mb-md-5">
             <h1 class="display-5 mb-4 text-lg-start text-center">
               Start Exploring
               <span class="dropdown display-5 d-inline-block">
@@ -284,49 +316,37 @@
               </form>
             </div>
           </div>
-
-          <!-- right side -->
-          <div class="right-side col-lg-7 mb-lg-0 mb-4 pb-2 pb-lg-0 order-lg-2">
-            <div class="row first-img m-auto">
-              <img
-                class="d-block m-auto img-fluid"
-                src="./assets/images/banner/banner-img-3.png"
-                alt="Hero image"
-              />
-            </div>
-
-            <div class="row">
-              <div
-                class="second-row-imgs d-flex gap-3 align-items-end justify-content-between"
-              >
-                <div class="col">
-                  <img
-                    class="d-block mx-auto"
-                    src="./assets/images/banner/banner-img-2.png"
-                    alt="Hero image"
-                  />
-                </div>
-                <div class="col">
-                  <img
-                    class="d-block mx-auto"
-                    src="./assets/images/banner/banner-img-1.png"
-                    alt="Hero image"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
     <!-- BANNER/HERO END -->
 
+    <!-- CATEGORYIES START -->
+    <section class="categories py-5 mb-lg-3">
+      <div class="container">
+        <div class="d-flex gap-1">
+          <!-- single -->
+          <a
+            class="category d-flex flex-shrink-0 shadow-sm text-decoration-none align-items-center rounded-pill p-2"
+          >
+            <div
+              class="icon-box text-accent d-flex align-items-center justify-content-center p-3 me-2"
+            >
+              <i class="icon-double-bed"></i>
+            </div>
+            <h3 class="ps-1 mb-0 me-3">Accomodation</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- CATEGORY END -->
+
     <!-- START -->
-    <section class="py-5 mb-lg-3">
+    <!-- <section class="py-5 mb-lg-3">
       <div class="container">
         <div class="row"></div>
       </div>
-    </section>
+    </section> -->
     <!-- END -->
 
     <!-- Bootstrap JS JavaScript Bundle with Popper -->
