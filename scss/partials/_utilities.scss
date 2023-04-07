@@ -142,8 +142,18 @@ hr {
 }
 // === SHADOW END ===
 
-// === START ===
-// === END ===
+// === TEXT START ===
+.section-heding {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.view-all-text {
+  @include base-des-16-400;
+  color: $gray-700;
+  text-decoration: none;
+}
+// === TEXT END ===
 
 // === START ===
 // === END ===

@@ -115,12 +115,27 @@ hr {
   box-shadow: 0px 2px 8px -4px rgba(31, 27, 45, 0.12), 0px 4px 16px rgba(31, 27, 45, 0.12) !important;
 }
 
+.section-heding {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.view-all-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666276;
+  text-decoration: none;
+}
+
 /* ==== Desktop ==== */
 /* `xl` applies to large devices (desktops, less than 1200px) */
 /* ==== Tablets ==== */
 /* 'lg' applies to medium devices (tablets, less than 992px) */
 @media (max-width: 992px) {
-  .form-group {
+  .banner .left-side p {
+    margin-right: 0;
+  }
+  .banner .left-side .form-group {
     margin-right: 0px !important;
   }
 }
@@ -10788,6 +10803,9 @@ textarea.form-control-lg {
   font-size: 20px !important;
   margin-left: 5px !important;
 }
+.banner .left-side p {
+  margin-right: 30px;
+}
 .banner .left-side .dropdown > a {
   font-weight: 700;
   font-size: 48px;
@@ -10820,7 +10838,14 @@ textarea.form-control-lg {
   width: 100%;
 }
 .banner .right-side .second-row-imgs {
-  margin-top: -200px;
+  margin-top: -175px;
+}
+.banner .right-side .second-row-imgs .second-img {
+  width: 400px;
+  margin-bottom: -80px;
+}
+.banner .right-side .second-row-imgs .third-img {
+  width: 306px;
 }
 
 .categories .category {

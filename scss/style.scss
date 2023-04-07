@@ -85,6 +85,11 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
         margin-left: 5px !important;
       }
     }
+
+    p {
+      margin-right: 30px;
+    }
+
     .dropdown > a {
       font-weight: 700;
       font-size: 48px;
@@ -127,8 +132,18 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
         width: 100%;
       }
     }
+
     .second-row-imgs {
-      margin-top: -200px;
+      margin-top: -175px;
+
+      .second-img {
+        width: 400px;
+        margin-bottom: -80px;
+      }
+
+      .third-img {
+        width: 306px;
+      }
     }
   }
 }
