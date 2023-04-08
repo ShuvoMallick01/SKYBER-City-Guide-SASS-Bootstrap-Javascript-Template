@@ -37,7 +37,7 @@ form .btn.show {
 
 .dropdown-toggle::after {
   all: unset;
-  content: "\e913" !important;
+  content: "\e91d" !important;
   font-family: "icomoon" !important;
   font-size: 12px;
   display: inline-block;
