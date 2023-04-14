@@ -58,8 +58,8 @@
             class="collapse navbar-collapse ms-4"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown me-lg-2">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item location-item dropdown me-lg-2">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -275,29 +275,24 @@
                   <span><i class="icon-search ms-2"></i></span>
                   <input
                     type="text"
-                    class="form-control border-0 border-end"
+                    class="form-control border-0 border-end rounded-0"
                     name=""
                     id=""
                     placeholder="What are you looking for?"
                   />
                 </div>
 
-                <div class="input-group">
-                  <button
-                    class="btn dropdown-toggle py-0"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                <div class="input-group d-flex align-items-center">
+                  <span><i class="icon-list"></i></span>
+                  <select
+                    class="form-select all-categories p-2 border-0"
+                    aria-label="Default select example"
                   >
-                    <i class="icon-list"></i>
-                    All categories
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Accomodation</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                  </ul>
+                    <option selected>All categories</option>
+                    <option value="1">Accomodation</option>
+                    <option value="2">Food & Drink</option>
+                    <option value="3">Shopping</option>
+                  </select>
                 </div>
 
                 <button
