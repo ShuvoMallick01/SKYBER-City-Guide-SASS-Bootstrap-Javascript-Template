@@ -1,20 +1,31 @@
-$gray-600: #9691a4;
-$gray-700: #666276;
-$gray-300: #efecf3;
+// Color system
+
+// scss-docs-start gray-color-variables
 $white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+// scss-docs-end gray-color-variables
 
 // scss-docs-start theme-color-variables
-$primary: #fd5631 !default;
-$primary-hover: #fd390e !default;
-$secondary: $gray-600 !default;
-$accent: #5d3cf2 !default;
-$gradient: linear-gradient(26.21deg, #5d3cf2 0%, #fd5631 108.88%) !default;
-$success: #07c98b !default;
-$info: #3c76f2 !default;
-$warning: #fdbc31 !default;
-$danger: #f23c49 !default;
-// $light: $gray-100 !default;
-// $dark: $gray-900 !default;
+$primary: #fd5631;
+$primary-hover: #fd390e;
+$secondary: $gray-600;
+$accent: #5d3cf2;
+$gradient: linear-gradient(26.21deg, #5d3cf2 0%, #fd5631 108.88%);
+$success: #07c98b;
+$info: #3c76f2;
+$warning: #fdbc31;
+$danger: #f23c49;
+$light: $gray-100;
+$dark: $gray-900;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -25,10 +36,51 @@ $theme-colors: (
   "info": $info,
   "warning": $warning,
   "danger": $danger,
-) !default;
+  "accent": $accent,
+);
 // scss-docs-end theme-colors-map
 
-// Shadow
+// === NAVBAR START ===
+$nav-link-padding-x: 1rem;
+$nav-link-font-size: 1rem;
+$nav-link-font-weight: 700;
+$navbar-nav-link-padding-x: 1rem;
+$nav-link-color: $gray-800;
+$nav-link-hover-color: $primary;
+$nav-link-color: $gray-800;
+// === NAVBAR END ===
+
+// === DROPDOWNS START ===
+$dropdown-link-hover-color: $primary;
+$dropdown-link-hover-bg: transparent;
+$dropdown-link-active-color: $primary;
+// === DROPDOWNS END ===
+
+// === BUTTON START ===
+// regular btn
+$btn-border-radius: 40px;
+$input-btn-padding-y: 10px;
+$input-btn-padding-x: 24px;
+$input-btn-font-family: "Noto Sans", sans-serif;
+$btn-padding-y: $input-btn-padding-y;
+$btn-padding-x: $input-btn-padding-x;
+$btn-font-family: $input-btn-font-family;
+$input-btn-font-size: 16px;
+$btn-font-size: $input-btn-font-size;
+$font-weight-bold: 700;
+$btn-font-weight: $font-weight-bold;
+$input-btn-focus-color: $white;
+// sm btn
+$input-btn-padding-y-sm: 8px;
+$input-btn-padding-x-sm: 20px;
+$border-radius-sm: 40px;
+// lg btn
+
+$btn-focus-width: 0 !important;
+$btn-focus-box-shadow: none;
+// === BUTTON END ===
+
+// === SHADOW START ===
 $box-shadow: 0px 2px 8px -4px rgba(31, 27, 45, 0.12),
   0px 4px 16px rgba(31, 27, 45, 0.12);
 $box-shadow-sm: 0px 2px 2px -2px rgba(31, 27, 45, 0.08),
@@ -36,3 +88,4 @@ $box-shadow-sm: 0px 2px 2px -2px rgba(31, 27, 45, 0.08),
 $box-shadow-lg: 0px 2px 8px -4px rgba(31, 27, 45, 0.12),
   0px 4px 16px rgba(31, 27, 45, 0.12);
 // $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
+// === SHADOW END ===

@@ -6,19 +6,15 @@ Version: 1.0.0
 Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 */
 
-/* ===== SCSS FILE INDEX ===== */
-/* --- style.scss --- */
-/* --- title --- */
-/* ===== SCSS FILE INDEX ===== */
-
 /* ===== IMPORT INDEX ===== */
-@import "../scss/partials/variables";
+// @import "../scss/partials/variables";
+@import "./partials/variables";
+@import "./vendor/bootstrap";
+@import "../scss/partials/classes";
 @import "../scss/partials/mixins";
 @import "../scss/partials/reset";
 @import "../scss/partials/utilities";
-@import "../scss/partials/classes";
 @import "../scss/partials/responsive";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 /* ===== IMPORT INDEX ===== */
 
 // === NAVBAR START ===
@@ -31,41 +27,41 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
   }
 
   .navbar-nav {
-    gap: 1.5rem;
+    // gap: 1.5rem;
 
     a {
-      @include base-text-16-700;
-      color: $gray-800;
+      // @include base-text-16-700;
+      // color: $gray-800;
     }
 
     .nav-item > a {
-      padding: 0px;
+      // padding: 0px;
     }
 
     .me-lg-2 {
-      padding-right: 1.5rem !important;
-      border-right: 1px solid $gray-300 !important;
-      padding: 0px;
+      // padding-right: 1.5rem !important;
+      // border-right: 1px solid $gray-300 !important;
+      // padding: 0px;
     }
 
     .nav-item {
       .dropdown-menu {
-        margin-top: 10px;
+        // margin-top: 10px;
 
         a:hover {
-          background-color: transparent !important;
+          // background-color: transparent !important;
         }
       }
       .dropdown-menu a {
-        @include base-des-16-400;
+        // @include base-des-16-400;
       }
 
       a:hover {
-        color: $primary !important;
+        // color: $primary !important;
       }
 
       .active {
-        color: $primary;
+        // color: $primary;
       }
     }
   }
@@ -73,273 +69,273 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 // === NAVBAR END ===
 
 // === BANNER/HERO START ===
-.banner {
-  .left-side {
-    z-index: 2;
-    h1 {
-      font-weight: 700;
-      font-size: 48px;
+// .banner {
+//   .left-side {
+//     z-index: 2;
+//     h1 {
+//       font-weight: 700;
+//       font-size: 48px;
 
-      .dropdown-toggle::after {
-        font-size: 20px !important;
-        margin-left: 5px !important;
-      }
-    }
+//       .dropdown-toggle::after {
+//         font-size: 20px !important;
+//         margin-left: 5px !important;
+//       }
+//     }
 
-    p {
-      margin-right: 30px;
-    }
+//     p {
+//       margin-right: 30px;
+//     }
 
-    .dropdown > a {
-      font-weight: 700;
-      font-size: 48px;
-    }
+//     .dropdown > a {
+//       font-weight: 700;
+//       font-size: 48px;
+//     }
 
-    .form-group {
-      padding: 0.4rem;
-      border: 1px solid $gray-200;
-      background-color: $white;
-      border-radius: 50px;
-      color: $gray-600;
-      font-weight: 400;
-      margin-right: -100px;
+//     .form-group {
+//       padding: 0.4rem;
+//       border: 1px solid $gray-200;
+//       background-color: $white;
+//       border-radius: 50px;
+//       color: $gray-600;
+//       font-weight: 400;
+//       margin-right: -100px;
 
-      input {
-        @include placeholder;
-      }
+//       input {
+//         @include placeholder;
+//       }
 
-      .input-group:first-child {
-        width: 110% !important;
-      }
+//       .input-group:first-child {
+//         width: 110% !important;
+//       }
 
-      .input-group {
-        button {
-          @include base-des-16-400;
-          color: $gray-600;
-        }
-      }
+//       .input-group {
+//         button {
+//           @include base-des-16-400;
+//           color: $gray-600;
+//         }
+//       }
 
-      .form-control {
-        // padding: 0.825rem 1.25rem;
-      }
-    }
-  }
+//       .form-control {
+//         // padding: 0.825rem 1.25rem;
+//       }
+//     }
+//   }
 
-  .right-side {
-    .first-img {
-      width: 440px;
-      .img {
-        width: 100%;
-      }
-    }
+//   .right-side {
+//     .first-img {
+//       width: 440px;
+//       .img {
+//         width: 100%;
+//       }
+//     }
 
-    .second-row-imgs {
-      margin-top: -175px;
+//     .second-row-imgs {
+//       margin-top: -175px;
 
-      .second-img {
-        width: 400px;
-        margin-bottom: -80px;
-      }
+//       .second-img {
+//         width: 400px;
+//         margin-bottom: -80px;
+//       }
 
-      .third-img {
-        width: 306px;
-      }
-    }
-  }
-}
+//       .third-img {
+//         width: 306px;
+//       }
+//     }
+//   }
+// }
 // === BANNER/HERO END ===
 
 // === CATEGORIES START ===
-.categories {
-  .category {
-    cursor: pointer;
+// .categories {
+//   .category {
+//     cursor: pointer;
 
-    .icon-box {
-      width: 48px;
-      height: 48px;
-      border-radius: 40px;
+//     .icon-box {
+//       width: 48px;
+//       height: 48px;
+//       border-radius: 40px;
 
-      i {
-        font-size: 22px !important;
-        font-weight: 500;
-      }
-    }
+//       i {
+//         font-size: 22px !important;
+//         font-weight: 500;
+//       }
+//     }
 
-    &:hover {
-      box-shadow: $box-shadow !important;
-    }
+//     &:hover {
+//       box-shadow: $box-shadow !important;
+//     }
 
-    h3 {
-      @include small-text-14-700;
-      color: $gray-900;
-    }
-  }
+//     h3 {
+//       @include small-text-14-700;
+//       color: $gray-900;
+//     }
+//   }
 
-  .accommodation,
-  .more {
-    .icon-box {
-      background-color: #5d3cf21a;
+//   .accommodation,
+//   .more {
+//     .icon-box {
+//       background-color: #5d3cf21a;
 
-      i {
-        color: $accent;
-      }
-    }
+//       i {
+//         color: $accent;
+//       }
+//     }
 
-    &:hover .icon-box {
-      background-color: $accent !important;
-      transition: 300ms all ease;
-    }
+//     &:hover .icon-box {
+//       background-color: $accent !important;
+//       transition: 300ms all ease;
+//     }
 
-    &:hover i {
-      color: $white;
-      transition: 300ms all ease;
-    }
-  }
+//     &:hover i {
+//       color: $white;
+//       transition: 300ms all ease;
+//     }
+//   }
 
-  .food-drink {
-    .icon-box {
-      background-color: #fdbc311a;
+//   .food-drink {
+//     .icon-box {
+//       background-color: #fdbc311a;
 
-      i {
-        color: $warning;
-      }
-    }
+//       i {
+//         color: $warning;
+//       }
+//     }
 
-    &:hover .icon-box {
-      background-color: $warning !important;
-      transition: 300ms all ease;
-    }
+//     &:hover .icon-box {
+//       background-color: $warning !important;
+//       transition: 300ms all ease;
+//     }
 
-    &:hover i {
-      color: $white;
-      transition: 300ms all ease;
-    }
-  }
+//     &:hover i {
+//       color: $white;
+//       transition: 300ms all ease;
+//     }
+//   }
 
-  .shopping {
-    .icon-box {
-      background-color: #fd56311a;
+//   .shopping {
+//     .icon-box {
+//       background-color: #fd56311a;
 
-      i {
-        color: $primary;
-      }
-    }
+//       i {
+//         color: $primary;
+//       }
+//     }
 
-    &:hover .icon-box {
-      background-color: $primary !important;
-      transition: 300ms all ease;
-    }
+//     &:hover .icon-box {
+//       background-color: $primary !important;
+//       transition: 300ms all ease;
+//     }
 
-    &:hover i {
-      color: $white;
-      transition: 300ms all ease;
-    }
-  }
+//     &:hover i {
+//       color: $white;
+//       transition: 300ms all ease;
+//     }
+//   }
 
-  .art-history {
-    .icon-box {
-      background-color: #07c98b1a;
+//   .art-history {
+//     .icon-box {
+//       background-color: #07c98b1a;
 
-      i {
-        color: $success;
-      }
-    }
+//       i {
+//         color: $success;
+//       }
+//     }
 
-    &:hover .icon-box {
-      background-color: $success !important;
-      transition: 300ms all ease;
-    }
+//     &:hover .icon-box {
+//       background-color: $success !important;
+//       transition: 300ms all ease;
+//     }
 
-    &:hover i {
-      color: $white;
-      transition: 300ms all ease;
-    }
-  }
+//     &:hover i {
+//       color: $white;
+//       transition: 300ms all ease;
+//     }
+//   }
 
-  .entertainment {
-    .icon-box {
-      background-color: #f23c491a;
+//   .entertainment {
+//     .icon-box {
+//       background-color: #f23c491a;
 
-      i {
-        color: $danger;
-      }
-    }
+//       i {
+//         color: $danger;
+//       }
+//     }
 
-    &:hover .icon-box {
-      background-color: $danger !important;
-      transition: 300ms all ease;
-    }
+//     &:hover .icon-box {
+//       background-color: $danger !important;
+//       transition: 300ms all ease;
+//     }
 
-    &:hover i {
-      color: $white;
-      transition: 300ms all ease;
-    }
-  }
-}
+//     &:hover i {
+//       color: $white;
+//       transition: 300ms all ease;
+//     }
+//   }
+// }
 // === CATEGORIES END ===
 
 // === WHERE TO STAY START ===
 .where-stay {
 }
 
-.card-hotel {
-  cursor: pointer;
+// .card-hotel {
+//   cursor: pointer;
 
-  .card-top {
-    &::after {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      left: 0;
-      right: 0;
-      background-color: rgba(33, 37, 41, 0.5);
-      border-radius: 12px;
-      z-index: 1;
-      opacity: 0;
-      transition: all 300ms ease;
-    }
+//   .card-top {
+//     &::after {
+//       position: absolute;
+//       content: "";
+//       width: 100%;
+//       height: 100%;
+//       left: 0;
+//       right: 0;
+//       background-color: rgba(33, 37, 41, 0.5);
+//       border-radius: 12px;
+//       z-index: 1;
+//       opacity: 0;
+//       transition: all 300ms ease;
+//     }
 
-    .favorite-btn {
-      width: 32px;
-      height: 32px;
-      border-radius: 25px !important;
-      background-color: $white;
-      margin-right: 15px;
-      margin-top: 15px;
-      color: $primary;
-      z-index: 2;
+//     .favorite-btn {
+//       width: 32px;
+//       height: 32px;
+//       border-radius: 25px !important;
+//       background-color: $white;
+//       margin-right: 15px;
+//       margin-top: 15px;
+//       color: $primary;
+//       z-index: 2;
 
-      &:hover {
-        color: $white !important;
-        background-color: $primary;
-        transition: 300ms all ease;
-      }
-    }
-  }
+//       &:hover {
+//         color: $white !important;
+//         background-color: $primary;
+//         transition: 300ms all ease;
+//       }
+//     }
+//   }
 
-  &:hover .card-top::after {
-    opacity: 1;
-  }
+//   &:hover .card-top::after {
+//     opacity: 1;
+//   }
 
-  .card-body {
-    .nav-link {
-      @include large-text-18-700;
-      color: $gray-800 !important;
+//   .card-body {
+//     .nav-link {
+//       @include large-text-18-700;
+//       color: $gray-800 !important;
 
-      &:hover {
-        color: $primary !important;
-      }
-    }
+//       &:hover {
+//         color: $primary !important;
+//       }
+//     }
 
-    .hotel-details {
-      p {
-        @include extramall-des-12-400;
-        color: $gray-700 !important;
-      }
-    }
-  }
-}
+//     .hotel-details {
+//       p {
+//         @include extramall-des-12-400;
+//         color: $gray-700 !important;
+//       }
+//     }
+//   }
+// }
 
 // === WHERE TO STAY END ===
 

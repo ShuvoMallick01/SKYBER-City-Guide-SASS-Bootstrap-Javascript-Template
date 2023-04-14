@@ -1,0 +1,117 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// === NAVBAR START ===
+
+.nav-link {
+  //   display: block;
+  //   padding: var(--#{$prefix}nav-link-padding-y)
+  //     var(--#{$prefix}nav-link-padding-x);
+  //   @include font-size(var(--#{$prefix}nav-link-font-size));
+  //   font-weight: var(--#{$prefix}nav-link-font-weight);
+  color: $gray-700;
+  //   text-decoration: if($link-decoration == none, null, none);
+  //   background: none;
+  //   border: 0;
+  //   @include transition($nav-link-transition);
+
+  &:hover,
+  &:focus {
+    color: $primary;
+    // text-decoration: if($link-hover-decoration == underline, none, null);
+  }
+
+  &:focus-visible {
+    // outline: 0;
+    // box-shadow: $nav-link-focus-box-shadow;
+  }
+
+  // Disabled state lightens text
+  &.disabled {
+    // color: var(--#{$prefix}nav-link-disabled-color);
+    // pointer-events: none;
+    // cursor: default;
+  }
+}
+
+.nav-link.active,
+.nav-item.show .nav-link {
+  color: $primary !important;
+  background-color: transparent;
+  //   border-color: var(--#{$prefix}nav-tabs-link-active-border-color);
+}
+// === NAVBAR END ===
+
+// === DROPDOWN START ===
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: $primary;
+  background-color: transparent;
+}
+// === DROPDOWN END ===
+
+// === BUTTON START ===
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @if $color == "light" {
+      @include button-variant(
+        $value,
+        $value,
+        $hover-background: shade-color($value, $btn-hover-bg-shade-amount),
+        $hover-border: shade-color($value, $btn-hover-border-shade-amount),
+        $active-background: shade-color($value, $btn-active-bg-shade-amount),
+        $active-border: shade-color($value, $btn-active-border-shade-amount)
+      );
+    } @else if $color == "dark" or $color == "success" {
+      @include button-variant(
+        $value,
+        $value,
+        $hover-background: tint-color($value, $btn-hover-bg-tint-amount),
+        $hover-border: tint-color($value, $btn-hover-border-tint-amount),
+        $active-background: tint-color($value, $btn-active-bg-tint-amount),
+        $active-border: tint-color($value, $btn-active-border-tint-amount)
+      );
+    } @else if $color == "warning" {
+      @include button-variant(
+        $value,
+        $value,
+        $hover-background: shade-color($value, $btn-hover-bg-shade-amount),
+        $hover-border: shade-color($value, $btn-hover-border-shade-amount),
+        $active-background: shade-color($value, $btn-active-bg-shade-amount),
+        $active-border: shade-color($value, $btn-active-border-shade-amount)
+      );
+    } @else {
+      @include button-variant(
+        $value,
+        $value,
+        $white,
+        $hover-color: $white,
+        $hover-background: darken($value, 10%),
+        $active-color: $white
+      );
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+
+  //   .btn-pill-#{$color} {
+  //     @include button-variant(
+  //       $value,
+  //       $value,
+  //       $white,
+  //       $hover-color: $white,
+  //       $hover-background: darken($value, 10%),
+  //       $active-color: $white
+  //     );
+  //     border-radius: 40px;
+  //   }
+}
+// === BUTTON END ===
