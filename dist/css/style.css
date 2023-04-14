@@ -11055,4 +11055,99 @@ textarea.form-control-lg {
   width: 306px;
 }
 
+.categories .category {
+  cursor: pointer;
+}
+.categories .category .icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+}
+.categories .category .icon-box i {
+  font-size: 22px !important;
+  font-weight: 500;
+}
+.categories .category:hover {
+  box-shadow: 0px 2px 8px -4px rgba(31, 27, 45, 0.12), 0px 4px 16px rgba(31, 27, 45, 0.12) !important;
+}
+.categories .category h3, .categories .category .h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #212529;
+}
+.categories .accommodation .icon-box,
+.categories .more .icon-box {
+  background-color: rgba(93, 60, 242, 0.1019607843);
+}
+.categories .accommodation .icon-box i,
+.categories .more .icon-box i {
+  color: #5d3cf2;
+}
+.categories .accommodation:hover .icon-box,
+.categories .more:hover .icon-box {
+  background-color: #5d3cf2 !important;
+  transition: 300ms all ease;
+}
+.categories .accommodation:hover i,
+.categories .more:hover i {
+  color: #fff;
+  transition: 300ms all ease;
+}
+.categories .food-drink .icon-box {
+  background-color: rgba(253, 188, 49, 0.1019607843);
+}
+.categories .food-drink .icon-box i {
+  color: #fdbc31;
+}
+.categories .food-drink:hover .icon-box {
+  background-color: #fdbc31 !important;
+  transition: 300ms all ease;
+}
+.categories .food-drink:hover i {
+  color: #fff;
+  transition: 300ms all ease;
+}
+.categories .shopping .icon-box {
+  background-color: rgba(253, 86, 49, 0.1019607843);
+}
+.categories .shopping .icon-box i {
+  color: #fd5631;
+}
+.categories .shopping:hover .icon-box {
+  background-color: #fd5631 !important;
+  transition: 300ms all ease;
+}
+.categories .shopping:hover i {
+  color: #fff;
+  transition: 300ms all ease;
+}
+.categories .art-history .icon-box {
+  background-color: rgba(7, 201, 139, 0.1019607843);
+}
+.categories .art-history .icon-box i {
+  color: #07c98b;
+}
+.categories .art-history:hover .icon-box {
+  background-color: #07c98b !important;
+  transition: 300ms all ease;
+}
+.categories .art-history:hover i {
+  color: #fff;
+  transition: 300ms all ease;
+}
+.categories .entertainment .icon-box {
+  background-color: rgba(242, 60, 73, 0.1019607843);
+}
+.categories .entertainment .icon-box i {
+  color: #f23c49;
+}
+.categories .entertainment:hover .icon-box {
+  background-color: #f23c49 !important;
+  transition: 300ms all ease;
+}
+.categories .entertainment:hover i {
+  color: #fff;
+  transition: 300ms all ease;
+}
+
 /*# sourceMappingURL=style.css.map */
