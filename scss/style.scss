@@ -12,7 +12,7 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 @import "./vendor/bootstrap";
 // @import "../scss/partials/classes";
 @import "../scss/mixins/typography";
-@import "../scss/partials/reset";
+// @import "../scss/partials/reset";
 @import "../scss/partials/utilities";
 @import "../scss/partials/responsive";
 /* ===== IMPORT INDEX ===== */
@@ -254,67 +254,66 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 // === CATEGORIES END ===
 
 // === WHERE TO STAY START ===
-.where-stay {
+.card-hotel {
+  cursor: pointer;
+
+  .card-top {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      background-color: rgba(33, 37, 41, 0.5);
+      border-radius: 12px;
+      z-index: 1;
+      opacity: 0;
+      transition: all 300ms ease;
+    }
+
+    .favorite-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 40px !important;
+      background-color: $white;
+      margin-right: 15px;
+      margin-top: 15px;
+      color: $primary;
+      z-index: 2;
+      border: none;
+
+      &:hover {
+        color: $white !important;
+        background-color: $primary;
+        transition: 300ms all ease;
+      }
+    }
+  }
+
+  &:hover .card-top::after {
+    opacity: 1;
+  }
+
+  .card-body {
+    .card-title {
+      font-weight: 700;
+      font-size: 18px;
+
+      &:hover {
+        color: $primary !important;
+      }
+    }
+
+    .hotel-details {
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        color: $gray-700 !important;
+      }
+    }
+  }
 }
-
-// .card-hotel {
-//   cursor: pointer;
-
-//   .card-top {
-//     &::after {
-//       position: absolute;
-//       content: "";
-//       width: 100%;
-//       height: 100%;
-//       left: 0;
-//       right: 0;
-//       background-color: rgba(33, 37, 41, 0.5);
-//       border-radius: 12px;
-//       z-index: 1;
-//       opacity: 0;
-//       transition: all 300ms ease;
-//     }
-
-//     .favorite-btn {
-//       width: 32px;
-//       height: 32px;
-//       border-radius: 25px !important;
-//       background-color: $white;
-//       margin-right: 15px;
-//       margin-top: 15px;
-//       color: $primary;
-//       z-index: 2;
-
-//       &:hover {
-//         color: $white !important;
-//         background-color: $primary;
-//         transition: 300ms all ease;
-//       }
-//     }
-//   }
-
-//   &:hover .card-top::after {
-//     opacity: 1;
-//   }
-
-//   .card-body {
-//     .nav-link {
-//       @include large-text-18-700;
-//       color: $gray-800 !important;
-
-//       &:hover {
-//         color: $primary !important;
-//       }
-//     }
-
-//     .hotel-details {
-//       p {
-//         @include extramall-des-12-400;
-//         color: $gray-700 !important;
-//       }
-//     }
-//   }
-// }
 
 // === WHERE TO STAY END ===
 
