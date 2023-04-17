@@ -6,19 +6,19 @@
 /* ==== Tablets ==== */
 /* 'lg' applies to medium devices (tablets, less than 992px) */
 @media (max-width: 992px) {
-  // banner/hero start
-  // .banner {
-  //   .left-side {
-  //     p {
-  //       margin-right: 0;
-  //     }
+  // Banner/hero start
+  .banner {
+    .left-side {
+      p {
+        margin-right: 0;
+      }
 
-  //     .form-group {
-  //       margin-right: 0px !important;
-  //     }
-  //   }
-  // }
-  // banner/hero end
+      .form-group {
+        margin-right: 0px !important;
+      }
+    }
+  }
+  // Banner/hero end
 }
 
 /* ==== landscape Phone ==== */

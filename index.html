@@ -271,11 +271,13 @@
               <form
                 class="form-group d-block shadow-sm d-flex gap-2 align-content-center rounded-md-pill"
               >
-                <div class="input-group d-flex align-items-center">
+                <div
+                  class="input-group d-flex align-items-center pe-1 border-end"
+                >
                   <span><i class="icon-search ms-2"></i></span>
                   <input
                     type="text"
-                    class="form-control border-0 border-end rounded-0"
+                    class="form-control border-0"
                     name=""
                     id=""
                     placeholder="What are you looking for?"
@@ -295,12 +297,14 @@
                   </select>
                 </div>
 
-                <button
-                  class="btn btn-primary btn-lg rounded-pill"
-                  type="button"
-                >
-                  Search
-                </button>
+                <div class="ms-xl-4">
+                  <button
+                    class="btn btn-primary search-btn rounded-pill"
+                    type="button"
+                  >
+                    Search
+                  </button>
+                </div>
               </form>
             </div>
           </div>

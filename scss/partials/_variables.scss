@@ -51,6 +51,10 @@ $nav-link-hover-color: $primary;
 $nav-link-color: $gray-800;
 $navbar-light-icon-color: $gray-800;
 $navbar-toggler-icon-bg: url("../../assets/images/icons/arrow-single-down.svg");
+$navbar-toggler-border-radius: 0;
+$navbar-light-toggler-border-color: transparent;
+$navbar-light-icon-color: $primary;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 
 // === NAVBAR END ===
 
@@ -63,7 +67,7 @@ $dropdown-link-active-color: $primary;
 
 // === BUTTON START ===
 // regular btn
-$btn-border-radius: 40px;
+// $btn-border-radius: 40px;
 $input-btn-padding-y: 10px;
 $input-btn-padding-x: 24px;
 $input-btn-font-family: "Noto Sans", sans-serif;
@@ -78,8 +82,13 @@ $input-btn-focus-color: $white;
 // sm btn
 $input-btn-padding-y-sm: 8px;
 $input-btn-padding-x-sm: 20px;
-$border-radius-sm: 40px;
+// $border-radius-sm: 40px;
 // lg btn
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius: 2.5rem;
+$btn-border-radius-sm: 2.5rem;
+$btn-border-radius-lg: 2.5rem;
 
 $btn-focus-width: 0 !important;
 $btn-focus-box-shadow: none;

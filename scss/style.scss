@@ -10,8 +10,8 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 // @import "../scss/partials/variables";
 @import "./partials/variables";
 @import "./vendor/bootstrap";
-@import "../scss/partials/classes";
-@import "../scss/partials/mixins";
+// @import "../scss/partials/classes";
+@import "../scss/mixins/typography";
 @import "../scss/partials/reset";
 @import "../scss/partials/utilities";
 @import "../scss/partials/responsive";
@@ -71,30 +71,19 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
       font-weight: 400;
       margin-right: -100px;
 
-      input {
-        // @include placeholder;
-      }
-
       .input-group:first-child {
-        width: 110% !important;
         border-radius: 0px !important;
       }
 
       .input-group {
-        button {
-          // @include base-des-16-400;
-          color: $gray-600;
-        }
-
         .all-categories {
           color: $gray-600;
-
-          background-position: right 66px center;
         }
 
         .icon-search {
           padding: 0 10px;
         }
+
         .icon-list {
           padding: 0 5px;
         }
@@ -102,10 +91,10 @@ Keywords:'city Guide Template', 'bootstrap template', 'javascript'
 
       .form-control {
         padding-left: 0px;
-        // &:focus {
-        //   margin-left: 2px !important;
-        //   padding: 5px;
-        // }
+      }
+
+      .search-btn {
+        padding: 14px 32px;
       }
     }
   }
