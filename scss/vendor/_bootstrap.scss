@@ -23,10 +23,12 @@
 // === NAVBAR END ===
 
 // === DROPDOWN START ===
-.dropdown-item:hover,
-.dropdown-item:focus {
-  color: $primary;
-  background-color: transparent;
+.dropdown-item {
+  &:hover,
+  &:focus {
+    color: $primary;
+    background-color: transparent;
+  }
 }
 // === DROPDOWN END ===
 
@@ -91,3 +93,7 @@
   //   }
 }
 // === BUTTON END ===
+
+// === CARD START ===
+
+// === CARD END ===
