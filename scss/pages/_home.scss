@@ -2,8 +2,12 @@
 .custom-navbar {
   .navbar-brand {
     width: 115px;
+
+    display: block;
     img {
-      width: 100%;
+      width: 100% !important;
+      height: auto;
+      vertical-align: middle;
     }
   }
 
@@ -98,6 +102,7 @@
 
       .third-img {
         width: 306px;
+        // margin-right: -50px;
       }
     }
   }
@@ -234,9 +239,20 @@
 }
 // === CATEGORIES END ===
 
-// === WHERE TO STAY START ===
+// === WHERE TO EAT START ===
+.taxi-488 {
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+  }
 
-// === WHERE TO STAY END ===
+  p {
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+// === WHERE TO EAT END ===
 
 // === START ===
 // === END ===

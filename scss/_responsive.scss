@@ -1,5 +1,23 @@
 /* `xl` applies to large devices (Desktop, less than 1200px) */
+@media (max-width: 1400px) {
+  // Navbar start
+  .custom-navbar {
+    .logo {
+      width: 115px;
+      margin-right: 0px !important;
+    }
+  }
+  // Navbar End
+}
+
+/* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1200px) {
+  .custom-navbar {
+    .logo {
+      width: 115px !important;
+      margin-right: 0px !important;
+    }
+  }
 }
 
 /* 'lg' applies to medium devices (Tablets, less than 992px) */

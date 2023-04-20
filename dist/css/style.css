@@ -10718,6 +10718,10 @@ a {
   background-color: transparent;
 }
 
+.dropdown-toggle::after {
+  background-image: url("../../assets/images/icons/arrow-single-down.svg") !important;
+}
+
 .dropdown-item:hover, .dropdown-item:focus {
   color: #fd5631;
   background-color: transparent;
@@ -10969,6 +10973,10 @@ a {
   border: 1px solid rgba(255, 255, 255, 0);
 }
 
+.bg-faded-accent {
+  background-color: rgba(93, 60, 242, 0.1);
+}
+
 .card-hotel {
   cursor: pointer;
 }
@@ -11019,9 +11027,12 @@ a {
 
 .custom-navbar .navbar-brand {
   width: 115px;
+  display: block;
 }
 .custom-navbar .navbar-brand img {
-  width: 100%;
+  width: 100% !important;
+  height: auto;
+  vertical-align: middle;
 }
 .custom-navbar .navbar-nav .me-lg-2 {
   padding-right: 1rem !important;
@@ -11188,7 +11199,29 @@ a {
   transition: 300ms all ease;
 }
 
+.taxi-488 h2, .taxi-488 .h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+.taxi-488 p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
 /* `xl` applies to large devices (Desktop, less than 1200px) */
+@media (max-width: 1400px) {
+  .custom-navbar .logo {
+    width: 115px;
+    margin-right: 0px !important;
+  }
+}
+/* `xl` applies to large devices (Desktop, less than 1200px) */
+@media (max-width: 1200px) {
+  .custom-navbar .logo {
+    width: 115px !important;
+    margin-right: 0px !important;
+  }
+}
 /* 'lg' applies to medium devices (Tablets, less than 992px) */
 @media (max-width: 992px) {
   .banner .left-side p {

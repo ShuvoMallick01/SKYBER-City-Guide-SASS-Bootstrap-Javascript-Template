@@ -53,6 +53,10 @@ a {
   color: $primary !important;
   background-color: transparent;
 }
+
+.dropdown-toggle::after {
+  background-image: url("../../assets/images/icons/arrow-single-down.svg") !important;
+}
 // === NAVBAR END ===
 
 // === DROPDOWN START ===

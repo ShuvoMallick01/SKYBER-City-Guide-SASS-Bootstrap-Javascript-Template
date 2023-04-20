@@ -39,8 +39,11 @@
     <header>
       <nav class="custom-navbar navbar navbar-expand-lg bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#"
-            ><img src="./assets/images/logo-skyber.svg" alt=""
+          <a class="navbar-brand logo" href="#"
+            ><img
+              src="./assets/images/logo-skyber.svg"
+              alt=""
+              class="img-fluid"
           /></a>
           <button
             class="navbar-toggler"
@@ -55,7 +58,7 @@
           </button>
 
           <div
-            class="collapse navbar-collapse ms-4"
+            class="collapse navbar-collapse ms-xl-4 ms-lg-1"
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
@@ -67,8 +70,8 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <i class="icon-pin align-baseline me-1 text-primary"></i>New
-                  York
+                  <i class="icon-pin align-baseline me-xl-1 text-primary"></i
+                  >New York
                 </a>
 
                 <ul class="dropdown-menu">
@@ -182,7 +185,7 @@
             </ul>
 
             <!-- right side buttons -->
-            <div class="d-flex flex-nowrap">
+            <div class="d-flex flex-wrap">
               <a
                 class="btn btn-sm text-primary text-nowrap"
                 href="#"
@@ -217,18 +220,18 @@
               />
             </div>
 
-            <div class="row">
-              <div class="second-row-imgs d-flex gap-1 align-items-center">
+            <div class="row justify-content-center justify-items-end">
+              <div class="second-row-imgs d-flex align-items-center gap-4">
                 <div class="col second-img">
                   <img
-                    class="d-block mx-auto img-fluid"
+                    class="img-fluid"
                     src="./assets/images/banner/banner-img-2.png"
                     alt="Hero image"
                   />
                 </div>
-                <div class="col third-img">
+                <div class="col third-img justify-content-end">
                   <img
-                    class="d-block mx-auto img-fluid"
+                    class="img-fluid"
                     src="./assets/images/banner/banner-img-1.png"
                     alt="Hero image"
                   />
@@ -243,7 +246,7 @@
               Start Exploring
               <span class="dropdown display-5 d-inline-block">
                 <a
-                  class="dropdown-toggle text-decoration-none"
+                  class="dropdown-toggle text-decoration-none text-primary"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -529,27 +532,46 @@
     <!-- WHERE TO SAY  END -->
 
     <!-- PRACTICE START -->
-    <section class="py-5 mb-lg-3">
+    <section class="mb-5 mb-lg-3">
       <div class="container">
-        <!-- heading -->
-        <div
-          class="d-flex justify-content-between align-items-center mb-4 pb-2"
-        >
-          <h2 class="section-heding">Where to stay in Berlin</h2>
-          <a class="view-all-text"
-            >View All <i class="icon-Property-2right align-middle"></i
-          ></a>
-        </div>
+        <div class="row">
+          <!-- left image -->
+          <div class="taxi-488 col-lg-4">
+            <div class="rounded-3 bg-faded-accent">
+              <div class="p-4">
+                <h2 class="text-primary mb-0 p-2">
+                  <i class="icon-phone-2 me-2"></i>Taxi
+                  <span class="text-black">488</span>
+                </h2>
+                <p class="mb-0 p-2 me-lg-5 pe-xl-5">
+                  The best way to get wherever you’re going!
+                </p>
+              </div>
 
-        <div class="mb-5 pb-5">
-          <button class="btn btn-primary">Shuvo Mallick</button>
+              <img
+                src="./assets/images/illustration/taxi488.svg"
+                alt="illustration"
+              />
+            </div>
+          </div>
+
+          <!-- right contents -->
+          <div class="col-lg-8">
+            <!-- heading -->
+            <div
+              class="d-flex justify-content-between align-items-center mb-4 pb-2"
+            >
+              <h3>Where to eat</h3>
+              <a>View All <i class="icon-arrow-long-right align-middle"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- PRACTICE END -->
 
     <!-- START -->
-    <!-- <section class="py-5 mb-lg-3">
+    <!-- <section class="mb-5 mb-lg-3">
       <div class="container">
         <div class="row"></div>
       </div>
