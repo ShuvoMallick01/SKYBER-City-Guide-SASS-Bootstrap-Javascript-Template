@@ -1,10 +1,8 @@
-/* ==== Desktop ==== */
-/* `xl` applies to large devices (desktops, less than 1200px) */
+/* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1200px) {
 }
 
-/* ==== Tablets ==== */
-/* 'lg' applies to medium devices (tablets, less than 992px) */
+/* 'lg' applies to medium devices (Tablets, less than 992px) */
 @media (max-width: 992px) {
   // Banner/hero start
   .banner {
@@ -21,8 +19,7 @@
   // Banner/hero end
 }
 
-/* ==== landscape Phone ==== */
-/* 'md' applies to small device (landscape phones, loess then 768px) */
+/* 'md' applies to small device (Landscape Phones, loess then 768px) */
 @media (max-width: 768px) {
   // navbar start
   // .me-lg-2 {
@@ -36,7 +33,6 @@
   // }
 }
 
-/* ==== Mobile responsive start ====
-/* sm applies to x-small devices (portrait phones, less than 576px)  */
+/* sm applies to x-small devices (Mobile, Portrait phones, less than 576px)  */
 @media (max-width: 576px) {
 }
