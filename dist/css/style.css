@@ -10718,13 +10718,16 @@ a {
   background-color: transparent;
 }
 
-.dropdown-toggle::after {
-  background-image: url("../../assets/images/icons/arrow-single-down.svg") !important;
-}
-
 .dropdown-item:hover, .dropdown-item:focus {
   color: #fd5631;
   background-color: transparent;
+}
+
+.dropdown-toggle::after {
+  all: unset;
+  font-family: "icomoon";
+  content: "\e91d";
+  margin-top: 5px !important;
 }
 
 .btn-primary {
@@ -11097,11 +11100,17 @@ a {
   margin-top: -175px;
 }
 .banner .right-side .second-row-imgs .second-img {
-  width: 400px;
+  width: 400px !important;
   margin-bottom: -80px;
+}
+.banner .right-side .second-row-imgs .second-img img {
+  width: 100% !important;
 }
 .banner .right-side .second-row-imgs .third-img {
   width: 306px;
+}
+.banner .right-side .second-row-imgs .third-img img {
+  width: 100% !important;
 }
 
 .categories .category {
@@ -11206,6 +11215,25 @@ a {
 .taxi-488 p {
   font-weight: 400;
   font-size: 18px;
+}
+
+.eat-place .logo-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  background-color: #e9ecef;
+}
+.eat-place .details .card-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+.eat-place .details .card-title:hover {
+  color: #fd5631 !important;
+}
+.eat-place .details .hotel-details p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #495057 !important;
 }
 
 /* `xl` applies to large devices (Desktop, less than 1200px) */

@@ -96,13 +96,20 @@
       margin-top: -175px;
 
       .second-img {
-        width: 400px;
+        width: 400px !important;
         margin-bottom: -80px;
+
+        img {
+          width: 100% !important;
+        }
       }
 
       .third-img {
         width: 306px;
-        // margin-right: -50px;
+
+        img {
+          width: 100% !important;
+        }
       }
     }
   }
@@ -249,6 +256,34 @@
   p {
     font-weight: 400;
     font-size: 18px;
+  }
+}
+
+.eat-place {
+  .logo-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: $gray-200;
+  }
+
+  .details {
+    .card-title {
+      font-weight: 700;
+      font-size: 18px;
+
+      &:hover {
+        color: $primary !important;
+      }
+    }
+
+    .hotel-details {
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        color: $gray-700 !important;
+      }
+    }
   }
 }
 

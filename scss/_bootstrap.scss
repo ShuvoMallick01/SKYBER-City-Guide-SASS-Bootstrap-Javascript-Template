@@ -54,9 +54,6 @@ a {
   background-color: transparent;
 }
 
-.dropdown-toggle::after {
-  background-image: url("../../assets/images/icons/arrow-single-down.svg") !important;
-}
 // === NAVBAR END ===
 
 // === DROPDOWN START ===
@@ -66,6 +63,13 @@ a {
     color: $primary;
     background-color: transparent;
   }
+}
+
+.dropdown-toggle::after {
+  all: unset;
+  font-family: "icomoon";
+  content: "\e91d";
+  margin-top: 5px !important;
 }
 // === DROPDOWN END ===
 
