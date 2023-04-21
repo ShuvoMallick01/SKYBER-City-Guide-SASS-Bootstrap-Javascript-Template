@@ -402,8 +402,39 @@
 }
 // === Get Our App END ===
 
-// === START ===
-// === END ===
+// === Don’t miss the latest posts START ===
+.latest-posts {
+  .card-body {
+    a {
+      &:first-child {
+        font-weight: 400;
+        font-size: 12px;
+      }
+
+      &:nth-child(2) {
+        font-weight: 700;
+        font-size: 16px;
+      }
+    }
+
+    .user-details {
+      h6 {
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 12px;
+      }
+
+      &:hover {
+        color: $gray-700;
+      }
+    }
+  }
+}
+// === Don’t miss the latest posts END ===
 
 // === START ===
 // === END ===

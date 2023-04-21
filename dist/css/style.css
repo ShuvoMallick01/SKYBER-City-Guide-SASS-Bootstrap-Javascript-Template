@@ -11574,6 +11574,26 @@ a {
   width: 200px;
 }
 
+.latest-posts .card-body a:first-child {
+  font-weight: 400;
+  font-size: 12px;
+}
+.latest-posts .card-body a:nth-child(2) {
+  font-weight: 700;
+  font-size: 16px;
+}
+.latest-posts .card-body .user-details h6, .latest-posts .card-body .user-details .h6 {
+  font-weight: 700;
+  font-size: 14px;
+}
+.latest-posts .card-body .user-details span {
+  font-weight: 400;
+  font-size: 12px;
+}
+.latest-posts .card-body .user-details:hover {
+  color: #495057;
+}
+
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {
