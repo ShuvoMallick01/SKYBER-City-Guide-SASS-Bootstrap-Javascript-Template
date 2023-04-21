@@ -520,7 +520,17 @@
   }
 
   .lan-dropdown {
-    background-color: transparent;
+    button {
+      font-weight: 400;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .dropdown-menu {
+      .active {
+        color: white;
+      }
+    }
   }
 
   .social-icon {

@@ -11648,8 +11648,13 @@ a {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
 }
-.footer-lower .lan-dropdown {
-  background-color: transparent;
+.footer-lower .lan-dropdown button {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-lower .lan-dropdown .dropdown-menu .active {
+  color: white;
 }
 .footer-lower .social-icon a {
   font-weight: 400;
