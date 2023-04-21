@@ -11636,6 +11636,10 @@ a {
   box-shadow: none;
 }
 
+.footer-lower {
+  border-color: rgba(255, 255, 255, 0.1529411765) !important;
+}
+
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {
