@@ -436,29 +436,66 @@
 }
 // === Don’t miss the latest posts END ===
 
-// === START ===
-// === END ===
+// === footer START ===
+.footer {
+  background-color: $gray-900;
 
-// === START ===
-// === END ===
+  .first-col {
+    .logo {
+      width: 116px !important;
+    }
 
-// === START ===
-// === END ===
+    .contact-details {
+      a {
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+  }
 
-// === START ===
-// === END ===
+  .links {
+    h3 {
+      font-weight: 700;
+      font-size: 16px;
+    }
 
-// === START ===
-// === END ===
+    ul {
+      li {
+        a {
+          font-weight: 400;
+          font-size: 14px;
+          color: $gray-500;
+        }
+      }
+    }
+  }
 
-// === START ===
-// === END ===
+  .subscribe-form {
+    h4 {
+      font-weight: 700;
+      font-size: 24px;
+    }
 
-// === START ===
-// === END ===
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      color: $gray-500;
+    }
 
-// === START ===
-// === END ===
+    form {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.12);
 
-// === START ===
-// === END ===
+      input {
+        outline: none !important;
+        border: none;
+        color: white;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+// === footer END ===

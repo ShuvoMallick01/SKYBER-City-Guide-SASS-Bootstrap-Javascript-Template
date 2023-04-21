@@ -139,7 +139,8 @@ a {
 
 .btn:focus,
 .btn:active:focus,
-.btn.active:focus {
+.btn.active:focus,
+.input:focus {
   outline: none !important;
   box-shadow: none !important;
   border: 1px solid rgba(255, 255, 255, 0);

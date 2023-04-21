@@ -11234,7 +11234,8 @@ a {
 
 .btn:focus,
 .btn:active:focus,
-.btn.active:focus {
+.btn.active:focus,
+.input:focus {
   outline: none !important;
   box-shadow: none !important;
   border: 1px solid rgba(255, 255, 255, 0);
@@ -11592,6 +11593,47 @@ a {
 }
 .latest-posts .card-body .user-details:hover {
   color: #495057;
+}
+
+.footer {
+  background-color: #212529;
+}
+.footer .first-col .logo {
+  width: 116px !important;
+}
+.footer .first-col .contact-details a {
+  font-weight: 400;
+  font-size: 16px;
+}
+.footer .links h3, .footer .links .h3 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.footer .links ul li a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #adb5bd;
+}
+.footer .subscribe-form h4, .footer .subscribe-form .h4 {
+  font-weight: 700;
+  font-size: 24px;
+}
+.footer .subscribe-form p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #adb5bd;
+}
+.footer .subscribe-form form {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.footer .subscribe-form form input {
+  outline: none !important;
+  border: none;
+  color: white;
+}
+.footer .subscribe-form form input:focus {
+  box-shadow: none;
 }
 
 /* `xl` applies to large devices (Desktop, less than 1200px) */
