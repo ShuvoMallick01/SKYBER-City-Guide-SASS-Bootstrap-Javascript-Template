@@ -248,6 +248,10 @@
 
 // === WHERE TO EAT START ===
 .taxi-488 {
+  .taxi {
+    height: 95%;
+  }
+
   h2 {
     font-weight: 700;
     font-size: 32px;
@@ -289,8 +293,34 @@
 
 // === WHERE TO EAT END ===
 
-// === START ===
-// === END ===
+// === Upcoming events in Berlin START ===
+.upcoming-events {
+  .btn-filter {
+  }
+
+  .event-card {
+    img {
+      height: 320px;
+      border-radius: 12px;
+      background-color: red;
+    }
+
+    .card-body {
+      h3 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .btn-group {
+        .vertical-line {
+          margin-left: -1px;
+          z-index: 5;
+        }
+      }
+    }
+  }
+}
+// === Upcoming events in Berlin END ===
 
 // === START ===
 // === END ===

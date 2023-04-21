@@ -26,6 +26,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-heart:before {
+  content: "\e900";
+  color: #fff;
+}
 .icon-accounting:before {
   content: "\e900";
 }

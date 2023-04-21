@@ -25,6 +25,7 @@ $info: #3c76f2;
 $warning: #fdbc31;
 $danger: #f23c49;
 $light: $gray-100;
+$gray: $gray-200;
 $dark: $gray-900;
 // scss-docs-end theme-color-variables
 
@@ -37,6 +38,7 @@ $theme-colors: (
   "warning": $warning,
   "danger": $danger,
   "accent": $accent,
+  "gray": $gray,
 );
 // scss-docs-end theme-colors-map
 
@@ -91,6 +93,15 @@ $input-btn-padding-y-sm: 8px;
 $input-btn-padding-x-sm: 20px;
 // $border-radius-sm: 40px;
 // lg btn
+
+//xsm btn
+$input-btn-padding-y-xsm: 8px;
+$input-btn-padding-x-xsm: 16px;
+$btn-font-size-xsm: 14px;
+$btn-border-radius-xsm: 40px;
+
+$btn-padding-y-xsm: $input-btn-padding-y-xsm;
+$btn-padding-x-xsm: $input-btn-padding-x-xsm;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius: 2.5rem;
