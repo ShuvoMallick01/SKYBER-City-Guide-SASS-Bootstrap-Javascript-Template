@@ -299,6 +299,26 @@
   }
 
   .event-card {
+    &::after {
+      position: absolute;
+      content: "";
+      background: linear-gradient(
+        180deg,
+        rgba(31, 27, 45, 0) 0%,
+        rgba(31, 27, 45, 0.1) 26.56%,
+        rgba(31, 27, 45, 0.28) 42.71%,
+        rgba(31, 27, 45, 0.48) 56.77%,
+        rgba(31, 27, 45, 0.68) 72.4%,
+        rgba(31, 27, 45, 0.85) 86.98%,
+        rgba(31, 27, 45, 0.94) 100%
+      );
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      margin: auto;
+      border-radius: 12px;
+    }
     img {
       height: 320px;
       border-radius: 12px;
@@ -306,6 +326,8 @@
     }
 
     .card-body {
+      z-index: 1;
+
       h3 {
         font-weight: 700;
         font-size: 20px;
@@ -315,6 +337,19 @@
         .vertical-line {
           margin-left: -1px;
           z-index: 5;
+          border-color: #ffffff5b !important;
+        }
+
+        .fist-btn {
+          &:hover {
+            z-index: 6 !important;
+          }
+        }
+
+        .heart-btn {
+          &:hover {
+            z-index: 6;
+          }
         }
       }
     }
@@ -322,11 +357,50 @@
 }
 // === Upcoming events in Berlin END ===
 
-// === START ===
-// === END ===
+// === What’s new in Berlin START ===
+.whats-new-slide {
+  .details {
+    .nav-link {
+      font-weight: 700;
+      font-size: 24px;
+    }
 
-// === START ===
-// === END ===
+    .hotel-details {
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        color: $gray-700;
+        margin-bottom: 3px !important;
+      }
+    }
+  }
+}
+// === What’s new in Berlin END ===
+
+// === Get Our App START ===
+.our-app {
+  background-color: $faded-accent;
+  border-radius: 12px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: $gray-900;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    color: $gray-700;
+  }
+
+  .icons {
+    img {
+      width: 200px;
+    }
+  }
+}
+// === Get Our App END ===
 
 // === START ===
 // === END ===
