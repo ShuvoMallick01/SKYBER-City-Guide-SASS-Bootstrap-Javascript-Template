@@ -11248,6 +11248,38 @@ a {
   --bs-btn-border-radius: 40px;
 }
 
+.h3 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.fs-base-16 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #343a40;
+}
+.fs-base-16:hover {
+  color: #fd5631;
+}
+
+.fs-xs-12 {
+  font-weight: 400;
+  font-size: 12px;
+  color: #495057;
+}
+
+.fs-small-14 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #495057;
+}
+
+.fs-base-rg-16 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #495057;
+}
+
 .bg-faded-accent {
   background-color: rgba(93, 60, 242, 0.1);
 }
@@ -11579,6 +11611,7 @@ a {
 }
 .our-app .icons img {
   width: 200px;
+  cursor: pointer;
 }
 
 .latest-posts .card-body a:first-child {
@@ -11662,6 +11695,9 @@ a {
 .footer-lower .lan-dropdown .dropdown-menu .active {
   color: white;
 }
+.footer-lower .lan-dropdown .dropdown-menu .active:hover {
+  background-color: #fd5631;
+}
 .footer-lower .social-icon a {
   font-weight: 400;
   font-size: 14px;
@@ -11681,6 +11717,62 @@ a {
   color: #fd5631;
 }
 
+/* ===== Sign In Modal START ====== */
+.modal {
+  --bs-modal-width: 952px !important;
+}
+
+.btn-close {
+  width: 10px;
+  height: 10px;
+}
+
+.sign-in-modal .left-contents .dont-have {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--bs-gray-700);
+}
+
+.border-right {
+  border-right: 1px solid var(--bs-gray-300) !important;
+}
+
+.sign-in-modal .right-contents .or,
+.signup-modal .right-contents .or {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--bs-gray-700);
+}
+
+.sign-in-modal .sign-in-form .form-label,
+.forgot-pass,
+.signup-modal .signup-form .form-label,
+.signup-modal .dont-have,
+.signup-modal .form-check {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--bs-gray-900);
+}
+
+.forgot-pass {
+  color: var(--bs-primary) !important;
+}
+
+/* ===== Sign In Modal END ====== */
+/* ===== Sign UP Modal START ====== */
+.modal-title {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--bs-gray-900);
+}
+
+.signup-modal .left-list {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--bs-gray-700);
+}
+
+/* ===== Sign UP Modal END ====== */
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {
@@ -11697,6 +11789,32 @@ a {
 }
 /* 'lg' applies to medium devices (Tablets, less than 992px) */
 @media (max-width: 992px) {
+  .custom-navbar .navbar-nav {
+    gap: 0.4rem;
+    padding: 0.5rem;
+  }
+  .custom-navbar .navbar-nav .me-lg-2 {
+    padding-right: 0px !important;
+    border-right: none !important;
+  }
+  .custom-navbar .navbar-nav .nav-item {
+    border: 1px solid #dee2e6 !important;
+    width: 100%;
+    padding: 10px 1rem;
+  }
+  .custom-navbar .navbar-nav .nav-item .dropdown-toggle {
+    display: flex;
+    justify-content: space-between !important;
+  }
+  .custom-navbar .navbar-nav .nav-item .dropdown-menu {
+    border: none;
+    border-left: 2px solid var(--bs-gray-300);
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+  .custom-navbar .navbar-nav .nav-item:first-child {
+    display: none;
+  }
   .banner .left-side p {
     margin-right: 0;
   }

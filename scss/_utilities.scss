@@ -1,3 +1,38 @@
+// === TYPOGRAPHY START ===
+.h3 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.fs-base-16 {
+  font-weight: 700;
+  font-size: 16px;
+  color: $gray-800;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.fs-xs-12 {
+  font-weight: 400;
+  font-size: 12px;
+  color: $gray-700;
+}
+
+.fs-small-14 {
+  font-weight: 400;
+  font-size: 14px;
+  color: $gray-700;
+}
+
+.fs-base-rg-16 {
+  font-weight: 400;
+  font-size: 16px;
+  color: $gray-700;
+}
+// === TYPOGRAPHY END ===
+
 // Color Utilities start
 .bg-faded-accent {
   background-color: $faded-accent;

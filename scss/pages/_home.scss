@@ -406,6 +406,7 @@
   .icons {
     img {
       width: 200px;
+      cursor: pointer;
     }
   }
 }
@@ -538,6 +539,10 @@
     .dropdown-menu {
       .active {
         color: white;
+
+        &:hover {
+          background-color: $primary;
+        }
       }
     }
   }

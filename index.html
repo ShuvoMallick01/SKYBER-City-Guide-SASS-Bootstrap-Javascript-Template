@@ -84,27 +84,12 @@
 
               <!-- single menu -->
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-
-              <!-- single menu -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
                 >
-                  Explore
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                </ul>
               </li>
 
-              <!-- single menu -->
+              <!-- Categories menu -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -116,13 +101,41 @@
                   Catalog
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Categories</a></li>
-                  <li><a class="dropdown-item" href="#">Filters</a></li>
-                  <li><a class="dropdown-item" href="#">City-Map</a></li>
+                  <li>
+                    <a class="dropdown-item" href="catalog-categories.html"
+                      >Categories</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="catalog-filters.html"
+                      >Filters</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalog-single-place-gallery.html"
+                      >Single Place - Gallery</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalog-single-place-info.html"
+                      >Single Place - Info</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalog-single-place-reviews.html"
+                      >Single Place - Reviews</a
+                    >
+                  </li>
                 </ul>
               </li>
 
-              <!-- single menu -->
+              <!-- Accounts menu -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -134,15 +147,32 @@
                   Accounts
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Log In</a></li>
-                  <li><a class="dropdown-item" href="#">Personal Info</a></li>
-                  <li><a class="dropdown-item" href="#">Favorites</a></li>
-                  <li><a class="dropdown-item" href="#">Reviews</a></li>
-                  <li><a class="dropdown-item" href="#">Notification</a></li>
+                  <li>
+                    <a class="dropdown-item" href="accounts-personal-info.html"
+                      >Personal Info</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="accounts-favorites.html"
+                      >Favorites</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="accounts-reviews.html"
+                      >Reviews</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="accounts-notification.html"
+                      >Notification</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sign In</a></li>
+                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
                 </ul>
               </li>
 
-              <!-- single menu -->
+              <!-- Vendor menu -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -154,15 +184,27 @@
                   Vendor
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Add Business</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Business Promotion</a>
+                    <a class="dropdown-item" href="vendor-add-business.html"
+                      >Add Business</a
+                    >
                   </li>
-                  <li><a class="dropdown-item" href="#">My Business</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="vendor-business-promotion.html"
+                      >Business Promotion</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="vendor-my-business.html"
+                      >My Business</a
+                    >
+                  </li>
                 </ul>
               </li>
 
-              <!-- single menu -->
+              <!-- Pages menu -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -174,12 +216,23 @@
                   Pages
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">About</a></li>
+                  <li><a class="dropdown-item" href="about.html">About</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Vlog</a>
+                    <a class="dropdown-item" href="blog.html">Blog</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">Contact</a></li>
-                  <li><a class="dropdown-item" href="#">Help</a></li>
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="help-center.html"
+                      >Help Center</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="404-not-found.html"
+                      >404 Not Found</a
+                    >
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -189,13 +242,339 @@
               <a
                 class="btn btn-sm text-primary text-nowrap"
                 href="#"
+                type="button"
                 data-bs-toggle="modal"
+                data-bs-target="#sign-in-Modal"
                 ><i class="icon-default-user align-baseline me-1"></i> Sign
                 in</a
               >
+
+              <!-- SIGN IN MODAL START -->
+              <div
+                class="modal fade"
+                id="sign-in-Modal"
+                tabindex="-1"
+                aria-labelledby="sign-in-ModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <!-- start -->
+                    <div class="modal-body px-0 py-0">
+                      <button
+                        class="btn-close position-absolute top-0 end-0 mt-3 me-3"
+                        type="button"
+                        data-bs-dismiss="modal"
+                      ></button>
+
+                      <!-- contents -->
+                      <div class="row sign-in-modal mx-0 align-items-center">
+                        <!-- left side -->
+                        <div class="col-md-6 p-3 p-lg-5 border-right">
+                          <div class="left-contents">
+                            <h2 class="modal-title mb-4 mb-sm-5">
+                              Hey there!<br />Welcome back.
+                            </h2>
+                            <img
+                              class="d-block mx-auto"
+                              src="./assets/images/sign-in-illustration.svg"
+                              width="344"
+                              alt="Illustartion"
+                            />
+                            <div class="dont-have mt-4">
+                              Don't have an account?
+                              <a
+                                href="#signup-Modal"
+                                data-bs-toggle="modal"
+                                data-bs-dismiss="modal"
+                                >Sign up here</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- right side -->
+                        <div class="col-md-6 px-4 p-3 p-lg-5">
+                          <div class="right-contents">
+                            <button
+                              class="btn btn-outline-info mb-3 w-100"
+                              href="#"
+                            >
+                              <i class="icon-google me-1"></i>Sign in with
+                              Google
+                            </button>
+                            <button
+                              class="btn btn-outline-info mb-3 w-100"
+                              href="#"
+                            >
+                              <i class="icon-Facebook-white-bg me-1"></i>Sign in
+                              with Facebook
+                            </button>
+
+                            <div class="d-flex align-items-center py-2 mb-1">
+                              <hr class="w-100" />
+                              <p class="or px-3">Or</p>
+                              <hr class="w-100" />
+                            </div>
+
+                            <form class="sign-in-form">
+                              <div class="mb-4">
+                                <label
+                                  class="form-label mb-2"
+                                  for="signin-email"
+                                  >Email address</label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="email"
+                                  id="signin-email"
+                                  placeholder="Enter your email"
+                                  required=""
+                                />
+                              </div>
+
+                              <div class="mb-4">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-0"
+                                >
+                                  <label
+                                    class="form-label mb-2"
+                                    for="signin-password"
+                                    >Password</label
+                                  >
+                                  <a class="forgot-pass" href="#"
+                                    >Forgot password?</a
+                                  >
+                                </div>
+
+                                <div
+                                  class="form-input-icon d-flex align-items-center"
+                                >
+                                  <input
+                                    class="form-control custom-form-control"
+                                    type="password"
+                                    id="signin-password"
+                                    placeholder="Enter password"
+                                    required=""
+                                  />
+                                  <i class="icon-off"></i>
+                                </div>
+                              </div>
+
+                              <button
+                                class="btn btn-primary btn-lg w-100"
+                                type="submit"
+                              >
+                                Sign in
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                        <!-- end row -->
+                      </div>
+                    </div>
+                    <!-- end -->
+                  </div>
+                </div>
+              </div>
+              <!-- SIGN IN MODAL END -->
+
+              <!-- SIGN UP MODAL START -->
+              <div
+                class="modal fade"
+                id="signup-Modal"
+                tabindex="-1"
+                aria-labelledby="signup-ModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <!-- start -->
+                    <div class="modal-body px-0 py-0">
+                      <button
+                        class="btn-close position-absolute top-0 end-0 mt-3 me-3"
+                        type="button"
+                        data-bs-dismiss="modal"
+                      ></button>
+
+                      <!-- contents -->
+                      <div class="row signup-modal mx-0 align-items-center">
+                        <!-- left side -->
+                        <div class="col-md-6 p-3 p-lg-5 border-right">
+                          <div class="left-contents">
+                            <h2 class="modal-title mb-4 mb-sm-5">
+                              Join Finder.<br />
+                              premium benefits:
+                            </h2>
+
+                            <ul class="left-list list-unstyled mb-4">
+                              <li class="d-flex mb-2">
+                                <i
+                                  class="icon-circle text-primary mt-1 me-2"
+                                ></i
+                                ><span>Add and promote your listings</span>
+                              </li>
+                              <li class="d-flex mb-2">
+                                <i
+                                  class="icon-circle text-primary mt-1 me-2"
+                                ></i
+                                ><span>Easily manage your wishlist</span>
+                              </li>
+                              <li class="d-flex mb-0">
+                                <i
+                                  class="icon-circle text-primary mt-1 me-2"
+                                ></i
+                                ><span>Leave reviews</span>
+                              </li>
+                            </ul>
+
+                            <img
+                              class="d-block mx-auto"
+                              src="./assets/images/sign-up-illustration.svg"
+                              width="344"
+                              alt="Illustartion"
+                            />
+
+                            <div class="dont-have mt-4">
+                              Already have an account?
+                              <a
+                                href="#sign-in-Modal"
+                                data-bs-toggle="modal"
+                                data-bs-dismiss="modal"
+                                >Sign In</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- right side -->
+                        <div class="col-md-6 px-4 p-3 p-lg-5">
+                          <div class="right-contents">
+                            <button
+                              class="btn btn-outline-info mb-3 w-100"
+                              href="#"
+                            >
+                              <i class="icon-google me-1"></i>Sign in with
+                              Google
+                            </button>
+                            <button
+                              class="btn btn-outline-info mb-3 w-100"
+                              href="#"
+                            >
+                              <i class="icon-Facebook-white-bg me-1"></i>Sign in
+                              with Facebook
+                            </button>
+
+                            <div class="d-flex align-items-center py-2 mb-0">
+                              <hr class="w-100" />
+                              <p class="or px-3">Or</p>
+                              <hr class="w-100" />
+                            </div>
+
+                            <form class="signup-form" novalidate="">
+                              <div class="mb-2">
+                                <label class="form-label" for="signup-name"
+                                  >Full Name</label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  id="signup-name"
+                                  placeholder="Enter your full name"
+                                  required=""
+                                />
+                              </div>
+
+                              <div class="mb-2">
+                                <label class="form-label" for="signup-email"
+                                  >Email Address</label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="email"
+                                  id="signup-email"
+                                  placeholder="Enter your email"
+                                  required=""
+                                />
+                              </div>
+
+                              <div class="mb-2">
+                                <label class="form-label" for="signup-password"
+                                  >Password
+                                  <span class="text-muted"
+                                    >(min. 8 char)</span
+                                  ></label
+                                >
+
+                                <div
+                                  class="form-input-icon d-flex align-items-center"
+                                >
+                                  <input
+                                    class="form-control custom-form-control"
+                                    type="password"
+                                    id="signup-password"
+                                    required=""
+                                  />
+                                  <i class="icon-off"></i>
+                                </div>
+                              </div>
+
+                              <div class="mb-3">
+                                <label
+                                  class="form-label"
+                                  for="signup-confirm-password"
+                                  >Confirm Password
+                                </label>
+
+                                <div
+                                  class="form-input-icon d-flex align-items-center"
+                                >
+                                  <input
+                                    class="form-control custom-form-control"
+                                    type="password"
+                                    id="signup-confirm-password"
+                                    required=""
+                                  />
+                                  <i class="icon-off"></i>
+                                </div>
+                              </div>
+
+                              <div class="form-check mb-4">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="agree-to-terms"
+                                  required=""
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="agree-to-terms"
+                                  >By joining, I agree to the
+                                  <a href="#">Terms of use</a> and
+                                  <a href="#">Privacy policy</a></label
+                                >
+                              </div>
+                              <button
+                                class="btn btn-primary btn-lg w-100"
+                                type="submit"
+                              >
+                                Sign up
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                        <!-- end row -->
+                      </div>
+                    </div>
+                    <!-- end -->
+                  </div>
+                </div>
+              </div>
+              <!-- SIGN UP MODAL END -->
+
               <a
                 class="btn btn-primary btn-sm text-white text-nowrap"
-                href="#"
+                href="add-business.html"
                 data-bs-toggle="modal"
                 ><i class="icon-plus me-1 align-baseline"></i>Add business</a
               >
@@ -805,21 +1184,27 @@
       <div class="container">
         <!-- heading -->
         <div
-          class="d-flex justify-content-between align-items-center mb-4 pb-2"
+          class="d-flex flex-wrap flex-column flex-md-row justify-content-between align-items-md-center mb-4 pb-2"
         >
           <h3>Upcoming events in Berlin</h3>
-          <div class="d-flex align-items-center gap-2">
+
+          <div class="d-flex flex-wrap align-items-center gap-2">
             <div class="btn-filter d-flex gap-3 me-4">
               <a class="btn btn-pill-gray btn-xsm fw-normal" href="#">Date</a>
               <a class="btn btn-pill-gray btn-xsm fw-normal" href="#">Today</a>
               <a class="btn btn-pill-gray btn-xsm fw-normal" href="#"
                 >Tomorrow</a
               >
-              <a class="btn btn-pill-gray btn-xsm fw-normal" href="#"
+              <a
+                class="btn btn-pill-gray btn-xsm fw-normal text-nowrap"
+                href="#"
                 >This weekend</a
               >
             </div>
-            <a>View All <i class="icon-arrow-long-right align-middle"></i></a>
+
+            <a class="text-nowrap"
+              >View All <i class="icon-arrow-long-right align-middle"></i
+            ></a>
           </div>
         </div>
 
@@ -838,7 +1223,9 @@
               <div
                 class="card-body position-absolute text-white bottom-0 w-100 px-4"
               >
-                <div class="d-flex justify-content-between align-items-center">
+                <div
+                  class="d-flex flex-wrap justify-content-between align-items-center"
+                >
                   <div class="left-side">
                     <div
                       class="d-flex justify-content-center justify-content-md-start mb-2"

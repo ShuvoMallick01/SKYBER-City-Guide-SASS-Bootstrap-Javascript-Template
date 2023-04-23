@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <!-- Google Noto Sans Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SASS COMPILE CSS -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <!-- ICON FONTS -->
+    <link rel="stylesheet" href="./assets/fonts.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./dist/css/home.css" />
+    <!-- Custom JS -->
+    <script src="js/app.js" defer></script>
+    <!-- Website Title -->
+    <title>Skyber-City Guide Website</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR START -->
+    <header>
+      <nav class="custom-navbar navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand logo" href="#"
+            ><img
+              src="./assets/images/logo-skyber.svg"
+              alt=""
+              class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse ms-xl-4 ms-lg-1"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item location-item dropdown me-lg-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="icon-pin align-baseline me-xl-1 text-primary"></i
+                  >New York
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Los Angeles</a></li>
+                  <li><a class="dropdown-item" href="#">Chicago</a></li>
+                  <li><a class="dropdown-item" href="#">Houston</a></li>
+                  <li><a class="dropdown-item" href="#">Philadelphia</a></li>
+                </ul>
+              </li>
+
+              <!-- single menu -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <!-- Categories menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Catalog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Categories</a></li>
+                  <li><a class="dropdown-item" href="#">Filters</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Single Place - Gallery</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Single Place - Info</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Single Place - Reviews</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Accounts menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Accounts
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Personal Info</a></li>
+                  <li><a class="dropdown-item" href="#">Favorites</a></li>
+                  <li><a class="dropdown-item" href="#">Reviews</a></li>
+                  <li><a class="dropdown-item" href="#">Notification</a></li>
+                  <li><a class="dropdown-item" href="#">Sign In</a></li>
+                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                </ul>
+              </li>
+
+              <!-- Vendor menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Vendor
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Add Business</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Business Promotion</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">My Business</a></li>
+                </ul>
+              </li>
+
+              <!-- Pages menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">About</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Blog</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                  <li><a class="dropdown-item" href="#">Help Center</a></li>
+                  <li><a class="dropdown-item" href="#">404 Not Eound</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- right side buttons -->
+            <div class="d-flex flex-wrap">
+              <a
+                class="btn btn-sm text-primary text-nowrap"
+                href="#"
+                data-bs-toggle="modal"
+                ><i class="icon-default-user align-baseline me-1"></i> Sign
+                in</a
+              >
+              <a
+                class="btn btn-primary btn-sm text-white text-nowrap"
+                href="#"
+                data-bs-toggle="modal"
+                ><i class="icon-plus me-1 align-baseline"></i>Add business</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- NAVBAR END -->
+
+    <!-- BANNER/HERO START -->
+    <section class="banner py-4 mb-lg-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- right side -->
+          <div class="right-side col-lg-7 mb-lg-0 mb-4 pb-2 pb-lg-0 order-lg-2">
+            <div class="row first-img m-auto">
+              <img
+                class="d-block m-auto img-fluid"
+                src="./assets/images/banner/banner-img-3.png"
+                alt="Hero image"
+              />
+            </div>
+
+            <div
+              class="row second-row-imgs justify-content-end align-items-center"
+            >
+              <div class="col second-img">
+                <img
+                  class="img-fluid"
+                  src="./assets/images/banner/banner-img-2.png"
+                  alt="Hero image"
+                />
+              </div>
+              <div class="col third-img text-end">
+                <img
+                  class="img-fluid"
+                  src="./assets/images/banner/banner-img-1.png"
+                  alt="Hero image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- left side -->
+          <div class="left-side col-lg-5 pe-lg-0 order-lg-1 mb-0 pb-0">
+            <h1 class="display-5 mb-4 text-lg-start text-center">
+              Start Exploring
+              <span class="dropdown display-5 d-inline-block">
+                <a
+                  class="dropdown-toggle text-decoration-none text-primary"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Berlin</a
+                >
+                <span class="dropdown-menu dropdown-menu-end my-1">
+                  <a class="dropdown-item fs-base-16" href="#">New York</a>
+                  <a class="dropdown-item fs-base-16" href="#">Manhaton</a>
+                  <a class="dropdown-item fs-base-16" href="#">Wasington</a>
+                  <a class="dropdown-item fs-base-16" href="#">Losangese</a>
+                  <a class="dropdown-item fs-base-16" href="#">Hamburg</a>
+                </span>
+              </span>
+            </h1>
+
+            <p class="fs-large-des-18 text-lg-start text-center mb-4">
+              Find great places to stay, eat, shop, or visit from our partners
+              and local experts.
+            </p>
+
+            <!-- Search Form -->
+            <div class="me-lg-n5">
+              <form
+                class="form-group d-block shadow-sm d-flex gap-2 align-content-center rounded-md-pill"
+              >
+                <div
+                  class="input-group d-flex align-items-center pe-1 border-end"
+                >
+                  <span><i class="icon-search ms-2"></i></span>
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    name=""
+                    id=""
+                    placeholder="What are you looking for?"
+                  />
+                </div>
+
+                <div class="input-group d-flex align-items-center">
+                  <span><i class="icon-list"></i></span>
+                  <select
+                    class="form-select all-categories p-2 border-0"
+                    aria-label="Default select example"
+                  >
+                    <option selected>All categories</option>
+                    <option value="1">Accomodation</option>
+                    <option value="2">Food & Drink</option>
+                    <option value="3">Shopping</option>
+                  </select>
+                </div>
+
+                <div class="ms-xl-4">
+                  <button
+                    class="btn btn-primary search-btn rounded-pill"
+                    type="button"
+                  >
+                    Search
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BANNER/HERO END -->
+
+    <!-- FOOTER START -->
+    <section class="footer">
+      <!-- Uper Part -->
+      <div class="container">
+        <div class="row gy-4 py-5">
+          <!-- Contact Col -->
+          <div class="first-col col-lg-3 col-md-6 col-sm-4">
+            <div class="mb-4 logo">
+              <a class="" href="city-guide-home-v1.html"
+                ><img src="./assets/images/logo-skyber-white.svg" alt="Logo"
+              /></a>
+            </div>
+
+            <div class="contact-details d-flex flex-column">
+              <a class="text-nowrap mb-1 text-white" href="#"
+                ><i class="icon-mail me-1 align-middle text-primary"></i
+                >example@gmail.com</a
+              >
+              <a class="text-nowrap text-white" href="#"
+                ><i class="icon-phone-1 me-1 align-middle text-primary"></i
+                >(406) 555-0120</a
+              >
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="quick-links links col-lg-2 col-md-3 col-sm-4">
+            <h3 class="text-white mb-3">Quick links</h3>
+
+            <ul class="list-unstyled">
+              <li><a class="" href="#">Top cities</a></li>
+              <li><a class="" href="#">Accommodation</a></li>
+              <li>
+                <a class="" href="#">Cafes restaurants</a>
+              </li>
+              <li><a class="" href="#">Events</a></li>
+            </ul>
+          </div>
+
+          <!-- Profile Links -->
+          <div class="profile-links links col-lg-2 col-md-3 col-sm-4">
+            <h3 class="text-white mb-3">Profile links</h3>
+
+            <ul class="list-unstyled">
+              <li><a class="" href="#">My account</a></li>
+              <li><a class="" href="#">Wishlist</a></li>
+              <li>
+                <a class="" href="#">My listings</a>
+              </li>
+              <li><a class="" href="#">Add listing</a></li>
+            </ul>
+          </div>
+
+          <!-- subscribe form -->
+          <div class="col-lg-4 subscribe-form offset-lg-1">
+            <h4 class="text-white mb-3">Subscribe to our newsletter</h4>
+            <p class="mb-4">Don’t miss any relevant vacancies!</p>
+            <form
+              class="d-flex align-items-center rounded-pill justify-content-between px-2 py-1"
+            >
+              <div class="form-group d-flex align-items-center">
+                <span
+                  ><i class="icon-mail align-middle text-muted ms-3"></i
+                ></span>
+                <input
+                  type="email"
+                  class="form-control bg-transparent border-0 px-2"
+                  id=""
+                  placeholder="Your Email"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary btn-sm text-nowrap">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lower Part -->
+      <div class="footer-lower border-top">
+        <div
+          class="container py-4 d-flex flex-column text-center text-lg-start flex-md-row justify-content-between align-items-center"
+        >
+          <p class="text-white-50 m-0 p-0">
+            Copyright © All rights reserved made by Shuvo Mallick
+          </p>
+
+          <div class="right-menu d-flex align-items-center">
+            <div class="links d-flex mb-lg-0">
+              <a class="px-2 mx-1" href="#">About</a
+              ><a class="px-2 mx-1" href="#">Blog</a
+              ><a class="px-2 mx-1" href="#">Support</a
+              ><a class="px-2 mx-1" href="#">Contacts</a>
+            </div>
+
+            <!-- Language switcher-->
+            <div class="lan-dropdown">
+              <button
+                class="btn dropdown-toggle text-white-50"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="icon-world align-baseline me-1"></i>Eng
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Bangali</a></li>
+              </ul>
+            </div>
+
+            <!-- Socials-->
+            <div class="social-icon text-nowrap d-flex align-items-center">
+              <a class="btn btn-icon ms-2" href="#"
+                ><i class="icon-facebook-1"></i></a
+              ><a class="btn btn-icon ms-2" href="#"
+                ><i class="icon-twitter"></i
+              ></a>
+              <a class="btn btn-icon ms-2" href="#"
+                ><i class="icon-telegram-1"></i></a
+              ><a class="btn btn-icon ms-2" href="#"
+                ><i class="icon-messenger"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER END -->
+
+    <!-- START -->
+    <!-- <section class="mb-5 pb-lg-4">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section> -->
+    <!-- END -->
+
+    <!-- <img
+      src="./assets/images/where-eat/"
+      class="img-fluid"
+      alt="title"
+    /> -->
+
+    <!-- Bootstrap JS JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
