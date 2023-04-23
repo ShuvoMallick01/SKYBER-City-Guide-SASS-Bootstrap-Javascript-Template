@@ -1,46 +1,52 @@
-/* ===== Sign In Modal START ====== */
+/* ==== Sign In Modal START ==== */
 .modal {
   --bs-modal-width: 952px !important;
-}
 
-.btn-close {
-  width: 10px;
-  height: 10px;
-}
+  .btn-close {
+    width: 10px;
+    height: 10px;
+  }
 
-.sign-in-modal .left-contents .dont-have {
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--bs-gray-700);
-}
+  .sign-in-modal {
+    .border-right {
+      border-right: 1px solid var(--bs-gray-300) !important;
+    }
 
-.border-right {
-  border-right: 1px solid var(--bs-gray-300) !important;
-}
+    .left-contents {
+      .dont-have {
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--bs-gray-700);
+      }
+    }
 
-.sign-in-modal .right-contents .or,
-.signup-modal .right-contents .or {
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--bs-gray-700);
-}
+    .right-contents {
+      .or {
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--bs-gray-700);
+      }
 
-.sign-in-modal .sign-in-form .form-label,
-.forgot-pass,
-.signup-modal .signup-form .form-label,
-.signup-modal .dont-have,
-.signup-modal .form-check {
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--bs-gray-900);
-}
+      .sign-in-form {
+        .form-label {
+          font-weight: 400;
+          font-size: 16px;
+          color: var(--bs-gray-900);
+        }
 
-.forgot-pass {
-  color: var(--bs-primary) !important;
+        .forgot-pass {
+          font-weight: 400;
+          font-size: 16px;
+          color: var(--bs-gray-900);
+          color: var(--bs-primary);
+        }
+      }
+    }
+  }
 }
-/* ===== Sign In Modal END ====== */
+/* ==== Sign In Modal END ==== */
 
-/* ===== Sign UP Modal START ====== */
+/* ==== Sign UP Modal START ==== */
 .modal-title {
   font-weight: 700;
   font-size: 28px;
@@ -52,4 +58,18 @@
   font-size: 16px;
   color: var(--bs-gray-700);
 }
-/* ===== Sign UP Modal END ====== */
+
+.signup-modal .right-contents .or {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--bs-gray-700);
+}
+
+.signup-modal .signup-form .form-label,
+.signup-modal .dont-have,
+.signup-modal .form-check {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--bs-gray-900);
+}
+/* ==== Sign UP Modal END ===== */
