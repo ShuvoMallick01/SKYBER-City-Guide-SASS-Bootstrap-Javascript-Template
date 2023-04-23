@@ -319,6 +319,7 @@
       margin: auto;
       border-radius: 12px;
     }
+
     img {
       height: 320px;
       border-radius: 12px;
@@ -334,12 +335,6 @@
       }
 
       .btn-group {
-        .vertical-line {
-          margin-left: -1px;
-          z-index: 5;
-          border-color: #ffffff5b !important;
-        }
-
         .fist-btn {
           &:hover {
             z-index: 6 !important;
@@ -347,8 +342,22 @@
         }
 
         .heart-btn {
-          &:hover {
-            z-index: 6;
+          &::before {
+            content: "";
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.479);
+            width: 1px;
+            height: 50%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+          }
+        }
+
+        &:hover {
+          .heart-btn::before {
+            background-color: transparent;
           }
         }
       }

@@ -36,8 +36,10 @@
     }
   }
 
-  &:hover .card-top::after {
-    opacity: 1;
+  &:hover {
+    .card-top::after {
+      opacity: 1;
+    }
   }
 
   .card-body {

@@ -11534,16 +11534,22 @@ a {
   font-weight: 700;
   font-size: 20px;
 }
-.upcoming-events .event-card .card-body .btn-group .vertical-line {
-  margin-left: -1px;
-  z-index: 5;
-  border-color: rgba(255, 255, 255, 0.3568627451) !important;
-}
 .upcoming-events .event-card .card-body .btn-group .fist-btn:hover {
   z-index: 6 !important;
 }
-.upcoming-events .event-card .card-body .btn-group .heart-btn:hover {
-  z-index: 6;
+.upcoming-events .event-card .card-body .btn-group .heart-btn::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.479);
+  width: 1px;
+  height: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.upcoming-events .event-card .card-body .btn-group:hover .heart-btn::before {
+  background-color: transparent;
 }
 
 .whats-new-slide .details .nav-link {
