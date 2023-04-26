@@ -11794,6 +11794,20 @@ a {
 }
 
 /* ==== Sign UP Modal END ===== */
+.catalog-categories .left-categories .form-group {
+  border: 1px solid #dee2e6;
+  padding: 6px;
+  border-radius: 40px;
+  color: #6c757d;
+}
+.catalog-categories .left-categories .form-group input {
+  padding: 2px;
+}
+.catalog-categories .left-categories .form-group input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6c757d;
+}
+
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {
