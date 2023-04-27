@@ -31,7 +31,7 @@
     <!-- Custom JS -->
     <script src="js/app.js" defer></script>
     <!-- Website Title -->
-    <title>Catalog - Filter</title>
+    <title>Catalog - Filters</title>
   </head>
 
   <body>
@@ -238,17 +238,16 @@
             </ul>
 
             <!-- Right Navbar buttons -->
-            <div class="d-flex flex-wrap">
-              <a
-                class="btn btn-sm text-primary text-nowrap"
-                href="#"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#sign-in-Modal"
-                ><i class="icon-default-user align-baseline me-1"></i> Sign
-                in</a
-              >
-
+            <div
+              class="d-sm-flex justify-content-center justify-content-xlg-end flex-wrap align-items-center gap-1 gap-xl-4"
+            >
+              <a href="./accounts-personal-info.html">
+                <img
+                  src="./assets/images/icons-user/user-icon-1.png"
+                  class="img-fluid"
+                  alt="title"
+                />
+              </a>
               <!-- SIGN IN MODAL START -->
               <div
                 class="modal fade"
@@ -602,7 +601,7 @@
           <div
             class="left-categories border-end col-lg-4 col-xl-3 border-top p-3 mb-4 p-xl-4 border-right shadow-sm"
           >
-            <!-- search field -->
+            <!-- Search field -->
             <form class="form-group shadow-sm mb-3 mb-lg-4">
               <div class="d-flex align-items-center">
                 <span><i class="icon-search mx-2 ms-3"></i></span>
@@ -616,166 +615,20 @@
               </div>
             </form>
 
-            <!-- tab -->
+            <!-- Tab -->
             <div
               class="tab-btn py-3 py-lg-4 border-top border-bottom d-flex gap-2"
             >
-              <button class="btn-tab-gray">
+              <a class="btn-tab-gray" href="./catalog-categories.html">
                 <i class="icon-list align-baseline me-1"></i>Categories
-              </button>
-              <button class="btn-tab-gray active-tab">
+              </a>
+              <a class="btn-tab-gray active-tab" href="./catalog-filters.html">
                 <i class="icon-list align-baseline me-1"></i>Filters
-              </button>
+              </a>
             </div>
 
-            <!-- Categories -->
-            <div
-              class="row categories row-cols-lg-2 row-cols-1 g-3 mt-2 border-bottom"
-            >
-              <!-- accommodation -->
-              <div class="col">
-                <a
-                  class="category accommodation card d-flex flex-column shadow-sm text-decoration-none align-items-center p-2"
-                >
-                  <div
-                    class="icon-box card text-accent d-flex align-items-center justify-content-center mb-3"
-                  >
-                    <i class="icon-double-bed"></i>
-                  </div>
-                  <h3 class="mb-0">Accomodation</h3>
-                </a>
-              </div>
-
-              <!-- Fitness & Sport -->
-              <div class="col">
-                <a
-                  class="category fitness-sport card d-flex flex-column shadow-sm text-decoration-none align-items-center p-2"
-                >
-                  <div
-                    class="icon-box card text-accent d-flex align-items-center justify-content-center mb-3"
-                  >
-                    <i class="icon-dumbell"></i>
-                  </div>
-                  <h3 class="mb-0">Fitness & Sport</h3>
-                </a>
-              </div>
-
-              <!-- Food & Drink -->
-              <div class="col">
-                <a
-                  class="category food-drink card d-flex flex-column shadow-sm text-decoration-none align-items-center p-2"
-                >
-                  <div
-                    class="icon-box card text-accent d-flex align-items-center justify-content-center mb-3"
-                  >
-                    <i class="icon-cafe"></i>
-                  </div>
-                  <h3 class="mb-0">Food & Drink</h3>
-                </a>
-              </div>
-
-              <!-- Night Life single -->
-              <div class="col">
-                <a
-                  class="category night-life card d-flex flex-column shadow-sm text-decoration-none align-items-center p-2"
-                >
-                  <div
-                    class="icon-box card text-accent d-flex align-items-center justify-content-center mb-3"
-                  >
-                    <i class="icon-disco-ball"></i>
-                  </div>
-                  <h3 class="mb-0">Night Life</h3>
-                </a>
-              </div>
-
-              <!-- Shopping single -->
-              <div class="col">
-                <a
-                  class="category shopping card d-flex flex-column shadow-sm text-decoration-none align-items-center p-2"
-                >
-                  <div
-                    class="icon-box card text-accent d-flex align-items-center justify-content-center mb-3"
-                  >
-                    <i class="icon-shopping-bag"></i>
-                  </div>
-                  <h3 class="mb-0">Shopping</h3>
-                </a>
-              </div>
-
-              <!-- Medicine single -->
-              <div class="col">
-                <a
-                  class="category medicine card d-flex flex-column shadow-sm text-decoration-none align-items-center p-2"
-                >
-                  <div
-                    class="icon-box card text-accent d-flex align-items-center justify-content-center mb-3"
-                  >
-                    <i class="icon-meds"></i>
-                  </div>
-                  <h3 class="mb-0">Medicine</h3>
-                </a>
-              </div>
-
-              <!-- Art & History single -->
-              <div class="col">
-                <a
-                  class="category art-history card d-flex flex-column shadow-sm text-decoration-none align-items-center p-2"
-                >
-                  <div
-                    class="icon-box card text-accent d-flex align-items-center justify-content-center mb-3"
-                  >
-                    <i class="icon-museum"></i>
-                  </div>
-                  <h3 class="mb-0">Art & History</h3>
-                </a>
-              </div>
-
-              <!-- Beauty -->
-              <div class="col">
-                <a
-                  class="category beauty card d-flex flex-column shadow-sm text-decoration-none align-items-center p-2"
-                >
-                  <div
-                    class="icon-box card text-accent d-flex align-items-center justify-content-center mb-3"
-                  >
-                    <i class="icon-museum"></i>
-                  </div>
-                  <h3 class="mb-0">Beauty</h3>
-                </a>
-              </div>
-
-              <!-- Entertainment -->
-              <div class="col">
-                <a
-                  class="category entertainment card d-flex flex-column shadow-sm text-decoration-none align-items-center p-2"
-                >
-                  <div
-                    class="icon-box card text-accent d-flex align-items-center justify-content-center mb-3"
-                  >
-                    <i class="icon-entertainment"></i>
-                  </div>
-                  <h3 class="mb-0">Entertainment</h3>
-                </a>
-              </div>
-
-              <!-- Auto Service -->
-              <div class="col">
-                <a
-                  class="category auto-service card d-flex flex-column shadow-sm text-decoration-none align-items-center p-2"
-                >
-                  <div
-                    class="icon-box card text-accent d-flex align-items-center justify-content-center mb-3"
-                  >
-                    <i class="icon-car"></i>
-                  </div>
-                  <h3 class="mb-0">Auto Service</h3>
-                </a>
-              </div>
-
-              <!-- end -->
-            </div>
-
-            <!-- end -->
+            <!-- Location -->
+            <div></div>
           </div>
 
           <!-- Right Catalog -->
