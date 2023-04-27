@@ -135,6 +135,17 @@ a {
     );
     border-radius: 40px;
   }
+
+  // .btn-tab-#{$color} {
+  //   @include button-variant(
+  //     $value,
+  //     $value,
+  //     $color: $gray-800,
+  //     $hover-color: $gray-800,
+  //     $hover-background: darken($value, 5%),
+  //   );
+  //   border-radius: 40px;
+  // }
 }
 
 .btn:focus,
@@ -159,3 +170,14 @@ a {
 // === CARD START ===
 
 // === CARD END ===
+
+// === FORM START ===
+.form-select {
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+// === FORM END ===

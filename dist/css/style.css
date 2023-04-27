@@ -11248,6 +11248,11 @@ a {
   --bs-btn-border-radius: 40px;
 }
 
+.form-select:focus, .form-select:focus-visible, .form-select:focus-within {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .h3 {
   font-weight: 700;
   font-size: 28px;
@@ -11280,8 +11285,37 @@ a {
   color: #495057;
 }
 
+.breadcrumb-item {
+  color: #6c757d;
+}
+.breadcrumb .active {
+  color: #fd5631;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
 .bg-faded-accent {
   background-color: rgba(93, 60, 242, 0.1);
+}
+
+.btn-tab-gray {
+  padding: 8px 16px;
+  border-radius: 40px;
+  border: 0;
+}
+.btn-tab-gray:hover {
+  box-shadow: 0px 2px 2px -2px rgba(31, 27, 45, 0.08), 0px 4px 12px rgba(31, 27, 45, 0.08);
+  color: #fd5631;
+  background-color: #fff;
+}
+
+.active-tab {
+  box-shadow: 0px 2px 2px -2px rgba(31, 27, 45, 0.08), 0px 4px 12px rgba(31, 27, 45, 0.08);
+  color: #fd5631;
+  background-color: #fff;
 }
 
 .card-hotel {
@@ -11804,10 +11838,130 @@ a {
   padding: 2px;
 }
 .catalog-categories .left-categories .form-group input::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #6c757d;
 }
-
+.catalog-categories .left-categories .categories .category {
+  cursor: pointer;
+  padding: 1.25rem !important;
+}
+.catalog-categories .left-categories .categories .category .icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+}
+.catalog-categories .left-categories .categories .category .icon-box i {
+  font-size: 22px !important;
+  font-weight: 500;
+}
+.catalog-categories .left-categories .categories .category:hover {
+  box-shadow: 0px 2px 8px -4px rgba(31, 27, 45, 0.12), 0px 4px 16px rgba(31, 27, 45, 0.12) !important;
+}
+.catalog-categories .left-categories .categories .category h3, .catalog-categories .left-categories .categories .category .h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212529;
+}
+.catalog-categories .left-categories .categories .category:hover .icon-box {
+  transition: 300ms all ease;
+}
+.catalog-categories .left-categories .categories .category:hover i {
+  color: #fff !important;
+  transition: 300ms all ease;
+}
+.catalog-categories .left-categories .categories .accommodation .icon-box,
+.catalog-categories .left-categories .categories .auto-service .icon-box {
+  background-color: rgba(93, 60, 242, 0.1);
+}
+.catalog-categories .left-categories .categories .accommodation .icon-box i,
+.catalog-categories .left-categories .categories .auto-service .icon-box i {
+  color: #5d3cf2;
+}
+.catalog-categories .left-categories .categories .accommodation:hover .icon-box,
+.catalog-categories .left-categories .categories .auto-service:hover .icon-box {
+  background-color: #5d3cf2 !important;
+}
+.catalog-categories .left-categories .categories .fitness-sport .icon-box {
+  background-color: rgba(242, 60, 73, 0.1019607843);
+}
+.catalog-categories .left-categories .categories .fitness-sport .icon-box i {
+  color: #f23c49;
+}
+.catalog-categories .left-categories .categories .fitness-sport:hover .icon-box {
+  background-color: #f23c49 !important;
+}
+.catalog-categories .left-categories .categories .food-drink .icon-box {
+  background-color: rgba(253, 86, 49, 0.1019607843);
+}
+.catalog-categories .left-categories .categories .food-drink .icon-box i {
+  color: #fdbc31;
+}
+.catalog-categories .left-categories .categories .food-drink:hover .icon-box {
+  background-color: #fdbc31 !important;
+}
+.catalog-categories .left-categories .categories .night-life .icon-box {
+  background-color: rgba(7, 201, 139, 0.1019607843);
+}
+.catalog-categories .left-categories .categories .night-life .icon-box i {
+  color: #07c98b;
+}
+.catalog-categories .left-categories .categories .night-life:hover .icon-box {
+  background-color: #07c98b !important;
+  transition: 300ms all ease;
+}
+.catalog-categories .left-categories .categories .shopping .icon-box {
+  background-color: rgba(253, 86, 49, 0.1019607843);
+}
+.catalog-categories .left-categories .categories .shopping .icon-box i {
+  color: #fd5631;
+}
+.catalog-categories .left-categories .categories .shopping:hover .icon-box {
+  background-color: #fd5631 !important;
+}
+.catalog-categories .left-categories .categories .medicine .icon-box {
+  background-color: rgba(60, 118, 242, 0.1019607843);
+}
+.catalog-categories .left-categories .categories .medicine .icon-box i {
+  color: #3c76f2;
+}
+.catalog-categories .left-categories .categories .medicine:hover .icon-box {
+  background-color: #3c76f2 !important;
+}
+.catalog-categories .left-categories .categories .art-history .icon-box {
+  background-color: rgba(253, 86, 49, 0.1019607843);
+}
+.catalog-categories .left-categories .categories .art-history .icon-box i {
+  color: #07c98b;
+}
+.catalog-categories .left-categories .categories .art-history:hover .icon-box {
+  background-color: #07c98b !important;
+}
+.catalog-categories .left-categories .categories .beauty .icon-box {
+  background-color: rgba(253, 188, 49, 0.1019607843);
+}
+.catalog-categories .left-categories .categories .beauty .icon-box i {
+  color: #fdbc31;
+}
+.catalog-categories .left-categories .categories .beauty:hover .icon-box {
+  background-color: #fdbc31 !important;
+}
+.catalog-categories .left-categories .categories .entertainment .icon-box {
+  background-color: rgba(242, 60, 73, 0.1019607843);
+}
+.catalog-categories .left-categories .categories .entertainment .icon-box i {
+  color: #f23c49;
+}
+.catalog-categories .left-categories .categories .entertainment:hover .icon-box {
+  background-color: #f23c49 !important;
+}
+.catalog-categories .left-categories .categories .auto-service .icon-box {
+  background-color: rgba(93, 60, 242, 0.1);
+}
+.catalog-categories .left-categories .categories .auto-service .icon-box i {
+  color: #5d3cf2;
+}
+.catalog-categories .left-categories .categories .auto-service:hover .icon-box {
+  background-color: #5d3cf2 !important;
+}
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {

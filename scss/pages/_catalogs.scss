@@ -11,10 +11,193 @@
         padding: 2px;
 
         &::placeholder {
-          /* Chrome, Firefox, Opera, Safari 10.1+ */
           color: $gray-600;
         }
       }
+    }
+
+    .categories {
+      .category {
+        cursor: pointer;
+        padding: 1.25rem !important;
+
+        .icon-box {
+          width: 48px;
+          height: 48px;
+          border-radius: 40px;
+
+          i {
+            font-size: 22px !important;
+            font-weight: 500;
+          }
+        }
+
+        &:hover {
+          box-shadow: $box-shadow !important;
+        }
+
+        h3 {
+          font-size: 16px;
+          font-weight: 700;
+          color: $gray-900;
+        }
+
+        &:hover .icon-box {
+          transition: 300ms all ease;
+        }
+
+        &:hover i {
+          color: $white !important;
+          transition: 300ms all ease;
+        }
+      }
+
+      .accommodation,
+      .auto-service {
+        .icon-box {
+          background-color: $faded-accent;
+
+          i {
+            color: $accent;
+          }
+        }
+
+        &:hover .icon-box {
+          background-color: $accent !important;
+        }
+      }
+
+      .fitness-sport {
+        .icon-box {
+          background-color: $faded-danger;
+
+          i {
+            color: $danger;
+          }
+        }
+
+        &:hover .icon-box {
+          background-color: $danger !important;
+        }
+      }
+
+      .food-drink {
+        .icon-box {
+          background-color: $faded-success;
+
+          i {
+            color: $warning;
+          }
+        }
+
+        &:hover .icon-box {
+          background-color: $warning !important;
+        }
+      }
+
+      .night-life {
+        .icon-box {
+          background-color: #07c98b1a;
+
+          i {
+            color: $success;
+          }
+        }
+
+        &:hover .icon-box {
+          background-color: $success !important;
+          transition: 300ms all ease;
+        }
+      }
+
+      .shopping {
+        .icon-box {
+          background-color: $faded-success;
+
+          i {
+            color: $primary;
+          }
+        }
+
+        &:hover .icon-box {
+          background-color: $primary !important;
+        }
+      }
+
+      .medicine {
+        .icon-box {
+          background-color: $faded-info;
+
+          i {
+            color: $info;
+          }
+        }
+
+        &:hover .icon-box {
+          background-color: $info !important;
+        }
+      }
+
+      .art-history {
+        .icon-box {
+          background-color: $faded-success;
+
+          i {
+            color: $success;
+          }
+        }
+
+        &:hover .icon-box {
+          background-color: $success !important;
+        }
+      }
+
+      .beauty {
+        .icon-box {
+          background-color: $faded-warning;
+
+          i {
+            color: $warning;
+          }
+        }
+
+        &:hover .icon-box {
+          background-color: $warning !important;
+        }
+      }
+
+      .entertainment {
+        .icon-box {
+          background-color: $faded-danger;
+
+          i {
+            color: $danger;
+          }
+        }
+
+        &:hover .icon-box {
+          background-color: $danger !important;
+        }
+      }
+
+      .auto-service {
+        .icon-box {
+          background-color: $faded-accent;
+
+          i {
+            color: $accent;
+          }
+        }
+
+        &:hover .icon-box {
+          background-color: $accent !important;
+        }
+      }
+    }
+  }
+
+  .right-catalog {
+    .title {
     }
   }
 }
