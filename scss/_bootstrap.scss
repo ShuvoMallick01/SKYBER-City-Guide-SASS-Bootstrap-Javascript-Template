@@ -181,3 +181,34 @@ a {
   }
 }
 // === FORM END ===
+
+// === PAGINATION ===
+.pagination {
+  .page-item {
+    a {
+      font-weight: 400;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      border-radius: 50%;
+      border: transparent;
+      cursor: pointer;
+      color: $gray-800;
+
+      &:hover {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+  .page-item:first-child {
+    a {
+      font-weight: 700;
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
