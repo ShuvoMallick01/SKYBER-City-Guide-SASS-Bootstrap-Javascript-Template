@@ -11270,10 +11270,14 @@ a {
   background-color: #fd5631;
   color: #fff;
 }
-.pagination .page-item:first-child a {
+.pagination .page-item .active {
   font-weight: 700;
   background-color: #fd5631;
   color: #fff;
+}
+.pagination .page-item:first-child .page-link {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
 }
 
 .h3 {

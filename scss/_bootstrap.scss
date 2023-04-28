@@ -213,12 +213,16 @@ a {
         color: $white;
       }
     }
-  }
-  .page-item:first-child {
-    a {
+
+    .active {
       font-weight: 700;
       background-color: $primary;
       color: $white;
+    }
+
+    &:first-child .page-link {
+      border-top-left-radius: 50% !important;
+      border-bottom-left-radius: 50% !important;
     }
   }
 }
