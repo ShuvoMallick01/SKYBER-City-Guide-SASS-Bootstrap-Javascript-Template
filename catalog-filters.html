@@ -599,7 +599,7 @@
         <div class="row">
           <!-- Left Filter -->
           <div
-            class="left-categories left-filters border-end col-lg-4 col-xl-3 border-top p-3 mb-4 p-xl-4 border-right shadow-sm"
+            class="left-categories left-filters border-end col-lg-4 col-xl-3 border-top p-3 mb-4 p-xl-4 ps-xl-5 border-right shadow-sm"
           >
             <!-- Search field -->
             <form class="form-group shadow-sm mb-3 mb-lg-4">
@@ -672,7 +672,8 @@
               <!-- Subcategory -->
               <div class="subcategory pb-4 mb-2">
                 <h4 class="mb-3">Subcategory</h4>
-                <div class="check-list">
+
+                <div class="check-list d-flex flex-column gap-1">
                   <div class="form-check">
                     <input
                       class="form-check-input"
@@ -748,8 +749,291 @@
               <!-- Price -->
               <div class="price pb-4 mb-2">
                 <h4 class="mb-3">Price</h4>
+                <div class="d-flex align-items-center">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">$</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Username"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                      value="50"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-muted px-2">-</p>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">$</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Username"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                      value="50"
+                    />
+                  </div>
+                </div>
               </div>
+
+              <!-- Average Rating -->
+              <div class="average-rating pb-4 mb-2">
+                <h4 class="mb-3">Average Rating</h4>
+
+                <div class="rating">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-filled text-warning"></i>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-default text-gray"></i>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-default text-gray"></i>
+                      <i class="icon-star-default text-gray"></i>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-default text-gray"></i>
+                      <i class="icon-star-default text-gray"></i>
+                      <i class="icon-star-default text-gray"></i>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="icon-star-filled text-warning"></i>
+                      <i class="icon-star-default text-gray"></i>
+                      <i class="icon-star-default text-gray"></i>
+                      <i class="icon-star-default text-gray"></i>
+                      <i class="icon-star-default text-gray"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Number of rooms -->
+              <div class="number-rooms pb-4 mb-2">
+                <h4 class="mb-3">Number of rooms</h4>
+
+                <select class="form-select mb-2">
+                  <option value="1-room" selected="">1 room</option>
+                  <option value="2-rooms">2 rooms</option>
+                  <option value="3-rooms">3 rooms</option>
+                  <option value="4-rooms">4 rooms</option>
+                  <option value="5-rooms">5 rooms</option>
+                </select>
+              </div>
+
+              <!-- Amenities -->
+              <div class="amenities pb-4 mb-2">
+                <h4 class="mb-3">Amenities</h4>
+
+                <div class="check-list d-flex flex-column gap-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Parking
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Restaurant
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Pet Friendly
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Room Service
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Hotel
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Boutique Hotel
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Room Facilities -->
+              <div class="room-facilities pb-4 mb-1 border-bottom">
+                <h4 class="mb-3">Room Facilities</h4>
+                <div class="check-list d-flex flex-column gap-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Kitchen
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Private Bathroom
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Air Conditioning
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Desk
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Hotel
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Terrace
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- end -->
             </div>
+
+            <button class="btn btn-outline-primary mb-5">
+              <i class="icon-rotate-right me-1"></i>Reset Filters
+            </button>
           </div>
 
           <!-- Right Catalog -->

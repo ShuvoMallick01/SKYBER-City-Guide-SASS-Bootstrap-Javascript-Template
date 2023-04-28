@@ -209,9 +209,28 @@
         font-size: 18px;
       }
 
+      .price {
+        .input-group {
+          .input-group-text {
+            background-color: $white;
+            width: 44px;
+          }
+        }
+      }
+
       .category {
         select {
           option {
+          }
+        }
+      }
+
+      .average-rating {
+        .rating {
+          .form-check {
+            .text-gray {
+              color: $gray-600 !important;
+            }
           }
         }
       }

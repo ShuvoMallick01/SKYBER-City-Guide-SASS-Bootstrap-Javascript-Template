@@ -10955,7 +10955,7 @@ a {
 .btn-outline-primary {
   --bs-btn-color: #fd5631;
   --bs-btn-border-color: #fd5631;
-  --bs-btn-hover-color: #000;
+  --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #fd5631;
   --bs-btn-hover-border-color: #fd5631;
   --bs-btn-focus-shadow-rgb: 253, 86, 49;
@@ -11025,7 +11025,7 @@ a {
 .btn-outline-success {
   --bs-btn-color: #07c98b;
   --bs-btn-border-color: #07c98b;
-  --bs-btn-hover-color: #000;
+  --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #07c98b;
   --bs-btn-hover-border-color: #07c98b;
   --bs-btn-focus-shadow-rgb: 7, 201, 139;
@@ -11060,7 +11060,7 @@ a {
 .btn-outline-info {
   --bs-btn-color: #3c76f2;
   --bs-btn-border-color: #3c76f2;
-  --bs-btn-hover-color: #000;
+  --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #3c76f2;
   --bs-btn-hover-border-color: #3c76f2;
   --bs-btn-focus-shadow-rgb: 60, 118, 242;
@@ -11095,7 +11095,7 @@ a {
 .btn-outline-warning {
   --bs-btn-color: #fdbc31;
   --bs-btn-border-color: #fdbc31;
-  --bs-btn-hover-color: #000;
+  --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #fdbc31;
   --bs-btn-hover-border-color: #fdbc31;
   --bs-btn-focus-shadow-rgb: 253, 188, 49;
@@ -11130,7 +11130,7 @@ a {
 .btn-outline-danger {
   --bs-btn-color: #f23c49;
   --bs-btn-border-color: #f23c49;
-  --bs-btn-hover-color: #000;
+  --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #f23c49;
   --bs-btn-hover-border-color: #f23c49;
   --bs-btn-focus-shadow-rgb: 242, 60, 73;
@@ -11200,7 +11200,7 @@ a {
 .btn-outline-gray {
   --bs-btn-color: #e9ecef;
   --bs-btn-border-color: #e9ecef;
-  --bs-btn-hover-color: #000;
+  --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #e9ecef;
   --bs-btn-hover-border-color: #e9ecef;
   --bs-btn-focus-shadow-rgb: 233, 236, 239;
@@ -11989,6 +11989,14 @@ a {
   font-weight: 700;
   font-size: 18px;
 }
+.catalog-filters .left-filters .filters-tab .price .input-group .input-group-text {
+  background-color: #fff;
+  width: 44px;
+}
+.catalog-filters .left-filters .filters-tab .average-rating .rating .form-check .text-gray {
+  color: #6c757d !important;
+}
+
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {
