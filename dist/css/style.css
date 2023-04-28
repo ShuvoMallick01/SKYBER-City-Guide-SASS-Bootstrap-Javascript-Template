@@ -11248,6 +11248,26 @@ a {
   --bs-btn-border-radius: 40px;
 }
 
+.btn-icon {
+  height: 32px;
+  width: 32px;
+  background-color: rgba(255, 255, 255, 0.0352941176);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: #495057;
+  border-radius: 40px;
+  box-shadow: 0px 2px 2px -2px rgba(31, 27, 45, 0.08), 0px 4px 12px rgba(31, 27, 45, 0.08);
+  cursor: pointer;
+}
+.btn-icon:hover {
+  background-color: #fd5631;
+  color: #fff;
+}
+
 .form-select:focus, .form-select:focus-visible, .form-select:focus-within {
   outline: none !important;
   box-shadow: none !important;
@@ -12004,24 +12024,38 @@ a {
   color: #6c757d !important;
 }
 
-.btn-icon {
-  height: 32px;
-  width: 32px;
-  background-color: rgba(255, 255, 255, 0.0352941176);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  font-weight: 400;
-  font-size: 14px;
-  color: #495057;
-  border-radius: 40px;
-  box-shadow: 0px 2px 2px -2px rgba(31, 27, 45, 0.08), 0px 4px 12px rgba(31, 27, 45, 0.08);
+.catalog-gallery .gallery {
   cursor: pointer;
 }
-.btn-icon:hover {
-  background-color: #fd5631;
-  color: #fff;
+.catalog-gallery .gallery::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.catalog-gallery .gallery:hover::after {
+  opacity: 1;
+  transition: all 300ms ease;
+}
+.catalog-gallery .gallery .zoom-icon {
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+}
+.catalog-gallery .gallery .zoom-icon i {
+  font-size: 35px;
+  margin: auto;
+}
+.catalog-gallery .gallery .zoom-icon:hover {
+  opacity: 1;
+  transition: all 300ms ease;
 }
 
 /* `xl` applies to large devices (Desktop, less than 1200px) */
