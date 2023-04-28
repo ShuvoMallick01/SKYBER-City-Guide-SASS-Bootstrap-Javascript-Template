@@ -12058,6 +12058,24 @@ a {
   transition: all 300ms ease;
 }
 
+.place-contents .title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.place-contents .place-info .sort-details p {
+  font-weight: 400;
+  font-size: 14px;
+}
+.place-contents .price h4, .place-contents .price .h4 {
+  font-weight: 700;
+  font-size: 24px;
+}
+.place-contents .price h4 span, .place-contents .price .h4 span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #495057;
+}
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {

@@ -284,6 +284,49 @@
     }
   }
 }
+
+.place-contents {
+  .title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .place-info {
+    .sort-details {
+      p {
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .price {
+    h4 {
+      font-weight: 700;
+      font-size: 24px;
+
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        color: $gray-700;
+      }
+    }
+  }
+
+  .right-map {
+    .button {
+      // top: 0;
+      // bottom: 0;
+      // left: 0;
+      // right: 0;
+      // margin: auto;
+      // height: 100%;
+      // width: 100%;
+      // display: flex;
+    }
+  }
+}
 // === CATALOG SINGLE PLACE GALLERY END ===
 
 // === START ===
