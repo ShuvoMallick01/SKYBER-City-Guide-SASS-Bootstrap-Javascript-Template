@@ -11985,6 +11985,10 @@ a {
 .catalog-categories .left-categories .categories .auto-service:hover .icon-box {
   background-color: #5d3cf2 !important;
 }
+.catalog-filters .left-filters .filters-tab h4, .catalog-filters .left-filters .filters-tab .h4 {
+  font-weight: 700;
+  font-size: 18px;
+}
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {

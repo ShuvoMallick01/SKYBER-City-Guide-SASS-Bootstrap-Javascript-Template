@@ -594,12 +594,12 @@
     <!-- NAVBAR END -->
 
     <!-- CATEGORIES START -->
-    <section class="catalog-categories mt-2">
+    <section class="catalog-categories catalog-filters mt-2">
       <div class="container-fluid">
         <div class="row">
           <!-- Left Filter -->
           <div
-            class="left-categories border-end col-lg-4 col-xl-3 border-top p-3 mb-4 p-xl-4 border-right shadow-sm"
+            class="left-categories left-filters border-end col-lg-4 col-xl-3 border-top p-3 mb-4 p-xl-4 border-right shadow-sm"
           >
             <!-- Search field -->
             <form class="form-group shadow-sm mb-3 mb-lg-4">
@@ -627,8 +627,129 @@
               </a>
             </div>
 
-            <!-- Location -->
-            <div></div>
+            <!-- Filters -->
+            <div class="filters-tab py-4">
+              <!-- Location -->
+              <div class="location pb-4 mb-2">
+                <h4 class="mb-3">Location</h4>
+                <select class="form-select mb-2">
+                  <option value="" disabled="">Choose the City</option>
+                  <option value="Berlin" selected="">Berlin</option>
+                  <option value="Hamburg">Hamburg</option>
+                  <option value="Munich">Munich</option>
+                  <option value="Koln">Koln</option>
+                  <option value="Frankfurt am Main">Frankfurt am Main</option>
+                </select>
+
+                <select class="form-select">
+                  <option value="" selected="" disabled="">
+                    Choose the district
+                  </option>
+                  <option value="Berlin-Mitte">Berlin-Mitte</option>
+                  <option value="Charlottenburg">Charlottenburg</option>
+                  <option value="Prenzlauer Berg">Prenzlauer Berg</option>
+                  <option value="Friedrichshain">Friedrichshain</option>
+                  <option value="Kreuzberg">Kreuzberg</option>
+                </select>
+              </div>
+
+              <!-- Category -->
+              <div class="category pb-4 mb-2">
+                <h4 class="mb-3">Category</h4>
+                <select class="form-select">
+                  <option value="" disabled="">Choose the city</option>
+                  <option value="Berlin" selected="">
+                    <i class="icon-heart" aria-hidden="true"></i
+                    ><i class="fa fa-email"></i>Accommodation
+                  </option>
+                  <option value="Hamburg">Hamburg</option>
+                  <option value="Munich">Munich</option>
+                  <option value="Koln">Koln</option>
+                  <option value="Frankfurt am Main">Frankfurt am Main</option>
+                </select>
+              </div>
+
+              <!-- Subcategory -->
+              <div class="subcategory pb-4 mb-2">
+                <h4 class="mb-3">Subcategory</h4>
+                <div class="check-list">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Hotel
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Hostel
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Motel
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Apartment
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Hotel
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Boutique Hotel
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Price -->
+              <div class="price pb-4 mb-2">
+                <h4 class="mb-3">Price</h4>
+              </div>
+            </div>
           </div>
 
           <!-- Right Catalog -->
@@ -652,7 +773,7 @@
               class="title d-sm-flex align-items-center justify-content-between pb-3"
             >
               <h1 class="page-title">Find accommodation</h1>
-              <a class="btn text-primary" href="#"
+              <a class="btn text-primary p-0" href="#"
                 ><i class="icon-map me-1 align-baseline"></i>Map View</a
               >
             </div>

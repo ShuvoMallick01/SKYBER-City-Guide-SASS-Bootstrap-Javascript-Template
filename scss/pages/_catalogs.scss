@@ -200,6 +200,25 @@
   }
 }
 
+// Catalog Filter
+.catalog-filters {
+  .left-filters {
+    .filters-tab {
+      h4 {
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .category {
+        select {
+          option {
+          }
+        }
+      }
+    }
+  }
+}
+
 // === CATEGORIES END ===
 
 // === START ===
