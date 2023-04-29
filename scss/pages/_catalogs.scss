@@ -312,6 +312,16 @@
         color: $gray-700;
       }
     }
+
+    .input-group {
+      &:focus {
+        box-shadow: none;
+      }
+
+      .form-control:focus {
+        box-shadow: 0 0 0 0rem !important;
+      }
+    }
   }
 
   .right-map {

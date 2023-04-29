@@ -211,6 +211,11 @@ a {
   }
 }
 
+.form-control:focus {
+  box-shadow: 0 0 0 0 !important;
+  border-color: $gray-400;
+}
+
 // === FORM END ===
 
 // === PAGINATION ===
