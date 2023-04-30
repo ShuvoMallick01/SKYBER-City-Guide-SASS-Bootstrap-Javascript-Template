@@ -410,6 +410,51 @@
 // === SINGLE PLACE -INFO PAGE  END ===
 
 // === SINGLE PLACE - REVIEW START ===
+.review-contents {
+  .progress-bar {
+    .contents {
+      margin-bottom: 4px;
+      p {
+        &:last-child {
+          width: 48px;
+        }
+      }
+    }
+
+    .progress {
+      width: 431px !important;
+    }
+  }
+
+  .rating {
+    h1 {
+      font-weight: 700;
+      font-size: 56px;
+    }
+  }
+}
+
+.single-review {
+  .user-info {
+    h4 {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .starts {
+      font-size: 12px;
+    }
+  }
+
+  p {
+    color: $gray-700;
+  }
+
+  .icons {
+    color: $gray-600;
+  }
+}
+
 // === SINGLE PLACE - REVIEW END ===
 
 // === START ===
