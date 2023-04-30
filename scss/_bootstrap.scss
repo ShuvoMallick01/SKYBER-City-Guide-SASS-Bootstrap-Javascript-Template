@@ -199,15 +199,7 @@ a {
   &:focus-within {
     outline: none !important;
     box-shadow: none !important;
-  }
-}
-
-.input-group
-  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
-    .valid-feedback
-  ):not(.invalid-tooltip):not(.invalid-feedback) {
-  &:focus {
-    // margin-left: -1px;
+    border-color: $gray-400 !important;
   }
 }
 
@@ -218,7 +210,7 @@ a {
 
 // === FORM END ===
 
-// === PAGINATION ===
+// === PAGINATION START ===
 .pagination {
   .page-item {
     a {
@@ -250,5 +242,11 @@ a {
       border-top-left-radius: 50% !important;
       border-bottom-left-radius: 50% !important;
     }
+
+    &:last-child .page-link {
+      border-top-right-radius: 50% !important;
+      border-bottom-right-radius: 50% !important;
+    }
   }
 }
+// === PAGINATION END ===

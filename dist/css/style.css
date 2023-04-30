@@ -11271,6 +11271,7 @@ a {
 .form-select:focus, .form-select:focus-visible, .form-select:focus-within {
   outline: none !important;
   box-shadow: none !important;
+  border-color: #ced4da !important;
 }
 
 .form-control:focus {
@@ -11303,6 +11304,10 @@ a {
 .pagination .page-item:first-child .page-link {
   border-top-left-radius: 50% !important;
   border-bottom-left-radius: 50% !important;
+}
+.pagination .page-item:last-child .page-link {
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
 }
 
 .h3 {
@@ -12024,6 +12029,20 @@ a {
 .catalog-filters .left-filters .filters-tab .price .input-group .input-group-text {
   background-color: #fff;
   width: 44px;
+}
+.catalog-filters .left-filters .filters-tab .category select option::before {
+  all: unset;
+  font-family: "icomoon";
+  content: "\e91d";
+  margin-top: 5px !important;
+}
+.catalog-filters .left-filters .filters-tab .category-dropdown .dropdown button {
+  border: 1px solid #ced4da;
+  width: 100%;
+  text-align: start;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 8px;
 }
 .catalog-filters .left-filters .filters-tab .average-rating .rating .form-check .text-gray {
   color: #6c757d !important;

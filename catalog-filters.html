@@ -654,12 +654,15 @@
               </div>
 
               <!-- Category -->
-              <div class="category pb-4 mb-2">
+              <!-- <div class="category pb-4 mb-2">
                 <h4 class="mb-3">Category</h4>
                 <select class="form-select">
                   <option value="" disabled="">Choose the city</option>
                   <option value="Berlin" selected="">
-                    <span><i class="icon-alerm-default"></i></span>Accommodation
+                    <span
+                      ><i class="icon-airbnb me-2 fs-lg opacity-60"></i
+                      >Accommodation</span
+                    >
                   </option>
                   <option value="Hamburg">
                     <div>
@@ -670,6 +673,56 @@
                   <option value="Koln">Koln</option>
                   <option value="Frankfurt am Main">Frankfurt am Main</option>
                 </select>
+              </div> -->
+
+              <!-- Category Using DropDown -->
+              <div class="category-dropdown pb-4 mb-2">
+                <h4 class="mb-3">Category</h4>
+
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle w-100 d-flex justify-content-between align-items-center"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="icon-list me-2"></i>
+                    <span class="w-100 d-block">All categoris</span>
+                  </button>
+
+                  <ul class="dropdown-menu w-100">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="icon-bed opacity-60 me-2"></i
+                        >Accommodation</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="icon-cafe opacity-60 me-2"></i>Food &
+                        Drink</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="icon-shopping-bag opacity-60 me-2"></i
+                        >Shopping</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="icon-museum opacity-60 me-2"></i>Art &
+                        History</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="icon-entertainment opacity-60 me-2"></i
+                        >Entertinment</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <!-- Subcategory -->
@@ -1606,12 +1659,6 @@
               <ul
                 class="pagination mb-5 pb-2 d-flex gap-1 align-content-center"
               >
-                <!-- <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true"><i class="icon-arrow-single-left align-baseline"></i
-                    ></span>
-                  </a>
-                </li> -->
                 <li class="page-item">
                   <a class="page-link active" href="#">1</a>
                 </li>

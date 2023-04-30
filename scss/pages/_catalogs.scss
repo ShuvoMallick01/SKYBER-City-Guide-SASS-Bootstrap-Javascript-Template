@@ -222,6 +222,25 @@
       .category {
         select {
           option {
+            &::before {
+              all: unset;
+              font-family: "icomoon";
+              content: "\e91d";
+              margin-top: 5px !important;
+            }
+          }
+        }
+      }
+
+      .category-dropdown {
+        .dropdown {
+          button {
+            border: 1px solid $gray-400;
+            width: 100%;
+            text-align: start;
+            font-weight: 400;
+            font-size: 16px;
+            border-radius: 8px;
           }
         }
       }
