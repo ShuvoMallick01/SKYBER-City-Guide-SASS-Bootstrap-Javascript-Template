@@ -381,6 +381,31 @@
       }
     }
   }
+
+  .bank-card {
+    h4 {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}
+
+.right-sort-info {
+  .title {
+    font-size: 20px;
+  }
+
+  .price {
+    h4 {
+      font-weight: 700;
+      font-size: 24px;
+
+      span {
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+  }
 }
 // === SINGLE PLACE -INFO PAGE  END ===
 

@@ -12164,6 +12164,22 @@ a {
 .catalog-info .amenities ul li {
   margin-bottom: 4px;
 }
+.catalog-info .bank-card h4, .catalog-info .bank-card .h4 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.right-sort-info .title {
+  font-size: 20px;
+}
+.right-sort-info .price h4, .right-sort-info .price .h4 {
+  font-weight: 700;
+  font-size: 24px;
+}
+.right-sort-info .price h4 span, .right-sort-info .price .h4 span {
+  font-weight: 400;
+  font-size: 16px;
+}
 
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
