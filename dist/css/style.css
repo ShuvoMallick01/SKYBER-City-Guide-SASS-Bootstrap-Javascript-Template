@@ -12151,6 +12151,20 @@ a {
 .place-contents .price .input-group .form-control:focus {
   box-shadow: 0 0 0 0rem !important;
 }
+.catalog-info .title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #212529;
+}
+.catalog-info .about .sort-details {
+  font-weight: 400;
+  font-size: 16px;
+  color: #495057;
+}
+.catalog-info .amenities ul li {
+  margin-bottom: 4px;
+}
+
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {

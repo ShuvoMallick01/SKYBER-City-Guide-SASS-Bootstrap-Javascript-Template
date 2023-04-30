@@ -201,7 +201,7 @@
 }
 // === CATEGORIES END ===
 
-// === CATALOG FILTER STAR ===
+// === FILTER STAR ===
 .catalog-filters {
   .left-filters {
     .filters-tab {
@@ -257,9 +257,9 @@
     }
   }
 }
-// === CATALOG FILTER END ===
+// === FILTER END ===
 
-// === CATALOG SINGLE PLACE GALLERY START ===
+// === SINGLE PLACE - GALLERY PAGE START ===
 .catalog-gallery {
   .gallery {
     cursor: pointer;
@@ -356,10 +356,33 @@
     }
   }
 }
-// === CATALOG SINGLE PLACE GALLERY END ===
+// === SINGLE PLACE - GALLERY PAGE END ===
 
-// === START ===
-// === END ===
+// === SINGLE PLACE -INFO PAGE START ===
+.catalog-info {
+  .title {
+    font-weight: 700;
+    font-size: 24px;
+    color: $gray-900;
+  }
+
+  .about {
+    .sort-details {
+      font-weight: 400;
+      font-size: 16px;
+      color: $gray-700;
+    }
+  }
+
+  .amenities {
+    ul {
+      li {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+// === SINGLE PLACE -INFO PAGE  END ===
 
 // === START ===
 // === END ===
