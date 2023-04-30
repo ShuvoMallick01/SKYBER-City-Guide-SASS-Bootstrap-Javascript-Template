@@ -31,7 +31,7 @@
     <!-- Custom JS -->
     <script src="js/app.js" defer></script>
     <!-- Website Title -->
-    <title>Catalog - Single Place Gallery</title>
+    <title>Catalog - Single Place Review</title>
   </head>
 
   <body>
@@ -102,13 +102,10 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="catalog-categories.html"
-                      >Categories</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="catalog-filters.html"
-                      >Filters</a
+                    <a
+                      class="dropdown-item"
+                      href="catalog-categories-filters.html"
+                      >Categories & Filters</a
                     >
                   </li>
                   <li>
@@ -127,7 +124,7 @@
                   </li>
                   <li>
                     <a
-                      class="dropdown-item"
+                      class="dropdown-item active"
                       href="catalog-single-place-reviews.html"
                       >Single Place - Reviews</a
                     >
@@ -594,7 +591,7 @@
     </header>
     <!-- NAVBAR END -->
 
-    <!-- CATEGORIES START -->
+    <!-- Breadcrumb/Title START -->
     <section class="catalog-categories mt-5">
       <div class="container">
         <div class="row">
@@ -617,7 +614,7 @@
 
           <!-- Title & Icons -->
           <div
-            class="title d-sm-flex align-items-center justify-content-between pb-4"
+            class="title d-sm-flex align-items-center justify-content-between"
           >
             <h1 class="page-title">Berlin Business Hotel</h1>
 
@@ -630,25 +627,344 @@
               </a>
             </div>
           </div>
-
-          <!-- Tab -->
-          <div class="d-sm-flex align-items-center mb-4 gap-3">
-            <a class="btn-tab-gray active-tab">
-              <i class="icon-image me-1"></i>Gallery
-            </a>
-            <a class="btn-tab-gray">
-              <i class="icon-info-circle me-1"></i>Info
-            </a>
-            <a class="btn-tab-gray"> <i class="icon-edit me-1"></i>Reviews </a>
-          </div>
-          <!-- Right Catalog -->
-          <div
-            class="right-catalog col-lg-8 col-xl-9 py-4 px-xxl-5 px-lg-4"
-          ></div>
         </div>
       </div>
     </section>
-    <!-- CATEGORIES END -->
+    <!-- Breadcrumb/Title END -->
+
+    <!-- REVIEW START -->
+    <section class="catalog-info mt-4">
+      <div class="container">
+        <div class="row">
+          <!-- LEFT SIDE -->
+          <div class="col-md-7 mb-5 mb-lg-0">
+            <!-- Tabs -->
+            <div
+              class="d-sm-flex align-items-center mb-4 pb-3 border-bottom gap-3"
+            >
+              <a class="btn-tab-gray">
+                <i class="icon-image me-1"></i>Gallery
+              </a>
+              <a class="btn-tab-gray">
+                <i class="icon-info-circle me-1"></i>Info
+              </a>
+              <a class="btn-tab-gray active-tab">
+                <i class="icon-edit me-1"></i>Reviews
+              </a>
+            </div>
+
+            <!-- Average Rating -->
+            <div class="average-rating mb-4 pb-md-3">
+              <a class="title nav-link mb-3" href="#">Average rating</a>
+
+              <!-- Reviews -->
+              <div class="row review-contents mb-4">
+                <!-- Progressbar -->
+                <div class="col-sm-8 order-sm-1 order-2">
+                  <div class="d-flex align-items-center">
+                    <p class="mb-0 text-nowrap me-3">
+                      5
+                      <i
+                        class="icon-star-default text-gray ms-0 align-middle"
+                      ></i>
+                    </p>
+
+                    <div
+                      class="progress w-100 me-3"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-warning"
+                        style="width: 80%"
+                      ></div>
+                    </div>
+
+                    <p class="mb-0">80%</p>
+                  </div>
+                </div>
+
+                <!-- Total Review -->
+                <div class="col-sm-4 order-sm-2 order-1">
+                  <div class="rating">
+                    <h1>4,9</h1>
+                    <div class="starts text-warning">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-jalf"></i>
+                    </div>
+                    <p class="mb-0">48 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="right-sort-info col-md-5">
+            <!-- Sorts info -->
+            <div class="card shadow-sm py-3 px-lg-4 px-3 mb-4">
+              <div class="card-body px-0">
+                <!-- Place Info -->
+                <div
+                  class="place-info d-lg-flex align-content-center mb-3 pb-3 border-bottom"
+                >
+                  <img
+                    src="./assets/images/logo/hotel-logo.png"
+                    class="img-fluid me-3"
+                    alt="title"
+                  />
+
+                  <div>
+                    <a class="title nav-link card-title mb-1" href="#"
+                      >Berlin Business Hotel</a
+                    >
+
+                    <div
+                      class="sort-details d-lg-flex flex-column flex-lg-row align-items-center gap-2"
+                    >
+                      <p class="mb-0 text-nowrap">
+                        <i class="icon-star-filled text-warning ps-0 ms-0"></i>
+                        5.0
+                        <span class="text-muted">(48)</span>
+                      </p>
+
+                      <p class="mb-0 text-nowrap">
+                        <i class="icon-credit-card ms-1"></i> $$
+                      </p>
+                      <p class="mb-0 text-nowrap text-truncate">
+                        <i class="icon-pin ms-1"></i> 1.4 km from center
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Place Contact -->
+                <div class="place-contents mb-3 pb-3 border-bottom">
+                  <h4 class="title mb-3">Contacts:</h4>
+                  <div class="d-flex row">
+                    <p class="mb-1">
+                      <i class="icon-pin me-2"></i>Ollenhauer Str. 29, 10118,
+                      Berlin
+                    </p>
+                    <p class="mb-1">
+                      <i class="icon-world me-2"></i>bb-hotel.com
+                    </p>
+                    <p class="mb-1">
+                      <i class="icon-phone-2 me-2"></i>(302) 555-0107, (302)
+                      555-0208
+                    </p>
+                    <p class="mb-1">
+                      <i class="icon-mail me-2"></i>bb-hotel@gmail.com
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Price -->
+                <div class="price mb-3 pb-3 border-bottom">
+                  <h4 class="mb-3">
+                    $50-100 <span class="text-muted">/night</span>
+                  </h4>
+                  <button class="btn btn-primary">
+                    Book now
+                    <i class="icon-arrow-single-right align-middle"></i>
+                  </button>
+                </div>
+
+                <!-- Follow -->
+                <div class="row">
+                  <div class="d-flex align-items-center gap-3">
+                    <h5 class="title">Follow:</h5>
+                    <div class="icons d-flex align-items-center gap-2">
+                      <a class="btn-icon">
+                        <i class="icon-facebook-1"></i>
+                      </a>
+                      <a class="btn-icon">
+                        <i class="icon-instagram"></i>
+                      </a>
+                      <a class="btn-icon">
+                        <i class="icon-twitter"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map -->
+            <div class="right-map">
+              <div
+                class="card d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="./assets/images/single-place/map-single-page-info.png"
+                  class="img-fluid position-relative"
+                  alt="title"
+                />
+
+                <div class="button position-absolute">
+                  <button class="btn btn-primary">
+                    <i class="icon-route me-1"></i>Get directions
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- START -->
+    <!-- <section class="mb-5 pb-lg-4">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section> -->
+    <!-- END -->
+
+    <!-- <img
+      src="./assets/images/where-eat/"
+      class="img-fluid"
+      alt="title"
+    /> -->
+
+    <!-- Recently viewed -->
+    <section class="where-stay mb-5 pb-lg-4 mt-5">
+      <div class="container">
+        <!-- heading -->
+        <div
+          class="d-flex justify-content-between align-items-center mb-4 pb-2"
+        >
+          <h3>Recently viewed</h3>
+          <a>View All <i class="icon-arrow-long-right align-middle"></i></a>
+        </div>
+
+        <div class="row d-flex gy-4 gy-xl-0">
+          <!-- single stay -->
+          <div class="col-xl-4 col-md-6">
+            <div class="card card-hotel overflow-hidden">
+              <div class="card-top position-relative">
+                <img
+                  src="./assets/images/catalog/stay-room-1.png"
+                  class="card-img-top"
+                  alt="hote-room"
+                />
+                <!-- Heart Badge -->
+                <button
+                  class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <!-- card body -->
+              <div class="card-body px-0">
+                <a class="nav-link card-title mb-2" href="#"
+                  >Berlin Business Hotel</a
+                >
+
+                <div class="hotel-details d-flex align-items-center gap-2">
+                  <p class="mb-0">
+                    <i class="icon-star-filled text-warning ps-0 ms-0"></i>
+                    5.0
+                    <span class="text-muted">(48)</span>
+                  </p>
+
+                  <p class="mb-0"><i class="icon-credit-card ms-1"></i> $$</p>
+                  <p class="mb-0">
+                    <i class="icon-pin ms-1"></i> 1.4 km from center
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- single stay -->
+          <div class="col-xl-4 col-md-6">
+            <div class="card card-hotel overflow-hidden">
+              <div class="card-top position-relative">
+                <img
+                  src="./assets/images/catalog/stay-room-2.png"
+                  class="card-img-top"
+                  alt="hote-room"
+                />
+                <!-- Heart Badge -->
+                <button
+                  class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <!-- card body -->
+              <div class="card-body px-0">
+                <a class="nav-link card-title mb-2" href="#"
+                  >Big Tree Cottage</a
+                >
+
+                <div class="hotel-details d-flex align-items-center gap-2">
+                  <p class="mb-0">
+                    <i class="icon-star-filled text-warning ps-0 ms-0"></i>
+                    5.0
+                    <span class="text-muted">(48)</span>
+                  </p>
+
+                  <p class="mb-0"><i class="icon-credit-card ms-1"></i> $$</p>
+                  <p class="mb-0">
+                    <i class="icon-pin ms-1"></i> 0.5 km from center
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- single stay -->
+          <div class="col-xl-4 col-md-6">
+            <div class="card card-hotel overflow-hidden">
+              <div class="card-top position-relative">
+                <img
+                  src="./assets/images/catalog/stay-room-3.png"
+                  class="card-img-top"
+                  alt="hote-room"
+                />
+                <!-- Heart Badge -->
+                <button
+                  class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <!-- card body -->
+              <div class="card-body px-0">
+                <a class="nav-link card-title mb-2" href="#"
+                  >Berlin Business Hotel</a
+                >
+
+                <div class="hotel-details d-flex align-items-center gap-2">
+                  <p class="mb-0">
+                    <i class="icon-star-filled text-warning ps-0 ms-0"></i>
+                    5.0
+                    <span class="text-muted">(48)</span>
+                  </p>
+
+                  <p class="mb-0"><i class="icon-credit-card ms-1"></i> $$</p>
+                  <p class="mb-0">
+                    <i class="icon-pin ms-1"></i> 1.4 km from center
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Recently viewed -->
 
     <!-- FOOTER START -->
     <section class="footer">
@@ -780,20 +1096,6 @@
       </div>
     </section>
     <!-- FOOTER END -->
-
-    <!-- START -->
-    <!-- <section class="mb-5 pb-lg-4">
-      <div class="container">
-        <div class="row"></div>
-      </div>
-    </section> -->
-    <!-- END -->
-
-    <!-- <img
-      src="./assets/images/where-eat/"
-      class="img-fluid"
-      alt="title"
-    /> -->
 
     <!-- Bootstrap JS JavaScript Bundle with Popper -->
     <script
