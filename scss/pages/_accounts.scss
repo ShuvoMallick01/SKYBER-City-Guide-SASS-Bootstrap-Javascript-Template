@@ -50,16 +50,82 @@
   }
 }
 
-.ac-favorite-stay {
-}
-
 // === PERSONAL INFO PAGE END ===
 
-// === START ===
-// === END ===
+// === AC REVIEWS START ===
+.personal-review {
+  .review {
+    color: $gray-700;
 
-// === START ===
-// === END ===
+    h4 {
+      font-weight: 700;
+      font-size: 16px;
+
+      span {
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+
+    .starts {
+      font-size: 12px;
+    }
+
+    .date {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .review-text {
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    .icons {
+      color: $gray-600;
+    }
+
+    .delete-icon {
+      i {
+        font-size: 18px;
+        color: $gray-600;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+// === AC REVIEWS END ===
+
+// === ac-notification START ===
+.ac-notification {
+  .notification {
+    label {
+      font-weight: 700;
+      font-size: 16px;
+      color: $gray-800;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      color: $gray-700;
+    }
+
+    .form-check-input:checked {
+      background-color: $success;
+      border: $success;
+    }
+
+    .form-check-input:not(checked) {
+      background-color: $gray-500;
+      border: $gray-500;
+    }
+  }
+}
+// === ac-notification END ===
 
 // === START ===
 // === END ===

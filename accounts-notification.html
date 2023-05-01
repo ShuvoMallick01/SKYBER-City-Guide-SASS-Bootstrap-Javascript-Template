@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <!-- Google Noto Sans Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SASS COMPILE CSS -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <!-- ICON FONTS -->
+    <link rel="stylesheet" href="./assets/fonts.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./dist/css/home.css" />
+    <!-- Custom JS -->
+    <script src="js/app.js" defer></script>
+    <!-- Website Title -->
+    <title>Accounts Notification</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR START -->
+    <header>
+      <nav class="custom-navbar navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand logo" href="index.html"
+            ><img
+              src="./assets/images/logo-skyber.svg"
+              alt=""
+              class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse ms-xl-4 ms-lg-1"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item location-item dropdown me-lg-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="icon-pin align-baseline me-xl-1 text-primary"></i
+                  >New York
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Los Angeles</a></li>
+                  <li><a class="dropdown-item" href="#">Chicago</a></li>
+                  <li><a class="dropdown-item" href="#">Houston</a></li>
+                  <li><a class="dropdown-item" href="#">Philadelphia</a></li>
+                </ul>
+              </li>
+
+              <!-- single menu -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+
+              <!-- Categories menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Catalog
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item active"
+                      href="catalog-categories-filters.html"
+                      >Categories & Filters</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalog-single-place-gallery.html"
+                      >Single Place - Gallery</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalog-single-place-info.html"
+                      >Single Place - Info</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalog-single-place-reviews.html"
+                      >Single Place - Reviews</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Accounts menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Accounts
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="accounts-personal-info.html"
+                      >Personal Info</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="accounts-favorites.html"
+                      >Favorites</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="accounts-reviews.html"
+                      >Reviews</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item active"
+                      href="accounts-notification.html"
+                      >Notification</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sign In</a></li>
+                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                </ul>
+              </li>
+
+              <!-- Vendor menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Vendor
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="vendor-add-business.html"
+                      >Add Business</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="vendor-business-promotion.html"
+                      >Business Promotion</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="vendor-my-business.html"
+                      >My Business</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Pages menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="about.html">About</a></li>
+                  <li>
+                    <a class="dropdown-item" href="blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="help-center.html"
+                      >Help Center</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="404-not-found.html"
+                      >404 Not Found</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Right Navbar buttons -->
+            <div
+              class="d-sm-flex justify-content-center justify-content-xlg-end flex-wrap align-items-center gap-1 gap-xl-4"
+            >
+              <a href="./accounts-personal-info.html">
+                <img
+                  src="./assets/images/icons-user/user-icon-1.png"
+                  class="img-fluid"
+                  alt="title"
+                />
+              </a>
+              <!-- SIGN IN MODAL START -->
+              <div
+                class="modal fade"
+                id="sign-in-Modal"
+                tabindex="-1"
+                aria-labelledby="sign-in-ModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <!-- btn close -->
+                    <div class="modal-body px-0 py-0">
+                      <button
+                        class="btn-close position-absolute top-0 end-0 mt-3 me-3"
+                        type="button"
+                        data-bs-dismiss="modal"
+                      ></button>
+
+                      <!-- body -->
+                      <div class="row sign-in-modal mx-0 align-items-center">
+                        <!-- left side -->
+                        <div class="col-md-6 p-3 p-lg-5 border-right">
+                          <div class="left-contents">
+                            <h2 class="modal-title mb-4 mb-sm-5">
+                              Hey there!<br />Welcome back.
+                            </h2>
+                            <img
+                              class="d-block mx-auto"
+                              src="./assets/images/illustration/login-illustration.svg"
+                              width="344"
+                              alt="Illustartion"
+                            />
+                            <div class="dont-have mt-4">
+                              Don't have an account?
+                              <a
+                                href="#signup-Modal"
+                                data-bs-toggle="modal"
+                                data-bs-dismiss="modal"
+                                class="text-primary text-decoration-underline"
+                                >Sign up here</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- right side -->
+                        <div class="col-md-6 px-4 p-3 p-lg-5">
+                          <div class="right-contents">
+                            <button
+                              class="btn btn-outline-info mb-3 w-100"
+                              href="#"
+                            >
+                              <i class="icon-google me-1"></i>Sign in with
+                              Google
+                            </button>
+                            <button
+                              class="btn btn-outline-info mb-3 w-100"
+                              href="#"
+                            >
+                              <i class="icon-Facebook-white-bg me-1"></i>Sign in
+                              with Facebook
+                            </button>
+
+                            <div class="d-flex align-items-center py-2 mb-1">
+                              <hr class="w-100" />
+                              <p class="or px-3">Or</p>
+                              <hr class="w-100" />
+                            </div>
+
+                            <form class="sign-in-form">
+                              <div class="mb-4">
+                                <label
+                                  class="form-label mb-2"
+                                  for="signin-email"
+                                  >Email address</label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="email"
+                                  id="signin-email"
+                                  placeholder="Enter your email"
+                                  required=""
+                                />
+                              </div>
+
+                              <div class="mb-4">
+                                <div
+                                  class="d-flex align-items-center justify-content-between mb-0"
+                                >
+                                  <label
+                                    class="form-label mb-2"
+                                    for="signin-password"
+                                    >Password</label
+                                  >
+                                  <a class="forgot-pass text-primary" href="#"
+                                    >Forgot password?</a
+                                  >
+                                </div>
+
+                                <div
+                                  class="form-input-icon d-flex align-items-center"
+                                >
+                                  <input
+                                    class="form-control custom-form-control"
+                                    type="password"
+                                    id="signin-password"
+                                    placeholder="Enter password"
+                                    required=""
+                                  />
+                                  <i class="icon-off"></i>
+                                </div>
+                              </div>
+
+                              <button
+                                class="btn btn-primary btn-lg w-100"
+                                type="submit"
+                              >
+                                Sign in
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                        <!-- end row -->
+                      </div>
+                    </div>
+                    <!-- end -->
+                  </div>
+                </div>
+              </div>
+              <!-- SIGN IN MODAL END -->
+
+              <!-- SIGN UP MODAL START -->
+              <div
+                class="modal signup-modal fade"
+                id="signup-Modal"
+                tabindex="-1"
+                aria-labelledby="signup-ModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <!-- Cross icon -->
+                    <div class="modal-body px-0 py-0">
+                      <button
+                        class="btn-close position-absolute top-0 end-0 mt-3 me-3"
+                        type="button"
+                        data-bs-dismiss="modal"
+                      ></button>
+
+                      <!-- contents -->
+                      <div class="row mx-0 align-items-center">
+                        <!-- left side -->
+                        <div class="col-md-6 p-3 p-lg-5 border-right">
+                          <div class="left-contents">
+                            <h2 class="modal-title mb-4 mb-sm-5">
+                              Join Finder.<br />
+                              Get premium benefits:
+                            </h2>
+
+                            <ul class="left-list list-unstyled mb-4">
+                              <li class="d-flex mb-2">
+                                <i
+                                  class="icon-check-circle text-primary mt-1 me-2"
+                                ></i
+                                ><span>Add and promote your listings</span>
+                              </li>
+                              <li class="d-flex mb-2">
+                                <i
+                                  class="icon-check-circle text-primary mt-1 me-2"
+                                ></i
+                                ><span>Easily manage your wishlist</span>
+                              </li>
+                              <li class="d-flex mb-0">
+                                <i
+                                  class="icon-check-circle text-primary mt-1 me-2"
+                                ></i
+                                ><span>Leave reviews</span>
+                              </li>
+                            </ul>
+
+                            <img
+                              class="d-block mx-auto"
+                              src="./assets/images/illustration/signup-illustration.svg"
+                              width="344"
+                              alt="Illustartion"
+                            />
+
+                            <div class="dont-have mt-4">
+                              Already have an account?
+                              <a
+                                href="#sign-in-Modal"
+                                data-bs-toggle="modal"
+                                data-bs-dismiss="modal"
+                                class="text-primary text-decoration-underline"
+                                >Sign In</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- right side -->
+                        <div class="col-md-6 px-4 p-3 p-lg-5">
+                          <div class="right-contents">
+                            <button
+                              class="btn btn-outline-info mb-3 w-100"
+                              href="#"
+                            >
+                              <i class="icon-google me-1"></i>Sign in with
+                              Google
+                            </button>
+                            <button
+                              class="btn btn-outline-info mb-3 w-100"
+                              href="#"
+                            >
+                              <i class="icon-facebook-1 me-1"></i>Sign in with
+                              Facebook
+                            </button>
+
+                            <div class="d-flex align-items-center py-2 mb-0">
+                              <hr class="w-100" />
+                              <p class="or px-3">Or</p>
+                              <hr class="w-100" />
+                            </div>
+
+                            <form class="signup-form" novalidate="">
+                              <div class="mb-2">
+                                <label class="form-label" for="signup-name"
+                                  >Full Name</label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  id="signup-name"
+                                  placeholder="Enter your full name"
+                                  required=""
+                                />
+                              </div>
+
+                              <div class="mb-2">
+                                <label class="form-label" for="signup-email"
+                                  >Email Address</label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="email"
+                                  id="signup-email"
+                                  placeholder="Enter your email"
+                                  required=""
+                                />
+                              </div>
+
+                              <div class="mb-2">
+                                <label class="form-label" for="signup-password"
+                                  >Password
+                                  <span class="text-muted"
+                                    >(min. 8 char)</span
+                                  ></label
+                                >
+
+                                <div
+                                  class="form-input-icon d-flex align-items-center"
+                                >
+                                  <input
+                                    class="form-control custom-form-control"
+                                    type="password"
+                                    id="signup-password"
+                                    required=""
+                                  />
+                                  <i class="icon-off"></i>
+                                </div>
+                              </div>
+
+                              <div class="mb-3">
+                                <label
+                                  class="form-label"
+                                  for="signup-confirm-password"
+                                  >Confirm Password
+                                </label>
+
+                                <div
+                                  class="form-input-icon d-flex align-items-center"
+                                >
+                                  <input
+                                    class="form-control custom-form-control"
+                                    type="password"
+                                    id="signup-confirm-password"
+                                    required=""
+                                  />
+                                  <i class="icon-off"></i>
+                                </div>
+                              </div>
+
+                              <div class="form-check mb-4">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="agree-to-terms"
+                                  required=""
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="agree-to-terms"
+                                  >By joining, I agree to the
+                                  <a
+                                    class="text-primary text-decoration-underline"
+                                    href="#"
+                                    >Terms of use</a
+                                  >
+                                  and
+                                  <a
+                                    class="text-primary text-decoration-underline"
+                                    href="#"
+                                    >Privacy policy</a
+                                  ></label
+                                >
+                              </div>
+                              <button
+                                class="btn btn-primary btn-lg w-100"
+                                type="submit"
+                              >
+                                Sign up
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SIGN UP MODAL END -->
+
+              <a
+                class="btn btn-primary btn-sm text-white text-nowrap"
+                href="add-business.html"
+                data-bs-toggle="modal"
+                ><i class="icon-plus me-1 align-baseline"></i>Add business</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- NAVBAR END -->
+
+    <!-- HEADER START -->
+    <section class="accounts mt-5">
+      <div class="container">
+        <div class="row">
+          <!-- Breadcrumb -->
+          <nav
+            class="mb-4"
+            style="--bs-breadcrumb-divider: '>'"
+            aria-label="breadcrumb"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Profile
+              </li>
+            </ol>
+          </nav>
+
+          <!-- Account Header -->
+          <div
+            class="account-header d-flex align-items-center justify-content-between"
+          >
+            <div class="d-flex align-items-center">
+              <!-- Picture -->
+              <div class="d-flex position-relative me-4">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="assets/images/icons-user/user-icon-1.png"
+                  alt="Profile Picture"
+                />
+
+                <div
+                  class="edit-icon position-absolute d-flex align-items-center justify-content-center bg-white rounded-circle p-2 end-0 bottom-0 shadow-sm"
+                >
+                  <i class="icon-pencil"></i>
+                </div>
+              </div>
+
+              <div class="title-review">
+                <h4 class="mb-2 text-gray-900">Annette Black</h4>
+                <div class="starts text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <a class="btn text-nowrap" href="#"
+              ><i class="icon-logout me-1"></i>Sign out</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HEADER END -->
+
+    <!-- REVIEW BODY START -->
+    <section class="ac-notification my-5">
+      <div class="container">
+        <div class="row">
+          <!-- Info -->
+          <div class="card shadow-sm px-4 py-3 mb-5">
+            <div class="card-body">
+              <!-- Tab -->
+              <div
+                class="d-flex flex-wrap flex-row align-items-center mb-4 gap-3 border-bottom pb-3 mb-4"
+              >
+                <a class="btn-tab-gray" href="./accounts-personal-info.html">
+                  <i class="icon-default-user me-1"></i>Personal Info
+                </a>
+                <a class="btn-tab-gray" href="./accounts-favorites.html">
+                  <i class="fa-regular fa-heart me-1"></i>Favorite
+                </a>
+                <a class="btn-tab-gray" href="./accounts-reviews.html">
+                  <i class="icon-star-default me-1"></i>Reviews
+                </a>
+                <a
+                  class="btn-tab-gray active-tab"
+                  href="./accounts-notification.html"
+                >
+                  <i class="icon-alerm-default me-1"></i>Notification
+                  Preferences
+                </a>
+              </div>
+
+              <!-- Title -->
+              <h3 class="mb-4">Notification Preferences</h3>
+
+              <!-- Single -->
+              <div class="notification border-bottom mb-3 pb-3">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="all-notifications"
+                    data-master-checkbox-for="#notification-settings"
+                  />
+                  <label
+                    class="form-check-label ms-2 fw-bold"
+                    for="all-notifications"
+                    >Enable/disable all notifications</label
+                  >
+                </div>
+              </div>
+
+              <!-- Single -->
+              <div class="notification border-bottom mb-3 pb-3">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="all-notifications"
+                    data-master-checkbox-for="#notification-settings"
+                    checked=""
+                  />
+                  <label
+                    class="form-check-label ms-2 fw-bold"
+                    for="all-notifications"
+                    >Product sold notifications</label
+                  >
+                  <p class="ms-2 mb-0">
+                    Send an email when someone purchased one of my products
+                  </p>
+                </div>
+              </div>
+
+              <!-- Single -->
+              <div class="notification border-bottom mb-3 pb-3">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="all-notifications"
+                    data-master-checkbox-for="#notification-settings"
+                    checked=""
+                  />
+                  <label
+                    class="form-check-label ms-2 fw-bold"
+                    for="all-notifications"
+                    >Product update notifications</label
+                  >
+                  <p class="ms-2 mb-0">
+                    Send an email when a product I've purchased is updated
+                  </p>
+                </div>
+              </div>
+
+              <!-- Single -->
+              <div class="notification border-bottom mb-3 pb-3">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="all-notifications"
+                    data-master-checkbox-for="#notification-settings"
+                  />
+                  <label
+                    class="form-check-label ms-2 fw-bold"
+                    for="all-notifications"
+                    >Product comment notifications</label
+                  >
+                  <p class="ms-2 mb-0">
+                    Send an email when someone comments on one of my products
+                  </p>
+                </div>
+              </div>
+
+              <!-- Single -->
+              <div class="notification border-bottom mb-3 pb-3">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="all-notifications"
+                    data-master-checkbox-for="#notification-settings"
+                  />
+                  <label
+                    class="form-check-label ms-2 fw-bold"
+                    for="all-notifications"
+                    >Product update notifications</label
+                  >
+                  <p class="ms-2 mb-0">
+                    Send an email when a product I've purchased is updated
+                  </p>
+                </div>
+              </div>
+
+              <!-- Single -->
+              <div class="notification">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="all-notifications"
+                    data-master-checkbox-for="#notification-settings"
+                    checked=""
+                  />
+                  <label
+                    class="form-check-label ms-2 fw-bold"
+                    for="all-notifications"
+                    >Product comment notifications</label
+                  >
+                  <p class="ms-2 mb-0">
+                    Send an email when someone comments on one of my products
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- REVIEW BODY  END -->
+
+    <!-- FOOTER START -->
+    <section class="footer mt-5">
+      <!-- Uper Part -->
+      <div class="container">
+        <div class="row gy-4 py-5">
+          <!-- Contact Col -->
+          <div class="first-col col-lg-3 col-md-6 col-sm-4">
+            <div class="mb-4 logo">
+              <a class="" href="city-guide-home-v1.html"
+                ><img src="./assets/images/logo-skyber-white.svg" alt="Logo"
+              /></a>
+            </div>
+
+            <div class="contact-details d-flex flex-column">
+              <a class="text-nowrap mb-1 text-white" href="#"
+                ><i class="icon-mail me-1 align-middle text-primary"></i
+                >example@gmail.com</a
+              >
+              <a class="text-nowrap text-white" href="#"
+                ><i class="icon-phone-1 me-1 align-middle text-primary"></i
+                >(406) 555-0120</a
+              >
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="quick-links links col-lg-2 col-md-3 col-sm-4">
+            <h3 class="text-white mb-3">Quick links</h3>
+
+            <ul class="list-unstyled">
+              <li><a class="" href="#">Top cities</a></li>
+              <li><a class="" href="#">Accommodation</a></li>
+              <li>
+                <a class="" href="#">Cafes restaurants</a>
+              </li>
+              <li><a class="" href="#">Events</a></li>
+            </ul>
+          </div>
+
+          <!-- Profile Links -->
+          <div class="profile-links links col-lg-2 col-md-3 col-sm-4">
+            <h3 class="text-white mb-3">Profile links</h3>
+
+            <ul class="list-unstyled">
+              <li><a class="" href="#">My account</a></li>
+              <li><a class="" href="#">Wishlist</a></li>
+              <li>
+                <a class="" href="#">My listings</a>
+              </li>
+              <li><a class="" href="#">Add listing</a></li>
+            </ul>
+          </div>
+
+          <!-- subscribe form -->
+          <div class="col-lg-4 subscribe-form offset-lg-1">
+            <h4 class="text-white mb-3">Subscribe to our newsletter</h4>
+            <p class="mb-4">Don’t miss any relevant vacancies!</p>
+            <form
+              class="d-flex align-items-center rounded-pill justify-content-between px-2 py-1"
+            >
+              <div class="form-group d-flex align-items-center">
+                <span
+                  ><i class="icon-mail align-middle text-muted ms-3"></i
+                ></span>
+                <input
+                  type="email"
+                  class="form-control bg-transparent border-0 px-2"
+                  id=""
+                  placeholder="Your Email"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary btn-sm text-nowrap">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lower Part -->
+      <div class="footer-lower border-top">
+        <div
+          class="container py-4 d-flex flex-column text-center text-lg-start flex-md-row justify-content-between align-items-center"
+        >
+          <p class="text-white-50 m-0 p-0">
+            Copyright © All rights reserved made by Shuvo Mallick
+          </p>
+
+          <div class="right-menu d-flex align-items-center">
+            <div class="links d-flex mb-lg-0">
+              <a class="px-2 mx-1" href="#">About</a
+              ><a class="px-2 mx-1" href="#">Blog</a
+              ><a class="px-2 mx-1" href="#">Support</a
+              ><a class="px-2 mx-1" href="#">Contacts</a>
+            </div>
+
+            <!-- Language switcher-->
+            <div class="lan-dropdown">
+              <button
+                class="btn dropdown-toggle text-white-50"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="icon-world align-baseline me-1"></i>Eng
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Bangali</a></li>
+              </ul>
+            </div>
+
+            <!-- Socials-->
+            <div class="social-icon text-nowrap d-flex align-items-center">
+              <a class="btn btn-icon ms-2" href="#"
+                ><i class="icon-facebook-1"></i></a
+              ><a class="btn btn-icon ms-2" href="#"
+                ><i class="icon-twitter"></i
+              ></a>
+              <a class="btn btn-icon ms-2" href="#"
+                ><i class="icon-telegram-1"></i></a
+              ><a class="btn btn-icon ms-2" href="#"
+                ><i class="icon-messenger"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER END -->
+
+    <!-- Bootstrap JS JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

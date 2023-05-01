@@ -12221,6 +12221,58 @@ a {
   background-color: #e9ecef !important;
 }
 
+.personal-review .review {
+  color: #495057;
+}
+.personal-review .review h4, .personal-review .review .h4 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.personal-review .review h4 span, .personal-review .review .h4 span {
+  font-weight: 400;
+  font-size: 16px;
+}
+.personal-review .review .starts {
+  font-size: 12px;
+}
+.personal-review .review .date {
+  font-weight: 400;
+  font-size: 14px;
+}
+.personal-review .review .review-text {
+  font-weight: 400;
+  font-size: 16px;
+}
+.personal-review .review .icons {
+  color: #6c757d;
+}
+.personal-review .review .delete-icon i {
+  font-size: 18px;
+  color: #6c757d;
+}
+.personal-review .review .delete-icon i:hover {
+  color: #fd5631;
+}
+
+.ac-notification .notification label {
+  font-weight: 700;
+  font-size: 16px;
+  color: #343a40;
+}
+.ac-notification .notification p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #495057;
+}
+.ac-notification .notification .form-check-input:checked {
+  background-color: #07c98b;
+  border: #07c98b;
+}
+.ac-notification .notification .form-check-input:not(checked) {
+  background-color: #adb5bd;
+  border: #adb5bd;
+}
+
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {
