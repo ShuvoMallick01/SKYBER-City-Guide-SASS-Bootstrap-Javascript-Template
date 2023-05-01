@@ -219,28 +219,29 @@
         }
       }
 
-      .category {
-        select {
-          option {
-            &::before {
-              all: unset;
-              font-family: "icomoon";
-              content: "\e91d";
-              margin-top: 5px !important;
-            }
-          }
-        }
-      }
+      // .category {
+      //   select {
+      //     option {
+      //       &::before {
+      //         all: unset;
+      //         font-family: "icomoon";
+      //         content: "\e91d";
+      //         margin-top: 5px !important;
+      //       }
+      //     }
+      //   }
+      // }
 
       .category-dropdown {
         .dropdown {
-          button {
-            border: 1px solid $gray-400;
+          .custom-dropdown {
             width: 100%;
             text-align: start;
             font-weight: 400;
             font-size: 16px;
-            border-radius: 8px;
+            border-radius: 8px !important;
+            border: 1px solid $gray-400 !important;
+            z-index: 5;
           }
         }
       }
@@ -454,7 +455,6 @@
     color: $gray-600;
   }
 }
-
 // === SINGLE PLACE - REVIEW END ===
 
 // === START ===

@@ -12060,19 +12060,14 @@ a {
   background-color: #fff;
   width: 44px;
 }
-.catalog-filters .left-filters .filters-tab .category select option::before {
-  all: unset;
-  font-family: "icomoon";
-  content: "\e91d";
-  margin-top: 5px !important;
-}
-.catalog-filters .left-filters .filters-tab .category-dropdown .dropdown button {
-  border: 1px solid #ced4da;
+.catalog-filters .left-filters .filters-tab .category-dropdown .dropdown .custom-dropdown {
   width: 100%;
   text-align: start;
   font-weight: 400;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 8px !important;
+  border: 1px solid #ced4da !important;
+  z-index: 5;
 }
 .catalog-filters .left-filters .filters-tab .average-rating .rating .form-check .text-gray {
   color: #6c757d !important;
@@ -12192,6 +12187,17 @@ a {
 }
 .single-review .icons {
   color: #6c757d;
+}
+
+.accounts .account-header img {
+  width: 100px;
+}
+.accounts .account-header .title-review h4, .accounts .account-header .title-review .h4 {
+  font-weight: 700;
+  font-size: 24px;
+}
+.accounts .account-header .title-review .starts {
+  font-size: 12px;
 }
 
 /* `xl` applies to large devices (Desktop, less than 1200px) */
