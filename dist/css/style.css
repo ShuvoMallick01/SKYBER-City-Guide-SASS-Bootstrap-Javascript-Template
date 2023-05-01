@@ -12200,6 +12200,27 @@ a {
   font-size: 12px;
 }
 
+.personal-info .details-info label {
+  font-weight: 700;
+  font-size: 16px;
+}
+.personal-info .details-info p {
+  margin-bottom: 0;
+  color: #495057;
+}
+.personal-info .details-info i {
+  font-size: 18px;
+}
+.personal-info .details-info .active {
+  color: #fd5631;
+}
+.personal-info .details-info .edit-mode {
+  color: #6c757d !important;
+}
+.personal-info .details-info .edit-mode select option[selected] {
+  background-color: #e9ecef !important;
+}
+
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {

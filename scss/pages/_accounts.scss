@@ -19,6 +19,35 @@
 }
 
 .personal-info {
+  .details-info {
+    label {
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: $gray-700;
+    }
+
+    i {
+      font-size: 18px;
+    }
+
+    .active {
+      color: $primary;
+    }
+
+    .edit-mode {
+      color: $gray-600 !important;
+
+      select {
+        option[selected] {
+          background-color: $gray-200 !important;
+        }
+      }
+    }
+  }
 }
 
 // === PERSONAL INFO PAGE END ===

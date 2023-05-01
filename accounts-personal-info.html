@@ -31,7 +31,7 @@
     <!-- Custom JS -->
     <script src="js/app.js" defer></script>
     <!-- Website Title -->
-    <title>Catalog - Single Place Review</title>
+    <title>Accounts Personal Info</title>
   </head>
 
   <body>
@@ -612,7 +612,7 @@
 
           <!-- Account Header -->
           <div
-            class="account-header d-sm-flex align-items-center justify-content-between"
+            class="account-header d-flex align-items-center justify-content-between"
           >
             <div class="d-flex align-items-center">
               <!-- Picture -->
@@ -654,24 +654,164 @@
       <div class="container">
         <div class="row">
           <!-- Info -->
+          <div class="card shadow-sm px-4 py-3 mb-5">
+            <div class="card-body">
+              <!-- Tab -->
+              <div
+                class="d-flex flex-wrap flex-column flex-md-row align-items-center mb-4 gap-3 border-bottom pb-3 mb-4"
+              >
+                <a
+                  class="btn-tab-gray active-tab"
+                  href="./catalog-single-place-gallery.html"
+                >
+                  <i class="icon-default-user me-1"></i>Personal Info
+                </a>
+                <a class="btn-tab-gray" href="./catalog-single-place-info.html">
+                  <i class="fa-regular fa-heart me-1"></i>Favorite
+                </a>
+                <a
+                  class="btn-tab-gray"
+                  href="./catalog-single-place-reviews.html"
+                >
+                  <i class="icon-star-default me-1"></i>Reviews
+                </a>
+                <a
+                  class="btn-tab-gray"
+                  href="./catalog-single-place-reviews.html"
+                >
+                  <i class="icon-alerm-default me-1"></i>Notification
+                  Preferences
+                </a>
+              </div>
+
+              <!-- Title -->
+              <h3 class="mb-4 pt-2">Personal Info</h3>
+
+              <!-- Details Info -->
+              <div class="details-info border rounded-3 p-3 mb-2">
+                <!-- Full name -->
+                <div
+                  class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3"
+                >
+                  <div class="info-row">
+                    <label>Full name</label>
+                    <p>Annette Black</p>
+                  </div>
+                  <i class="icon-edit"></i>
+                </div>
+
+                <!-- Gender -->
+                <div
+                  class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3"
+                >
+                  <div class="info-row">
+                    <label>Gender</label>
+                    <p>Not specified</p>
+                  </div>
+                  <i class="icon-edit"></i>
+                </div>
+
+                <!-- Date of birth -->
+                <div
+                  class="active d-flex align-items-center justify-content-between border-bottom pb-3 mb-3"
+                >
+                  <div class="info-row">
+                    <label>Date of birth</label>
+                    <p>Not specified</p>
+                  </div>
+                  <i class="icon-edit"></i>
+                </div>
+
+                <!-- Date of birth Edit Mode -->
+                <div
+                  class="edit-mode d-flex flex-column flex-md-row gap-3 w-50 align-items-center justify-content-between border-bottom pb-3 mb-3"
+                >
+                  <!-- Month -->
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Month</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+
+                  <!-- Day -->
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Day</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+
+                  <!-- Year -->
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Year</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                <!-- Email -->
+                <div
+                  class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3"
+                >
+                  <div class="info-row">
+                    <label>Email</label>
+                    <p>annette_black@gmail.com</p>
+                  </div>
+                  <i class="icon-edit"></i>
+                </div>
+
+                <!-- Phone number -->
+                <div
+                  class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3"
+                >
+                  <div class="info-row">
+                    <label>Phone number</label>
+                    <p>(302) 555-0107</p>
+                  </div>
+                  <i class="icon-edit"></i>
+                </div>
+
+                <!-- Address -->
+                <div
+                  class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3"
+                >
+                  <div class="info-row">
+                    <label>Address</label>
+                    <p>Not specified</p>
+                  </div>
+                  <i class="icon-edit"></i>
+                </div>
+
+                <!-- Password -->
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="info-row">
+                    <label>Password</label>
+                    <p>*********</p>
+                  </div>
+                  <i class="icon-edit"></i>
+                </div>
+              </div>
+
+              <a class="btn p-0 mt-4 text-primary"
+                ><i class="icon-trash me-1"></i>Delete account</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- ACCOUNT BODY  END -->
-
-    <!-- START -->
-    <!-- <section class="mb-5 pb-lg-4">
-      <div class="container">
-        <div class="row"></div>
-      </div>
-    </section> -->
-    <!-- END -->
-
-    <!-- <img
-      src="./assets/images/where-eat/"
-      class="img-fluid"
-      alt="title"
-    /> -->
 
     <!-- FOOTER START -->
     <section class="footer mt-5">
