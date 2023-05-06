@@ -34,7 +34,7 @@
     <title>Vendor - Add Business</title>
   </head>
 
-  <body>
+  <body class="vendor-body">
     <!-- NAVBAR START -->
     <header>
       <nav class="custom-navbar navbar navbar-expand-lg bg-light">
@@ -593,7 +593,7 @@
     <!-- NAVBAR END -->
 
     <!-- ADD BUSINESS START -->
-    <section class="accounts mt-5">
+    <section class="add-business mt-5">
       <div class="container">
         <div class="row">
           <!-- Breadcrumb -->
@@ -610,15 +610,15 @@
             </ol>
           </nav>
 
-          <!-- Contents -->
-          <div class="col-lg-8">
+          <!-- Left Contents -->
+          <div class="left-contents col-lg-8">
             <h2 class="page-title mb-4">Add business</h2>
 
             <!-- Basic Info Card -->
             <section class="card card-body border-0 p-4 mb-4 shadow-sm">
               <!-- Title -->
               <h3 class="card-title mb-4">
-                <i class="icon-info-circle me-2"></i>Basic info
+                <i class="icon-info-circle me-2 text-primary"></i>Basic info
               </h3>
 
               <!-- Single -->
@@ -639,20 +639,243 @@
               </div>
 
               <!-- Single -->
+              <div class="mb-3 row">
+                <div class="col-12 col-md-6">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Category*</label
+                  >
+                  <select
+                    class="form-select col-md-6 col-12"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Accommodation</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Single -->
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Subcategory*</label
+                  >
+                  <select
+                    class="form-select col-md-6 col-12"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Hotel</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+
+            <!-- Location Card -->
+            <section class="card card-body border-0 p-4 mb-4 shadow-sm">
+              <!-- Title -->
+              <h3 class="card-title mb-4">
+                <i class="icon-pin me-2 text-primary"></i>Location
+              </h3>
+
+              <!-- Item -->
+              <div class="mb-3 row">
+                <div class="col-6">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Country / region*</label
+                  >
+                  <select
+                    class="form-select col-md-6 col-12"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Germany</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                <div class="col-6">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >City*</label
+                  >
+                  <select
+                    class="form-select col-md-6 col-12"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Berlin</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="mb-3 row">
+                <div class="col-9">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >District*</label
+                  >
+                  <select
+                    class="form-select col-md-8 col-12"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Germany</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                <div class="col-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Zip code*</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                  />
+                </div>
+              </div>
+
+              <!-- Item -->
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label"
-                  >Category*</label
+                  >Street address*</label
                 >
-                <select
-                  class="form-select col-md-6 col-12"
-                  aria-label="Default select example"
-                >
-                  <option selected>Accommodation</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                />
               </div>
+
+              <!-- Map -->
+              <div class="">
+                <h4 class="mb-3 base-title">Display on the map</h4>
+                <img
+                  src="./assets/images/vendor/map.svg"
+                  class="img-fluid"
+                  alt="title"
+                />
+              </div>
+            </section>
+
+            <!-- Contacts Card -->
+            <section class="card card-body border-0 p-4 mb-4 shadow-sm">
+              <!-- Title -->
+              <h3 class="card-title mb-4">
+                <i class="icon-phone-2 me-2 text-primary"></i>Contacts
+              </h3>
+
+              <!-- email/phone -->
+              <div class="mb-3 row">
+                <div class="col-6">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email*</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Enter your email"
+                  />
+                </div>
+
+                <div class="col-6">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Phone*</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+              </div>
+
+              <!-- website -->
+              <div class="mb-3 pb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Website</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter your website"
+                />
+              </div>
+
+              <!-- Socials  -->
+              <div class="mb-3">
+                <h4 class="base-title mb-3">Socials</h4>
+
+                <div class="d-flex align-items-center mb-3">
+                  <a class="btn-icon me-3"><i class="icon-facebook-1"></i></a>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Your Facebook account"
+                  />
+                </div>
+
+                <div class="d-flex align-items-center mb-3">
+                  <a class="btn-icon me-3"><i class="icon-linkedin"></i></a>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Your linkedin account"
+                  />
+                </div>
+
+                <div class="d-flex align-items-center mb-3">
+                  <a class="btn-icon me-3"><i class="icon-twitter"></i></a>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Your twitter account"
+                  />
+                </div>
+              </div>
+
+              <a class="btn-text"
+                ><i class="icon-arrow-short-down"></i> Load more</a
+              >
+            </section>
+
+            <!-- Description Card -->
+            <section class="card card-body border-0 p-4 mb-4 shadow-sm">
+              <!-- Title -->
+              <h3 class="card-title mb-4">
+                <i class="icon-edit me-2 text-primary"></i>Description
+              </h3>
+            </section>
+
+            <!-- Card -->
+            <section class="card card-body border-0 p-4 mb-4 shadow-sm">
+              <!-- Title -->
+              <h3 class="card-title mb-4">
+                <i class="icon-pin me-2 text-primary"></i>Location
+              </h3>
+            </section>
+
+            <!-- Card -->
+            <section class="card card-body border-0 p-4 mb-4 shadow-sm">
+              <!-- Title -->
+              <h3 class="card-title mb-4">
+                <i class="icon-pin me-2 text-primary"></i>Location
+              </h3>
             </section>
           </div>
 
