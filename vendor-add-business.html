@@ -855,11 +855,630 @@
             </section>
 
             <!-- Description Card -->
-            <section class="card card-body border-0 p-4 mb-4 shadow-sm">
+            <section
+              class="description card card-body border-0 p-4 mb-4 shadow-sm"
+            >
               <!-- Title -->
               <h3 class="card-title mb-4">
                 <i class="icon-edit me-2 text-primary"></i>Description
               </h3>
+
+              <div class="mb-4">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Description*</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+                <div class="form-text" id="basic-addon4">
+                  8000 characters left
+                </div>
+              </div>
+
+              <!-- Total number of rooms & suites -->
+              <div class="mb-4">
+                <label
+                  for="exampleFormControlTextarea1"
+                  class="form-label base-title d-block"
+                  >Total number of rooms & suites</label
+                >
+                <div
+                  class="btn-multigroup"
+                  role="group"
+                  aria-label="Basic outlined example"
+                >
+                  <button type="button" class="btn-multigroup-outline">
+                    5+
+                  </button>
+                  <button type="button" class="btn-multigroup-outline">
+                    10+
+                  </button>
+                  <button type="button" class="btn-multigroup-outline">
+                    20+
+                  </button>
+                  <button type="button" class="btn-multigroup-outline">
+                    50+
+                  </button>
+                  <button type="button" class="btn-multigroup-outline">
+                    100+
+                  </button>
+                  <button type="button" class="btn-multigroup-outline">
+                    200+
+                  </button>
+                </div>
+              </div>
+
+              <!-- Hotel rating -->
+              <div class="hotel-rating mb-4">
+                <label
+                  for="exampleFormControlTextarea1"
+                  class="form-label base-title d-block"
+                  >Hotel rating</label
+                >
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <div class="starts text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <div class="starts text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star text-muted opacity-75"></i>
+                  </div>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <div class="starts text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star text-muted opacity-75"></i>
+                    <i class="fa-regular fa-star text-muted opacity-75"></i>
+                  </div>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <div class="starts text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star text-muted opacity-75"></i>
+                    <i class="fa-regular fa-star text-muted opacity-75"></i>
+                    <i class="fa-regular fa-star text-muted opacity-75"></i>
+                  </div>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <div class="starts text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star text-muted opacity-75"></i>
+                    <i class="fa-regular fa-star text-muted opacity-75"></i>
+                    <i class="fa-regular fa-star text-muted opacity-75"></i>
+                    <i class="fa-regular fa-star text-muted opacity-75"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Col 03 Minimum Stay -->
+              <div class="mb-4">
+                <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 gy-3">
+                  <!-- Minimum stay -->
+                  <div class="col">
+                    <label
+                      for="exampleFormControlTextarea1"
+                      class="form-label base-title d-block mb-2"
+                      >Minimum stay</label
+                    >
+
+                    <div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          3 nights or less
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          More than 3 nights
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- On site staff -->
+                  <div class="col">
+                    <label
+                      for="exampleFormControlTextarea1"
+                      class="form-label base-title d-block mb-2"
+                      >On site staff</label
+                    >
+
+                    <div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Yes
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Housekeeping -->
+                  <div class="col">
+                    <label
+                      for="exampleFormControlTextarea1"
+                      class="form-label base-title d-block mb-2"
+                      >Housekeeping</label
+                    >
+
+                    <div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Included in room rate
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Additional Fee
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Housekeeping frequency -->
+                  <div class="col">
+                    <label
+                      for="exampleFormControlTextarea1"
+                      class="form-label base-title d-block mb-2"
+                      >Housekeeping frequency</label
+                    >
+
+                    <div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Daily
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Weekly
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          None
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Front desk -->
+                  <div class="col">
+                    <label
+                      for="exampleFormControlTextarea1"
+                      class="form-label base-title d-block mb-2"
+                      >Front desk</label
+                    >
+
+                    <div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Yes
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Bathroom -->
+                  <div class="col">
+                    <label
+                      for="exampleFormControlTextarea1"
+                      class="form-label base-title d-block mb-2"
+                      >Bathroom</label
+                    >
+
+                    <div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Included in room rate
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Additional Fee
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Amenities -->
+              <div class="mb-4">
+                <label
+                  for="exampleFormControlTextarea1"
+                  class="form-label base-title d-block mb-2"
+                  >Amenities</label
+                >
+                <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1">
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-wifi"
+                        type="checkbox"
+                      />
+                      <label class="form-check-label" for="ab-amenity-wifi"
+                        >WiFi</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-pets"
+                        type="checkbox"
+                      />
+                      <label class="form-check-label" for="ab-amenity-pets"
+                        >Pets-friendly</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-dishwasher"
+                        type="checkbox"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="ab-amenity-dishwasher"
+                        >Dishwasher</label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-parking"
+                        type="checkbox"
+                        checked=""
+                      />
+                      <label class="form-check-label" for="ab-amenity-parking"
+                        >Parking place</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-restaurant"
+                        type="checkbox"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="ab-amenity-restaurant"
+                        >Restaurant</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-iron"
+                        type="checkbox"
+                      />
+                      <label class="form-check-label" for="ab-amenity-iron"
+                        >Iron</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-swimming-pool"
+                        type="checkbox"
+                        checked=""
+                      />
+                      <label
+                        class="form-check-label"
+                        for="ab-amenity-swimming-pool"
+                        >Swimming pool</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-bar"
+                        type="checkbox"
+                      />
+                      <label class="form-check-label" for="ab-amenity-bar"
+                        >Bar</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-hair-dryer"
+                        type="checkbox"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="ab-amenity-hair-dryer"
+                        >Hair dryer</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-spa-lounge"
+                        type="checkbox"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="ab-amenity-spa-lounge"
+                        >Spa lounge</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-tv"
+                        type="checkbox"
+                        checked=""
+                      />
+                      <label class="form-check-label" for="ab-amenity-tv"
+                        >TV</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-kitchen"
+                        type="checkbox"
+                      />
+                      <label class="form-check-label" for="ab-amenity-kitchen"
+                        >Kitchen</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-gym"
+                        type="checkbox"
+                      />
+                      <label class="form-check-label" for="ab-amenity-gym"
+                        >Gym</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-air-conditioning"
+                        type="checkbox"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="ab-amenity-air-conditioning"
+                        >Air conditioning</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-breakfast"
+                        type="checkbox"
+                      />
+                      <label class="form-check-label" for="ab-amenity-breakfast"
+                        >Breakfast</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-laundry-service"
+                        type="checkbox"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="ab-amenity-laundry-service"
+                        >Laundry service</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-heating"
+                        type="checkbox"
+                        checked=""
+                      />
+                      <label class="form-check-label" for="ab-amenity-heating"
+                        >Heating</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="ab-amenity-security-cameras"
+                        type="checkbox"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="ab-amenity-security-cameras"
+                        >Security cameras</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <!-- Card -->

@@ -12296,6 +12296,34 @@ a {
   font-size: 16px;
   color: #212529;
 }
+.add-business .left-contents .description .btn-multigroup {
+  display: flex;
+  border-radius: 6px !important;
+}
+.add-business .left-contents .description .btn-multigroup .btn-multigroup-outline {
+  font-weight: 400;
+  font-size: 14px;
+  color: #343a40;
+  padding: 6px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+}
+.add-business .left-contents .description .btn-multigroup .btn-multigroup-outline:hover {
+  background-color: #e9ecef;
+}
+.add-business .left-contents .description .btn-multigroup .btn-multigroup-outline:first-child {
+  border-radius: 6px 0px 0px 6px;
+}
+.add-business .left-contents .description .btn-multigroup .btn-multigroup-outline:last-child {
+  border-radius: 0px 6px 6px 0px;
+}
+.add-business .left-contents .hotel-rating .starts {
+  font-size: 14px;
+}
 
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {

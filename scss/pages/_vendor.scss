@@ -10,6 +10,43 @@
       font-size: 16px;
       color: $gray-900;
     }
+
+    .description {
+      .btn-multigroup {
+        display: flex;
+        border-radius: 6px !important;
+
+        .btn-multigroup-outline {
+          font-weight: 400;
+          font-size: 14px;
+          color: $gray-800;
+          padding: 6px 16px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid $gray-400;
+          background-color: $white;
+
+          &:hover {
+            background-color: $gray-200;
+          }
+
+          &:first-child {
+            border-radius: 6px 0px 0px 6px;
+          }
+          &:last-child {
+            border-radius: 0px 6px 6px 0px;
+          }
+        }
+      }
+    }
+
+    .hotel-rating {
+      .starts {
+        font-size: 14px;
+      }
+    }
   }
 }
 
