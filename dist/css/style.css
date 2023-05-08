@@ -12324,6 +12324,11 @@ a {
 .add-business .left-contents .hotel-rating .starts {
   font-size: 14px;
 }
+.add-business .left-contents .photos-video-card .upload-photos-video {
+  border: 1px dashed #d5d2dc;
+  border-radius: 12px;
+  height: 244px;
+}
 
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {

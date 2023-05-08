@@ -1479,23 +1479,165 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Room types -->
+              <div class="mb-4">
+                <label
+                  for="exampleFormControlTextarea1"
+                  class="form-label base-title d-block mb-2"
+                  >Room types</label
+                >
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    id="ab-amenity-parking"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="ab-amenity-parking"
+                    >Non-smoking rooms</label
+                  >
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    id="ab-amenity-parking"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="ab-amenity-parking"
+                    >Single rooms</label
+                  >
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    id="ab-amenity-parking"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="ab-amenity-parking"
+                    >Double rooms</label
+                  >
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    id="ab-amenity-parking"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="ab-amenity-parking"
+                    >Family suites</label
+                  >
+                </div>
+              </div>
+
+              <!-- Awards -->
+              <div class="mb-4">
+                <label
+                  for="exampleFormControlTextarea1"
+                  class="form-label base-title d-block mb-2"
+                  >Awards</label
+                >
+
+                <div class="d-flex gap-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                  />
+                  <button class="btn btn-primary text-nowrap">
+                    <i class="icon-upload me-2"></i>Upload award
+                  </button>
+                </div>
+              </div>
+
+              <a class="btn-text"><i class="icon-plus me-2"></i>Add more</a>
             </section>
 
-            <!-- Card -->
+            <!-- Price Card -->
             <section class="card card-body border-0 p-4 mb-4 shadow-sm">
               <!-- Title -->
               <h3 class="card-title mb-4">
-                <i class="icon-pin me-2 text-primary"></i>Location
+                <i class="icon-cash-money me-2 text-primary"></i>Price
               </h3>
+
+              <div class="">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Price (per night)*</label
+                >
+                <div
+                  class="d-flex flex-sm-row flex-column col-md-8 align-items-center"
+                >
+                  <div class="d-flex align-items-center mb-sm-0 mb-2">
+                    <input
+                      type="number"
+                      class="form-control"
+                      min="58"
+                      step="10"
+                      id="exampleFormControlInput1"
+                      placeholder="Min"
+                    />
+                    <div class="mx-2">—</div>
+                    <input
+                      class="form-control"
+                      type="number"
+                      placeholder="Max"
+                      min="60"
+                      step="10"
+                      required=""
+                    />
+                  </div>
+
+                  <select
+                    class="form-select w-sm-25 mx-2"
+                    aria-label="Default select example"
+                  >
+                    <option selected>$</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
             </section>
 
-            <!-- Card -->
-            <section class="card card-body border-0 p-4 mb-4 shadow-sm">
+            <!-- Photos / video Card -->
+            <section
+              class="photos-video-card card card-body border-0 mb-4 p-4 shadow-sm"
+            >
               <!-- Title -->
               <h3 class="card-title mb-4">
-                <i class="icon-pin me-2 text-primary"></i>Location
+                <i class="icon-image me-2"></i>Photos / video
               </h3>
+
+              <div class="d-flex alert alert-info mb-4">
+                <i class="icon-alert-circle pt-1 fs-5 text-al me-2"></i>
+                <p class="mb-0">
+                  The maximum photo size is 8 MB. Formats: jpeg, jpg, png. Put
+                  the main picture first. The maximum video size is 10 MB.
+                  Formats: mp4, mov.
+                </p>
+              </div>
+
+              <!-- Upload photos -->
+              <div class="upload-photos-video position-relative mb-1">
+                <div
+                  class="d-flex flex-column gap-2 align-items-center justify-content-center position-absolute top-0 bottom-0 w-100 m-auto"
+                >
+                  <button class="btn btn-primary">
+                    <i class="icon-upload"></i>Upload photos & video
+                  </button>
+                  <p>or drag them in</p>
+                </div>
+              </div>
             </section>
+
+            <div class="d-flex gap-3 mb-4">
+              <button class="btn btn-outline-primary">Preview</button>
+              <button class="btn btn-primary">Next</button>
+            </div>
           </div>
 
           <!-- Right Progress -->
