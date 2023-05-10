@@ -12329,6 +12329,23 @@ a {
   border-radius: 12px;
   height: 244px;
 }
+.add-business .right-side-progress h4, .add-business .right-side-progress .h4 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.add-business .right-side-progress .progress {
+  height: 4px;
+}
+.add-business .right-side-progress .progress-list {
+  font-weight: 400;
+  font-size: 16px;
+}
+.add-business .right-side-progress .progress-list li {
+  cursor: pointer;
+}
+.add-business .right-side-progress .progress-list li:hover {
+  color: #fd5631;
+}
 
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {

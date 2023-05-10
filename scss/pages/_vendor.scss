@@ -56,6 +56,30 @@
       }
     }
   }
+
+  .right-side-progress {
+    h4 {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .progress {
+      height: 4px;
+    }
+
+    .progress-list {
+      font-weight: 400;
+      font-size: 16px;
+
+      li {
+        cursor: pointer;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
 }
 
 // === ADD BUSINESS END ===
