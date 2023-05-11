@@ -93,3 +93,11 @@
 .icon-star-default {
   color: $gray-600 !important;
 }
+
+.card-hover {
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: $box-shadow-sm;
+  }
+}

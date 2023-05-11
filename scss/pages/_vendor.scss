@@ -84,8 +84,58 @@
 
 // === ADD BUSINESS END ===
 
-// === START ===
-// === END ===
+// === PROMOTION PAGE START ===
+.promotion-page {
+  .plan-list {
+    .plan {
+      img {
+        height: 72px !important;
+      }
+
+      .price {
+        font-weight: 700;
+        font-size: 40px;
+      }
+
+      ul {
+        max-width: 16rem !important;
+      }
+
+      .card-footer {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.serv-cklist {
+  &__heading {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    box-shadow: none;
+    border: 1px solid #efecf3;
+
+    &__title {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    &__des {
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    &__price {
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+}
+// ===  PROMOTION PAGE  END ===
 
 // === START ===
 // === END ===
