@@ -12512,6 +12512,11 @@ a {
   padding-left: 8px;
 }
 
+.news-insights h1, .news-insights .h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {
