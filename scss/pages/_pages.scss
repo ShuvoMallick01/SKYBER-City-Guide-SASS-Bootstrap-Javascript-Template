@@ -112,8 +112,6 @@
 }
 
 // The people behind Finder
-
-// === /ABOUT PAGE ===
 .team-members {
   .team-member {
     h4 {
@@ -126,6 +124,26 @@
     }
   }
 }
+
+// stay-informed
+.stay-informed {
+  &__des {
+    font-weight: 400;
+    font-size: 18px !important;
+  }
+
+  &__form-group {
+    border: 1px solid #efecf3;
+    border-radius: 40px;
+    padding: 10px;
+
+    .form-control {
+      padding-left: 8px;
+    }
+  }
+}
+
+// === /ABOUT PAGE ===
 
 // === S ===
 // === /E ===

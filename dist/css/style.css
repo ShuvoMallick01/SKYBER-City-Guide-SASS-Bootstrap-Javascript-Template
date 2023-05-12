@@ -12499,6 +12499,19 @@ a {
   font-size: 14px;
 }
 
+.stay-informed__des {
+  font-weight: 400;
+  font-size: 18px !important;
+}
+.stay-informed__form-group {
+  border: 1px solid #efecf3;
+  border-radius: 40px;
+  padding: 10px;
+}
+.stay-informed__form-group .form-control {
+  padding-left: 8px;
+}
+
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {
