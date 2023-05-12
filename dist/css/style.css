@@ -11473,6 +11473,34 @@ a {
   color: #495057 !important;
 }
 
+.feature-cards .feature-card {
+  cursor: pointer;
+}
+.feature-cards .feature-card__iconbox {
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+}
+.feature-cards .feature-card__iconbox i {
+  font-size: 22px !important;
+  font-weight: 500;
+}
+.feature-cards .feature-card:hover .feature-cards .feature-card__iconbox {
+  transition: 300ms all ease;
+}
+.feature-cards .feature-card:hover i {
+  color: #fff !important;
+  transition: 300ms all ease;
+}
+.feature-cards .feature-card h3, .feature-cards .feature-card .h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.feature-cards .feature-card p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
 .custom-navbar .navbar-brand {
   width: 115px;
   display: block;
@@ -12411,33 +12439,6 @@ a {
   font-size: 56px;
 }
 
-.feature-cards .feature-card {
-  cursor: pointer;
-}
-.feature-cards .feature-card__iconbox {
-  width: 48px;
-  height: 48px;
-  border-radius: 40px;
-}
-.feature-cards .feature-card__iconbox i {
-  font-size: 22px !important;
-  font-weight: 500;
-}
-.feature-cards .feature-card:hover .feature-cards .feature-card__iconbox {
-  transition: 300ms all ease;
-}
-.feature-cards .feature-card:hover i {
-  color: #fff !important;
-  transition: 300ms all ease;
-}
-.feature-cards .feature-card h3, .feature-cards .feature-card .h3 {
-  font-weight: 700;
-  font-size: 20px;
-}
-.feature-cards .feature-card p {
-  font-weight: 400;
-  font-size: 14px;
-}
 .feature-cards .safety-priority .feature-card__iconbox {
   background-color: rgba(93, 60, 242, 0.1);
 }
@@ -12482,6 +12483,20 @@ a {
 }
 .feature-cards .daily-hard-work:hover .feature-card__iconbox {
   background-color: #07c98b !important;
+}
+
+.requently-ask__questions__question h4, .requently-ask__questions__question .h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.team-members .team-member h4, .team-members .team-member .h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.team-members .team-member p {
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* `xl` applies to large devices (Desktop, less than 1200px) */

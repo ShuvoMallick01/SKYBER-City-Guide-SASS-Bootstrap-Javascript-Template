@@ -30,40 +30,6 @@
 
 // The values we live by
 .feature-cards {
-  .feature-card {
-    cursor: pointer;
-
-    &__iconbox {
-      width: 48px;
-      height: 48px;
-      border-radius: 40px;
-
-      i {
-        font-size: 22px !important;
-        font-weight: 500;
-      }
-    }
-
-    &:hover &__iconbox {
-      transition: 300ms all ease;
-    }
-
-    &:hover i {
-      color: $white !important;
-      transition: 300ms all ease;
-    }
-
-    h3 {
-      font-weight: 700;
-      font-size: 20px;
-    }
-
-    p {
-      font-weight: 400;
-      font-size: 14px;
-    }
-  }
-
   .safety-priority {
     .feature-card__iconbox {
       background-color: $faded-accent;
@@ -134,7 +100,32 @@
     }
   }
 }
+
+// Frequently asked questions
+.requently-ask__questions {
+  &__question {
+    h4 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+}
+
+// The people behind Finder
+
 // === /ABOUT PAGE ===
+.team-members {
+  .team-member {
+    h4 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}
 
 // === S ===
 // === /E ===
