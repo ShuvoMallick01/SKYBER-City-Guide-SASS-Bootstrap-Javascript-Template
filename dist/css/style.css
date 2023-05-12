@@ -12354,17 +12354,17 @@ a {
   color: #fd5631;
 }
 
-.promotion-page .plan-list .plan img {
+.promotion-page__plan img {
   height: 72px !important;
 }
-.promotion-page .plan-list .plan .price {
+.promotion-page__plan .price {
   font-weight: 700;
   font-size: 40px;
 }
-.promotion-page .plan-list .plan ul {
+.promotion-page__plan ul {
   max-width: 16rem !important;
 }
-.promotion-page .plan-list .plan .card-footer {
+.promotion-page__plan .card-footer {
   background-color: transparent;
 }
 
@@ -12388,6 +12388,100 @@ a {
 .serv-cklist__item__price {
   font-weight: 700;
   font-size: 24px;
+}
+
+.about-banner {
+  background-image: url("../.././assets/images/about/about-banner.png");
+  background-repeat: no-repeat, repeat;
+  height: 577px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.about-banner__banner-overlay {
+  background: linear-gradient(90deg, rgba(31, 27, 45, 0.5) 0%, rgba(31, 27, 45, 0.36) 31.25%, rgba(31, 27, 45, 0) 100%);
+  height: 577px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden !important;
+}
+.about-banner h1, .about-banner .h1 {
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.feature-cards .feature-card {
+  cursor: pointer;
+}
+.feature-cards .feature-card__iconbox {
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+}
+.feature-cards .feature-card__iconbox i {
+  font-size: 22px !important;
+  font-weight: 500;
+}
+.feature-cards .feature-card:hover .feature-cards .feature-card__iconbox {
+  transition: 300ms all ease;
+}
+.feature-cards .feature-card:hover i {
+  color: #fff !important;
+  transition: 300ms all ease;
+}
+.feature-cards .feature-card h3, .feature-cards .feature-card .h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.feature-cards .feature-card p {
+  font-weight: 400;
+  font-size: 14px;
+}
+.feature-cards .safety-priority .feature-card__iconbox {
+  background-color: rgba(93, 60, 242, 0.1);
+}
+.feature-cards .safety-priority .feature-card__iconbox i {
+  color: #5d3cf2;
+}
+.feature-cards .safety-priority:hover .feature-card__iconbox {
+  background-color: #5d3cf2 !important;
+}
+.feature-cards .fair-price .feature-card__iconbox {
+  background-color: rgba(253, 188, 49, 0.1019607843);
+}
+.feature-cards .fair-price .feature-card__iconbox i {
+  color: #fdbc31;
+}
+.feature-cards .fair-price:hover .feature-card__iconbox {
+  background-color: #fdbc31 !important;
+}
+.feature-cards .empathy .feature-card__iconbox {
+  background-color: rgba(253, 86, 49, 0.1);
+}
+.feature-cards .empathy .feature-card__iconbox i {
+  color: #fd5631;
+}
+.feature-cards .empathy:hover .feature-card__iconbox {
+  background-color: #fd5631 !important;
+}
+.feature-cards .results-driven-team .feature-card__iconbox {
+  background-color: rgba(253, 86, 49, 0.1019607843);
+}
+.feature-cards .results-driven-team .feature-card__iconbox i {
+  color: #07c98b;
+}
+.feature-cards .results-driven-team:hover .feature-card__iconbox {
+  background-color: #07c98b !important;
+}
+.feature-cards .daily-hard-work .feature-card__iconbox {
+  background-color: rgba(253, 86, 49, 0.1019607843);
+}
+.feature-cards .daily-hard-work .feature-card__iconbox i {
+  color: #07c98b;
+}
+.feature-cards .daily-hard-work:hover .feature-card__iconbox {
+  background-color: #07c98b !important;
 }
 
 /* `xl` applies to large devices (Desktop, less than 1200px) */

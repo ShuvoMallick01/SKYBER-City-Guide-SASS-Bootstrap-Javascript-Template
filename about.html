@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <!-- Google Noto Sans Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SASS COMPILE CSS -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <!-- ICON FONTS -->
+    <link rel="stylesheet" href="./assets/fonts.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./dist/css/home.css" />
+    <!-- Custom JS -->
+    <script src="js/app.js" defer></script>
+    <!-- Website Title -->
+    <title>Vendor - My Business</title>
+  </head>
+
+  <body class="">
+    <!-- NAVBAR -->
+    <header>
+      <nav class="custom-navbar navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand logo" href="index.html"
+            ><img
+              src="./assets/images/logo-skyber.svg"
+              alt=""
+              class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse ms-xl-4 ms-lg-1"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item location-item dropdown me-lg-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="icon-pin align-baseline me-xl-1 text-primary"></i
+                  >New York
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Los Angeles</a></li>
+                  <li><a class="dropdown-item" href="#">Chicago</a></li>
+                  <li><a class="dropdown-item" href="#">Houston</a></li>
+                  <li><a class="dropdown-item" href="#">Philadelphia</a></li>
+                </ul>
+              </li>
+
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+
+              <!-- Catalog menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Catalog
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalog-categories-filters.html"
+                      >Categories & Filters</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalog-single-place-gallery.html"
+                      >Single Place - Gallery</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalog-single-place-info.html"
+                      >Single Place - Info</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalog-single-place-reviews.html"
+                      >Single Place - Reviews</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Accounts menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Accounts
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="accounts-personal-info.html"
+                      >Personal Info</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="accounts-favorites.html"
+                      >Favorites</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="accounts-reviews.html"
+                      >Reviews</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="accounts-notification.html"
+                      >Notification</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Vendor menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Vendor
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="vendor-add-business.html"
+                      >Add Business</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="vendor-business-promotion.html"
+                      >Business Promotion</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="vendor-my-business.html"
+                      >My Business</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Pages menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item active" href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="help-center.html"
+                      >Help Center</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="404-not-found.html"
+                      >404 Not Found</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Right Navbar buttons -->
+            <div
+              class="d-sm-flex justify-content-center justify-content-xlg-end flex-wrap align-items-center gap-1 gap-xl-4"
+            >
+              <a href="./accounts-personal-info.html">
+                <img
+                  src="./assets/images/icons-user/user-icon-1.png"
+                  class="img-fluid"
+                  alt="title"
+                />
+              </a>
+
+              <!-- Add Business -->
+              <a
+                class="btn btn-primary btn-sm text-white text-nowrap"
+                href="./vendor-add-business.html"
+                ><i class="icon-plus me-1 align-baseline"></i>Add business</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- /NAVBAR -->
+
+    <!-- BANNER -->
+    <section class="about-banner mt-2 mb-5 pb-lg-4">
+      <div class="about-banner__banner-overlay">
+        <div class="container">
+          <div class="row a">
+            <!-- Breadcrumb -->
+            <nav
+              class="my-4"
+              style="--bs-breadcrumb-divider: '>'"
+              aria-label="breadcrumb"
+            >
+              <ol class="breadcrumb about-banner__breadcrumb">
+                <li class="breadcrumb-item">
+                  <a class="text-white-50" href="# ">Home</a>
+                </li>
+                <li
+                  class="breadcrumb-item active text-white"
+                  aria-current="page"
+                >
+                  About
+                </li>
+              </ol>
+            </nav>
+
+            <div class="about-banner__contents col-md-6 col-sm-8 py-5">
+              <h1 class="mb-4 pb-md-2 text-white">
+                Fall in<i class="fa-regular fa-heart px-3 fs-1 text-primary"></i
+                >with new places!
+              </h1>
+              <p class="mb-sm-5 pb-4 pe-lg-5 me-lg-4 lead text-white">
+                We are your personal guide to unique experiences. We know the
+                best places to see and events in any part of the world. Don't
+                miss anything with our help!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /BANNER -->
+
+    <!-- Values We Live -->
+    <section class="values-we-live mb-5 pb-lg-4">
+      <div class="container">
+        <div class="row">
+          <!-- heading -->
+          <div class="values-we-live__heading text-center">
+            <h2 class="page-title">The values we live by</h2>
+            <p class="m-auto w-50 mb-4 pb-2">
+              Travelers across the globe use our platform to discover where to
+              stay, what to do and where to eat in any part of the world.
+            </p>
+          </div>
+
+          <!-- Features -->
+          <div
+            class="feature-cards row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-3"
+          >
+            <!-- safety-priority -->
+            <div class="col">
+              <div
+                class="feature-card safety-priority card card-body shadow-sm"
+              >
+                <div
+                  class="feature-card__iconbox text-accent d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="icon-security"></i>
+                </div>
+
+                <h3 class="mb-2">Safety is our priority</h3>
+                <p class="mb-0">
+                  Vel et aliquet diam vulputate hendrerit lorem eget amet
+                  adipiscing. At ut ut consectetur in sed.
+                </p>
+              </div>
+            </div>
+
+            <!-- Fair price -->
+            <div class="col">
+              <div class="feature-card fair-price card card-body shadow-sm">
+                <div
+                  class="feature-card__iconbox text-warning d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="icon-cash-money"></i>
+                </div>
+
+                <h3 class="mb-2">Fair price</h3>
+                <p class="mb-0">
+                  Tincidunt mauris sit eu, lacinia pharetra, lorem neque dui.
+                  Maecenas ultricies laoreet facilisis fusce amet.
+                </p>
+              </div>
+            </div>
+
+            <!-- Empathy -->
+            <div class="col">
+              <div class="feature-card empathy card card-body shadow-sm">
+                <div
+                  class="feature-card__iconbox text-primary d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <h3 class="mb-2">Empathy</h3>
+                <p class="mb-0">
+                  Id velit, dui condimentum dictumst sapien quis a elementum
+                  dignissim. Dignissim ultrices scelerisque.
+                </p>
+              </div>
+            </div>
+
+            <!-- Results-driven team -->
+            <div class="col">
+              <div
+                class="feature-card results-driven-team card card-body shadow-sm"
+              >
+                <div
+                  class="feature-card__iconbox text-success d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="icon-plus-user"></i>
+                </div>
+
+                <h3 class="mb-2">Results-driven team</h3>
+                <p class="mb-0">
+                  Tincidunt mauris sit eu, lacinia pharetra, lorem neque dui.
+                  Maecenas ultricies laoreet facilisis fusce amet.
+                </p>
+              </div>
+            </div>
+
+            <!-- Daily hard work -->
+            <div class="col">
+              <div
+                class="feature-card daily-hard-work card card-body shadow-sm"
+              >
+                <div
+                  class="feature-card__iconbox text-accent d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="icon-shopping-bag"></i>
+                </div>
+
+                <h3 class="mb-2">Daily hard work</h3>
+                <p class="mb-0">
+                  Vel et aliquet diam vulputate hendrerit lorem eget amet
+                  adipiscing. At ut ut consectetur in sed.
+                </p>
+              </div>
+            </div>
+
+            <!-- Communication -->
+            <div class="col">
+              <div class="feature-card fair-price card card-body shadow-sm">
+                <div
+                  class="feature-card__iconbox text-warning d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="icon-reply"></i>
+                </div>
+
+                <h3 class="mb-2">Communication</h3>
+                <p class="mb-0">
+                  Tincidunt mauris sit eu, lacinia pharetra, lorem neque dui.
+                  Maecenas ultricies laoreet facilisis fusce amet.
+                </p>
+              </div>
+            </div>
+
+            <!-- Passion & enthusiasm -->
+            <div class="col">
+              <div class="feature-card empathy card card-body shadow-sm">
+                <div
+                  class="feature-card__iconbox text-primary d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="icon-like"></i>
+                </div>
+
+                <h3 class="mb-2">Passion & enthusiasm</h3>
+                <p class="mb-0">
+                  Id velit, dui condimentum dictumst sapien quis a elementum
+                  dignissim. Dignissim ultrices scelerisque.
+                </p>
+              </div>
+            </div>
+
+            <!-- Simple solutions -->
+            <div class="col">
+              <div
+                class="feature-card results-driven-team card card-body shadow-sm"
+              >
+                <div
+                  class="feature-card__iconbox text-success d-flex align-items-center justify-content-center mb-3"
+                >
+                  <i class="icon-check-circle"></i>
+                </div>
+
+                <h3 class="mb-2">Simple solutions</h3>
+                <p class="mb-0">
+                  Tincidunt mauris sit eu, lacinia pharetra, lorem neque dui.
+                  Maecenas ultricies laoreet facilisis fusce amet.
+                </p>
+              </div>
+            </div>
+            <!-- /feature cards -->
+          </div>
+          <!-- /row -->
+        </div>
+      </div>
+    </section>
+    <!-- / Values We Live -->
+
+    <!-- GET NEW CUSTOMER -->
+    <section class="mb-5 pb-lg-4">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
+    <!-- /GET NEW CUSTOMER -->
+
+    <!-- START -->
+    <!-- <section class="mb-5 pb-lg-4">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section> -->
+    <!-- END -->
+
+    <!-- <img
+      src="./assets/images/where-eat/"
+      class="img-fluid"
+      alt="title"
+    /> -->
+
+    <!-- FOOTER START -->
+    <section class="footer mt-5">
+      <!-- Uper Part -->
+      <div class="container">
+        <div class="row gy-4 py-5">
+          <!-- Contact Col -->
+          <div class="first-col col-lg-3 col-md-6 col-sm-4">
+            <div class="mb-4 logo">
+              <a class="" href="city-guide-home-v1.html"
+                ><img src="./assets/images/logo-skyber-white.svg" alt="Logo"
+              /></a>
+            </div>
+
+            <div class="contact-details d-flex flex-column">
+              <a class="text-nowrap mb-1 text-white" href="#"
+                ><i class="icon-mail me-1 align-middle text-primary"></i
+                >example@gmail.com</a
+              >
+              <a class="text-nowrap text-white" href="#"
+                ><i class="icon-phone-1 me-1 align-middle text-primary"></i
+                >(406) 555-0120</a
+              >
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="quick-links links col-lg-2 col-md-3 col-sm-4">
+            <h3 class="text-white mb-3">Quick links</h3>
+
+            <ul class="list-unstyled">
+              <li><a class="" href="#">Top cities</a></li>
+              <li><a class="" href="#">Accommodation</a></li>
+              <li>
+                <a class="" href="#">Cafes restaurants</a>
+              </li>
+              <li><a class="" href="#">Events</a></li>
+            </ul>
+          </div>
+
+          <!-- Profile Links -->
+          <div class="profile-links links col-lg-2 col-md-3 col-sm-4">
+            <h3 class="text-white mb-3">Profile links</h3>
+
+            <ul class="list-unstyled">
+              <li><a class="" href="#">My account</a></li>
+              <li><a class="" href="#">Wishlist</a></li>
+              <li>
+                <a class="" href="#">My listings</a>
+              </li>
+              <li><a class="" href="#">Add listing</a></li>
+            </ul>
+          </div>
+
+          <!-- subscribe form -->
+          <div class="col-lg-4 subscribe-form offset-lg-1">
+            <h4 class="text-white mb-3">Subscribe to our newsletter</h4>
+            <p class="mb-4">Don’t miss any relevant vacancies!</p>
+            <form
+              class="d-flex align-items-center rounded-pill justify-content-between px-2 py-1"
+            >
+              <div class="form-group d-flex align-items-center">
+                <span
+                  ><i class="icon-mail align-middle text-muted ms-3"></i
+                ></span>
+                <input
+                  type="email"
+                  class="form-control bg-transparent border-0 px-2"
+                  id=""
+                  placeholder="Your Email"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary btn-sm text-nowrap">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lower Part -->
+      <div class="footer-lower border-top">
+        <div
+          class="container py-4 d-flex flex-column text-center text-lg-start flex-md-row justify-content-between align-items-center"
+        >
+          <p class="text-white-50 m-0 p-0">
+            Copyright © All rights reserved made by Shuvo Mallick
+          </p>
+
+          <div class="right-menu d-flex align-items-center">
+            <div class="links d-flex mb-lg-0">
+              <a class="px-2 mx-1" href="#">About</a
+              ><a class="px-2 mx-1" href="#">Blog</a
+              ><a class="px-2 mx-1" href="#">Support</a
+              ><a class="px-2 mx-1" href="#">Contacts</a>
+            </div>
+
+            <!-- Language switcher-->
+            <div class="lan-dropdown">
+              <button
+                class="btn dropdown-toggle text-white-50"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="icon-world align-baseline me-1"></i>Eng
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Bangali</a></li>
+              </ul>
+            </div>
+
+            <!-- Socials-->
+            <div class="social-icon text-nowrap d-flex align-items-center">
+              <a class="btn btn-icon ms-2" href="#"
+                ><i class="icon-facebook-1"></i></a
+              ><a class="btn btn-icon ms-2" href="#"
+                ><i class="icon-twitter"></i
+              ></a>
+              <a class="btn btn-icon ms-2" href="#"
+                ><i class="icon-telegram-1"></i></a
+              ><a class="btn btn-icon ms-2" href="#"
+                ><i class="icon-messenger"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER END -->
+
+    <!-- Bootstrap JS JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

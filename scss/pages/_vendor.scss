@@ -86,24 +86,22 @@
 
 // === PROMOTION PAGE START ===
 .promotion-page {
-  .plan-list {
-    .plan {
-      img {
-        height: 72px !important;
-      }
+  &__plan {
+    img {
+      height: 72px !important;
+    }
 
-      .price {
-        font-weight: 700;
-        font-size: 40px;
-      }
+    .price {
+      font-weight: 700;
+      font-size: 40px;
+    }
 
-      ul {
-        max-width: 16rem !important;
-      }
+    ul {
+      max-width: 16rem !important;
+    }
 
-      .card-footer {
-        background-color: transparent;
-      }
+    .card-footer {
+      background-color: transparent;
     }
   }
 }
@@ -136,15 +134,3 @@
   }
 }
 // ===  PROMOTION PAGE  END ===
-
-// === START ===
-// === END ===
-
-// === START ===
-// === END ===
-
-// === START ===
-// === END ===
-
-// === START ===
-// === END ===

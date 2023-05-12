@@ -1,0 +1,155 @@
+// === ABOUT PAGE ===
+.about-banner {
+  background-image: url("../.././assets/images/about/about-banner.png");
+  background-repeat: no-repeat, repeat;
+  height: 577px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+
+  &__banner-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(31, 27, 45, 0.5) 0%,
+      rgba(31, 27, 45, 0.36) 31.25%,
+      rgba(31, 27, 45, 0) 100%
+    );
+
+    height: 577px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden !important;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 56px;
+  }
+}
+
+// The values we live by
+.feature-cards {
+  .feature-card {
+    cursor: pointer;
+
+    &__iconbox {
+      width: 48px;
+      height: 48px;
+      border-radius: 40px;
+
+      i {
+        font-size: 22px !important;
+        font-weight: 500;
+      }
+    }
+
+    &:hover &__iconbox {
+      transition: 300ms all ease;
+    }
+
+    &:hover i {
+      color: $white !important;
+      transition: 300ms all ease;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+
+  .safety-priority {
+    .feature-card__iconbox {
+      background-color: $faded-accent;
+
+      i {
+        color: $accent;
+      }
+    }
+
+    &:hover .feature-card__iconbox {
+      background-color: $accent !important;
+    }
+  }
+
+  .fair-price {
+    .feature-card__iconbox {
+      background-color: $faded-warning;
+
+      i {
+        color: $warning;
+      }
+    }
+
+    &:hover .feature-card__iconbox {
+      background-color: $warning !important;
+    }
+  }
+
+  .empathy {
+    .feature-card__iconbox {
+      background-color: $faded-primary;
+
+      i {
+        color: $primary;
+      }
+    }
+
+    &:hover .feature-card__iconbox {
+      background-color: $primary !important;
+    }
+  }
+
+  .results-driven-team {
+    .feature-card__iconbox {
+      background-color: $faded-success;
+
+      i {
+        color: $success;
+      }
+    }
+
+    &:hover .feature-card__iconbox {
+      background-color: $success !important;
+    }
+  }
+
+  .daily-hard-work {
+    .feature-card__iconbox {
+      background-color: $faded-success;
+
+      i {
+        color: $success;
+      }
+    }
+
+    &:hover .feature-card__iconbox {
+      background-color: $success !important;
+    }
+  }
+}
+// === /ABOUT PAGE ===
+
+// === S ===
+// === /E ===
+
+// === S ===
+// === /E ===
+
+// === S ===
+// === /E ===
+
+// === S ===
+// === /E ===
+
+// === S ===
+// === /E ===
+
+// === S ===
+// === /E ===

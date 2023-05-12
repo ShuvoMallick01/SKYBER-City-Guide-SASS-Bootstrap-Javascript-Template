@@ -35,7 +35,7 @@
   </head>
 
   <body class="vendor-body">
-    <!-- NAVBAR START -->
+    <!-- NAVBAR -->
     <header>
       <nav class="custom-navbar navbar navbar-expand-lg bg-light">
         <div class="container">
@@ -257,10 +257,10 @@
         </div>
       </nav>
     </header>
-    <!-- NAVBAR END -->
+    <!-- /NAVBAR -->
 
-    <!-- BUSINESS PROMOTION START -->
-    <section class="add-business mt-5">
+    <!-- MY BUSINESS -->
+    <section class="mt-5">
       <div class="container">
         <div class="row">
           <!-- Breadcrumb -->
@@ -272,28 +272,301 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
-                Add business
+                My businesses
               </li>
             </ol>
           </nav>
+
+          <!-- Heading & Sorting -->
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="page-title">My businesses</h2>
+            <div class="d-flex align-items-center flex-shrink-0">
+              <label class="text-nowrap me-3"
+                ><i class="icon-arrows-sort me-1"></i>Sort by:</label
+              >
+              <select class="form-select form-select-sm" id="sortby">
+                <option>Newest</option>
+                <option>Popularity</option>
+                <option>Low - High Price</option>
+                <option>High - Low Price</option>
+                <option>High rating</option>
+                <option>Average Rating</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- My Businesses Contents -->
+          <div class="card border-0 shadow-sm p-sm-4">
+            <div class="card-body">
+              <div class="row">
+                <!-- left side -->
+                <div class="col-lg-3 col-md-4 pe-lg-4 px-lg-4 mb-5 mb-md-0">
+                  <ul class="nav d-flex flex-column mb-4 pb-lg-3 pe-lg-4">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link py-1 px-0 fw-normal"
+                        aria-current="page"
+                        href="#"
+                        ><i class="icon-bed me-2 fw-normal"></i>Accommodation
+                        <span class="float-end text-muted">(4)</span></a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link py-1 px-0 fw-normal"
+                        aria-current="page"
+                        href="#"
+                        ><i class="icon-cafe me-2 fw-normal"></i>Food & Drink
+                        <span class="float-end text-muted">(1)</span></a
+                      >
+                    </li>
+                  </ul>
+
+                  <a
+                    class="btn btn-primary rounded-pill d-block"
+                    href="city-guide-add-business.html"
+                    ><i class="icon-plus me-2"></i>Add new business</a
+                  >
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-lg-9 col-md-8">
+                  <div class="row d-flex gy-4 ps-lg-4">
+                    <!-- item -->
+                    <div class="col-xl-4 col-md-6">
+                      <div class="card card-hotel overflow-hidden">
+                        <div class="card-top position-relative">
+                          <img
+                            src="./assets/images/my-businesses/my-businesses-1.png"
+                            class="card-img-top"
+                            alt="hote-room"
+                          />
+                          <!-- Heart Badge -->
+                          <button
+                            class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                          >
+                            <i class="icon-dots-vertical"></i>
+                          </button>
+                        </div>
+
+                        <!-- card body -->
+                        <div class="card-body px-0">
+                          <a class="nav-link card-title mb-2" href="#"
+                            >Berlin Business Hotel</a
+                          >
+
+                          <div
+                            class="hotel-details d-flex align-items-center gap-2"
+                          >
+                            <p class="mb-0">
+                              <i
+                                class="icon-star-filled text-warning ps-0 ms-0"
+                              ></i>
+                              5.0
+                              <span class="text-muted">(48)</span>
+                            </p>
+
+                            <p class="mb-0">
+                              <i class="icon-credit-card ms-1"></i> $$
+                            </p>
+                            <p class="mb-0">
+                              <i class="icon-pin ms-1"></i> 1.4 km from center
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- item -->
+                    <div class="col-xl-4 col-md-6">
+                      <div class="card card-hotel overflow-hidden">
+                        <div class="card-top position-relative">
+                          <img
+                            src="./assets/images/my-businesses/my-businesses-1.png"
+                            class="card-img-top"
+                            alt="hote-room"
+                          />
+                          <!-- Heart Badge -->
+                          <button
+                            class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                          >
+                            <i class="icon-dots-vertical"></i>
+                          </button>
+                        </div>
+
+                        <!-- card body -->
+                        <div class="card-body px-0">
+                          <a class="nav-link card-title mb-2" href="#"
+                            >Berlin Business Hotel</a
+                          >
+
+                          <div
+                            class="hotel-details d-flex align-items-center gap-2"
+                          >
+                            <p class="mb-0">
+                              <i
+                                class="icon-star-filled text-warning ps-0 ms-0"
+                              ></i>
+                              5.0
+                              <span class="text-muted">(48)</span>
+                            </p>
+
+                            <p class="mb-0">
+                              <i class="icon-credit-card ms-1"></i> $$
+                            </p>
+                            <p class="mb-0">
+                              <i class="icon-pin ms-1"></i> 1.4 km from center
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- item -->
+                    <div class="col-xl-4 col-md-6">
+                      <div class="card card-hotel overflow-hidden">
+                        <div class="card-top position-relative">
+                          <img
+                            src="./assets/images/my-businesses/my-businesses-1.png"
+                            class="card-img-top"
+                            alt="hote-room"
+                          />
+                          <!-- Heart Badge -->
+                          <button
+                            class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                          >
+                            <i class="icon-dots-vertical"></i>
+                          </button>
+                        </div>
+
+                        <!-- card body -->
+                        <div class="card-body px-0">
+                          <a class="nav-link card-title mb-2" href="#"
+                            >Berlin Business Hotel</a
+                          >
+
+                          <div
+                            class="hotel-details d-flex align-items-center gap-2"
+                          >
+                            <p class="mb-0">
+                              <i
+                                class="icon-star-filled text-warning ps-0 ms-0"
+                              ></i>
+                              5.0
+                              <span class="text-muted">(48)</span>
+                            </p>
+
+                            <p class="mb-0">
+                              <i class="icon-credit-card ms-1"></i> $$
+                            </p>
+                            <p class="mb-0">
+                              <i class="icon-pin ms-1"></i> 1.4 km from center
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- item -->
+                    <div class="col-xl-4 col-md-6">
+                      <div class="card card-hotel overflow-hidden">
+                        <div class="card-top position-relative">
+                          <img
+                            src="./assets/images/my-businesses/my-businesses-1.png"
+                            class="card-img-top"
+                            alt="hote-room"
+                          />
+                          <!-- Heart Badge -->
+                          <button
+                            class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                          >
+                            <i class="icon-dots-vertical"></i>
+                          </button>
+                        </div>
+
+                        <!-- card body -->
+                        <div class="card-body px-0">
+                          <a class="nav-link card-title mb-2" href="#"
+                            >Berlin Business Hotel</a
+                          >
+
+                          <div
+                            class="hotel-details d-flex align-items-center gap-2"
+                          >
+                            <p class="mb-0">
+                              <i
+                                class="icon-star-filled text-warning ps-0 ms-0"
+                              ></i>
+                              5.0
+                              <span class="text-muted">(48)</span>
+                            </p>
+
+                            <p class="mb-0">
+                              <i class="icon-credit-card ms-1"></i> $$
+                            </p>
+                            <p class="mb-0">
+                              <i class="icon-pin ms-1"></i> 1.4 km from center
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- item -->
+                    <div class="col-xl-4 col-md-6">
+                      <div class="card card-hotel overflow-hidden">
+                        <div class="card-top position-relative">
+                          <img
+                            src="./assets/images/my-businesses/my-businesses-1.png"
+                            class="card-img-top"
+                            alt="hote-room"
+                          />
+                          <!-- Heart Badge -->
+                          <button
+                            class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                          >
+                            <i class="icon-dots-vertical"></i>
+                          </button>
+                        </div>
+
+                        <!-- card body -->
+                        <div class="card-body px-0">
+                          <a class="nav-link card-title mb-2" href="#"
+                            >Berlin Business Hotel</a
+                          >
+
+                          <div
+                            class="hotel-details d-flex align-items-center gap-2"
+                          >
+                            <p class="mb-0">
+                              <i
+                                class="icon-star-filled text-warning ps-0 ms-0"
+                              ></i>
+                              5.0
+                              <span class="text-muted">(48)</span>
+                            </p>
+
+                            <p class="mb-0">
+                              <i class="icon-credit-card ms-1"></i> $$
+                            </p>
+                            <p class="mb-0">
+                              <i class="icon-pin ms-1"></i> 1.4 km from center
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /My Businesses Contents-->
         </div>
       </div>
     </section>
-    <!-- ADD BUSINESS END -->
-
-    <!-- START -->
-    <!-- <section class="mb-5 pb-lg-4">
-      <div class="container">
-        <div class="row"></div>
-      </div>
-    </section> -->
-    <!-- END -->
-
-    <!-- <img
-      src="./assets/images/where-eat/"
-      class="img-fluid"
-      alt="title"
-    /> -->
+    <!-- /MY BUSINESS -->
 
     <!-- FOOTER START -->
     <section class="footer mt-5">
