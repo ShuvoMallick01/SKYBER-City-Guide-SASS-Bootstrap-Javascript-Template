@@ -281,8 +281,8 @@
     <!-- /Breadcrumb -->
 
     <!-- News & insights -->
-    <section class="news-insights mb-5 pb-lg-4">
-      <div class="container">
+    <section class="news-insights">
+      <div class="container mb-5 pb-4 border-bottom">
         <div class="row">
           <!-- heading -->
           <h1 class="page-title mb-4 pb-2">News & insights</h1>
@@ -292,12 +292,18 @@
             <!-- single post -->
             <div class="col-md-6">
               <div class="card card-post overflow-hidden">
-                <div class="card-top">
+                <div class="card-top position-relative">
                   <img
                     src="./assets/images/post/post-1.png"
                     class="card-img-top"
                     alt="post"
                   />
+
+                  <div class="position-absolute top-0 end-0 p-3">
+                    <span class="badge text-bg-success text-white fw-normal"
+                      >Sponsored</span
+                    >
+                  </div>
                 </div>
 
                 <!-- card body -->
@@ -305,11 +311,19 @@
                   <a
                     class="text-uppercase text-decoration-none text-primary"
                     href="#"
-                    >Accomodation</a
+                    >ENTERTAINMENT</a
                   >
-                  <a class="nav-link card-title mb-3" href="#"
-                    >Air Travel in the Time of COVID-19</a
+                  <a class="nav-link card-title mb-2" href="#"
+                    >10 Delightful Dining Room Decor Trends for Spring</a
                   >
+
+                  <p class="mb-3 text-muted">
+                    Mi sit montes, aenean tempor sollicitudin volutpat viverra.
+                    Tellus amet, vitae ac consectetur blandit at. Odio proin
+                    elit, vehicula morbi faucibus vestibulum. Elementum sed
+                    tincidunt nec aliquam tempus. Neque pharetra vitae
+                    malesuada.
+                  </p>
 
                   <a
                     class="user-details d-flex align-items-center text-decoration-none"
@@ -339,12 +353,18 @@
             <!-- single post -->
             <div class="col-md-6">
               <div class="card card-post overflow-hidden">
-                <div class="card-top">
+                <div class="card-top position-relative">
                   <img
                     src="./assets/images/post/post-2.png"
                     class="card-img-top"
                     alt="post"
                   />
+
+                  <div class="position-absolute top-0 end-0 p-3">
+                    <span class="badge text-bg-success text-white fw-normal"
+                      >Sponsored</span
+                    >
+                  </div>
                 </div>
 
                 <!-- card body -->
@@ -352,22 +372,30 @@
                   <a
                     class="text-uppercase text-decoration-none text-primary"
                     href="#"
-                    >TRANSPORTATION</a
+                    >Inspiration</a
                   >
-                  <a class="nav-link card-title mb-3" href="#"
-                    >10 World-Class Museums You Can Visit Online</a
+                  <a class="nav-link card-title mb-2" href="#"
+                    >10 Travel Mistakes to Avoid During Coronavirus Outbreak</a
                   >
+
+                  <p class="mb-3 text-muted">
+                    Mi sit montes, aenean tempor sollicitudin volutpat viverra.
+                    Tellus amet, vitae ac consectetur blandit at. Odio proin
+                    elit, vehicula morbi faucibus vestibulum. Elementum sed
+                    tincidunt nec aliquam tempus. Neque pharetra vitae
+                    malesuada.
+                  </p>
 
                   <a
                     class="user-details d-flex align-items-center text-decoration-none"
                     href="#"
                     ><img
                       class=""
-                      src="./assets/images/icons-user/user-icon-2.png"
+                      src="./assets/images/icons-user/user-icon-1.png"
                       alt="Avatar"
                     />
                     <div class="ps-2">
-                      <h6 class="mb-1">Annette Black</h6>
+                      <h6 class="mb-1">Bessie Cooper</h6>
                       <div class="d-flex">
                         <span class="me-2 pe-1"
                           ><i class="icon-calendar-clean me-1 align-middle"></i
@@ -388,19 +416,450 @@
     </section>
     <!-- /News & insights -->
 
-    <!-- START -->
-    <!-- <section class="mb-5 pb-lg-4">
+    <!-- Filter with post Items -->
+    <section class="blog-posts mb-5 pb-lg-4">
       <div class="container">
-        <div class="row"></div>
-      </div>
-    </section> -->
-    <!-- END -->
+        <div class="row">
+          <!-- Left Filter -->
+          <div class="col-lg-3">
+            <!-- sorting -->
+            <div class="d-flex align-items-center flex-shrink-0 mb-4">
+              <label class="text-nowrap me-3"
+                ><i class="icon-arrows-sort me-1"></i>Sort by:</label
+              >
+              <select class="form-select form-select-sm" id="sortby">
+                <option>Newest</option>
+                <option>Popularity</option>
+                <option>Low - High Price</option>
+                <option>High - Low Price</option>
+                <option>High rating</option>
+                <option>Average Rating</option>
+              </select>
+            </div>
 
-    <!-- <img
-      src="./assets/images/where-eat/"
-      class="img-fluid"
-      alt="title"
-    /> -->
+            <!-- search field -->
+            <form
+              class="form-group mb-3 mb-lg-4 d-flex align-items-center position-relative"
+            >
+              <input
+                type="text"
+                class="form-control rounded"
+                id=""
+                placeholder="What are you looking for?"
+              />
+              <span class="position-absolute end-0 p-2"
+                ><i class="icon-search mx-2 ms-3"></i
+              ></span>
+            </form>
+
+            <!-- Categories -->
+            <div class="card card-body border mb-4">
+              <h4 class="lead-bold mb-3">Categories</h4>
+
+              <ul class="nav d-flex flex-column">
+                <li class="nav-item">
+                  <a
+                    class="nav-link fw-normal px-0 mb-1"
+                    aria-current="page"
+                    href="#"
+                    >Inspiration
+                    <span class="float-end text-muted">(2)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fw-normal px-0 mb-1 active"
+                    aria-current="page"
+                    href="#"
+                    >Transportation
+                    <span class="float-end text-muted">(4)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fw-normal px-0 mb-1"
+                    aria-current="page"
+                    href="#"
+                    >Lifestyle <span class="float-end text-muted">(5)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fw-normal px-0 mb-1"
+                    aria-current="page"
+                    href="#"
+                    >Entertainment
+                    <span class="float-end text-muted">(1)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fw-normal px-0 mb-1"
+                    aria-current="page"
+                    href="#"
+                    >Accomodation
+                    <span class="float-end text-muted">(6)</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tags -->
+            <div class="card card-body border mb-4">
+              <h4 class="lead-bold mb-4">Tags</h4>
+
+              <div class="tags d-flex gap-2 flex-wrap">
+                <button class="btn-tag">Trending</button>
+                <button class="btn-tag">Tutorial</button>
+                <button class="btn-tag">Jobs</button>
+                <button class="btn-tag">Urban</button>
+                <button class="btn-tag">Tips</button>
+                <button class="btn-tag">Travel</button>
+              </div>
+            </div>
+
+            <!-- Stay Informed -->
+            <div class="stay-informed-blog card card-body border mb-4">
+              <h4 class="lead-bold mb-4">Stay Informed</h4>
+
+              <p>
+                Subscribe to our newsletter and be the first to see the latest
+                news and advice.
+              </p>
+
+              <form
+                class="form-group stay-informed__form-group rounded-pill mb-2 d-flex shadow-sm bg-white"
+              >
+                <div class="input-group align-items-center">
+                  <span class="text-muted ms-2"><i class="icon-mail"></i></span>
+                  <input
+                    class="form-control border-0"
+                    type="email"
+                    placeholder="Your Email"
+                  />
+                </div>
+
+                <button
+                  class="btn btn-primary btn-sm text-nowrap"
+                  type="button"
+                >
+                  Sign up
+                </button>
+              </form>
+
+              <p class="form-text mb-0">
+                * By signing up you agree to our
+                <a href="#" class="text-decoration-none text-primary"
+                  >Privacy Policy</a
+                >
+              </p>
+            </div>
+
+            <!-- /left side -->
+          </div>
+
+          <!-- Right Post items -->
+          <div class="col-lg-9">
+            <div class="blog__right-posts latest-posts ms-3">
+              <!-- post -->
+              <div class="card card-post overflow-hidden d-flex flex-row mb-4">
+                <div class="card-top position-relative me-4">
+                  <img
+                    src="./assets/images/blog/blog-post-horizontal-1.png"
+                    class="card-img-top"
+                    alt="post"
+                  />
+
+                  <div class="position-absolute top-0 end-0 p-3">
+                    <span class="badge text-bg-primary text-white fw-normal"
+                      >New</span
+                    >
+                  </div>
+                </div>
+
+                <!-- card body -->
+                <div class="card-body p-0">
+                  <a
+                    class="text-uppercase text-decoration-none text-primary"
+                    href="#"
+                    >TRANSPORTATION</a
+                  >
+                  <a class="nav-link card-title mb-2" href="#"
+                    >Air Travel in the Time of COVID-19</a
+                  >
+
+                  <p class="mb-3 text-muted">
+                    Mi sit montes, aenean tempor sollicitudin volutpat viverra.
+                    Tellus amet, vitae ac consectetur blandit at. Odio proin
+                    elit, vehicula morbi faucibus vestibulum pulvinar posuere
+                    nisl tincidunt. Iaculis sit quam magna congue.
+                  </p>
+
+                  <a
+                    class="user-details d-flex align-items-center text-decoration-none"
+                    href="#"
+                    ><img
+                      class=""
+                      src="./assets/images/icons-user/user-icon-1.png"
+                      alt="Avatar"
+                    />
+                    <div class="ps-2">
+                      <h6 class="mb-1">Bessie Cooper</h6>
+                      <div class="d-flex">
+                        <span class="me-2 pe-1"
+                          ><i class="icon-calendar-clean me-1 align-middle"></i
+                          >Nov 24</span
+                        ><span
+                          ><i class="icon-chat-round me-1 align-middle"></i>No
+                          comments</span
+                        >
+                      </div>
+                    </div></a
+                  >
+                </div>
+              </div>
+
+              <!-- post -->
+              <div class="card card-post overflow-hidden d-flex flex-row mb-4">
+                <div class="card-top me-4">
+                  <img
+                    src="./assets/images/blog/blog-post-horizontal-2.png"
+                    class="card-img-top"
+                    alt="post"
+                  />
+                </div>
+
+                <!-- card body -->
+                <div class="card-body p-0">
+                  <a
+                    class="text-uppercase text-decoration-none text-primary text-uppercase"
+                    href="#"
+                    >Inspiration</a
+                  >
+                  <a class="nav-link card-title mb-2" href="#"
+                    >10 World-Class Museums You Can Visit Online</a
+                  >
+
+                  <p class="mb-3 text-muted">
+                    Mi sit montes, aenean tempor sollicitudin volutpat viverra.
+                    Tellus amet, vitae ac consectetur blandit at. Odio proin
+                    elit, vehicula morbi faucibus vestibulum pulvinar posuere
+                    nisl tincidunt. Iaculis sit quam magna congue.
+                  </p>
+
+                  <a
+                    class="user-details d-flex align-items-center text-decoration-none"
+                    href="#"
+                    ><img
+                      class=""
+                      src="./assets/images/icons-user/user-icon-1.png"
+                      alt="Avatar"
+                    />
+                    <div class="ps-2">
+                      <h6 class="mb-1">Bessie Cooper</h6>
+                      <div class="d-flex">
+                        <span class="me-2 pe-1"
+                          ><i class="icon-calendar-clean me-1 align-middle"></i
+                          >Nov 24</span
+                        ><span
+                          ><i class="icon-chat-round me-1 align-middle"></i>No
+                          comments</span
+                        >
+                      </div>
+                    </div></a
+                  >
+                </div>
+              </div>
+
+              <!-- post -->
+              <div class="card card-post overflow-hidden d-flex flex-row mb-4">
+                <div class="card-top me-4">
+                  <img
+                    src="./assets/images/blog/blog-post-horizontal-4.png"
+                    class="card-img-top"
+                    alt="post"
+                  />
+                </div>
+
+                <!-- card body -->
+                <div class="card-body p-0">
+                  <a
+                    class="text-uppercase text-decoration-none text-primary text-uppercase"
+                    href="#"
+                    >Inspiration</a
+                  >
+                  <a class="nav-link card-title mb-2" href="#"
+                    >How to Spend a Few Days Visiting Coast</a
+                  >
+
+                  <p class="mb-3 text-muted">
+                    Mi sit montes, aenean tempor sollicitudin volutpat viverra.
+                    Tellus amet, vitae ac consectetur blandit at. Odio proin
+                    elit, vehicula morbi faucibus vestibulum pulvinar posuere
+                    nisl tincidunt. Iaculis sit quam magna congue.
+                  </p>
+
+                  <a
+                    class="user-details d-flex align-items-center text-decoration-none"
+                    href="#"
+                    ><img
+                      class=""
+                      src="./assets/images/icons-user/user-icon-1.png"
+                      alt="Avatar"
+                    />
+                    <div class="ps-2">
+                      <h6 class="mb-1">Bessie Cooper</h6>
+                      <div class="d-flex">
+                        <span class="me-2 pe-1"
+                          ><i class="icon-calendar-clean me-1 align-middle"></i
+                          >Nov 24</span
+                        ><span
+                          ><i class="icon-chat-round me-1 align-middle"></i>No
+                          comments</span
+                        >
+                      </div>
+                    </div></a
+                  >
+                </div>
+              </div>
+
+              <!-- post -->
+              <div class="card card-post overflow-hidden d-flex flex-row mb-4">
+                <div class="card-top me-4">
+                  <img
+                    src="./assets/images/blog/blog-post-horizontal-5.png"
+                    class="card-img-top"
+                    alt="post"
+                  />
+                </div>
+
+                <!-- card body -->
+                <div class="card-body p-0">
+                  <a
+                    class="text-uppercase text-decoration-none text-primary text-uppercase"
+                    href="#"
+                    >Inspiration</a
+                  >
+                  <a class="nav-link card-title mb-2" href="#"
+                    >US Museum Industry 2021–2024</a
+                  >
+
+                  <p class="mb-3 text-muted">
+                    Mi sit montes, aenean tempor sollicitudin volutpat viverra.
+                    Tellus amet, vitae ac consectetur blandit at. Odio proin
+                    elit, vehicula morbi faucibus vestibulum pulvinar posuere
+                    nisl tincidunt. Iaculis sit quam magna congue.
+                  </p>
+
+                  <a
+                    class="user-details d-flex align-items-center text-decoration-none"
+                    href="#"
+                    ><img
+                      class=""
+                      src="./assets/images/icons-user/user-icon-2.png"
+                      alt="Avatar"
+                    />
+                    <div class="ps-2">
+                      <h6 class="mb-1">Bessie Cooper</h6>
+                      <div class="d-flex">
+                        <span class="me-2 pe-1"
+                          ><i class="icon-calendar-clean me-1 align-middle"></i
+                          >Nov 24</span
+                        ><span
+                          ><i class="icon-chat-round me-1 align-middle"></i>No
+                          comments</span
+                        >
+                      </div>
+                    </div></a
+                  >
+                </div>
+              </div>
+
+              <!-- post -->
+              <div
+                class="card card-post overflow-hidden d-flex flex-row mb-4 border-bottom pb-4"
+              >
+                <div class="card-top me-4">
+                  <img
+                    src="./assets/images/blog/blog-post-horizontal-6.png"
+                    class="card-img-top"
+                    alt="post"
+                  />
+                </div>
+
+                <!-- card body -->
+                <div class="card-body p-0">
+                  <a
+                    class="text-uppercase text-decoration-none text-primary text-uppercase"
+                    href="#"
+                    >Lifestyle</a
+                  >
+                  <a class="nav-link card-title mb-2" href="#"
+                    >Rocky Mountains Ski Resorts News & Events</a
+                  >
+
+                  <p class="mb-3 text-muted">
+                    Mi sit montes, aenean tempor sollicitudin volutpat viverra.
+                    Tellus amet, vitae ac consectetur blandit at. Odio proin
+                    elit, vehicula morbi faucibus vestibulum pulvinar posuere
+                    nisl tincidunt. Iaculis sit quam magna congue.
+                  </p>
+
+                  <a
+                    class="user-details d-flex align-items-center text-decoration-none"
+                    href="#"
+                    ><img
+                      class=""
+                      src="./assets/images/icons-user/user-icon-1.png"
+                      alt="Avatar"
+                    />
+                    <div class="ps-2">
+                      <h6 class="mb-1">Bessie Cooper</h6>
+                      <div class="d-flex">
+                        <span class="me-2 pe-1"
+                          ><i class="icon-calendar-clean me-1 align-middle"></i
+                          >Nov 24</span
+                        ><span
+                          ><i class="icon-chat-round me-1 align-middle"></i>No
+                          comments</span
+                        >
+                      </div>
+                    </div></a
+                  >
+                </div>
+              </div>
+
+              <!-- Pagination -->
+              <nav aria-label="Page navigation example mb-4">
+                <ul
+                  class="pagination pb-2 d-flex gap-1 align-content-center float-end"
+                >
+                  <li class="page-item">
+                    <a class="page-link active" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">...</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">8</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true"
+                        ><i class="icon-arrow-single-right align-baseline"></i
+                      ></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Filter with post Items -->
 
     <!-- FOOTER START -->
     <section class="footer mt-5">

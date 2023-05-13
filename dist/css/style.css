@@ -11380,6 +11380,12 @@ a {
   font-size: 32px;
 }
 
+.lead-bold {
+  font-weight: 700;
+  font-size: 20px;
+  color: #212529;
+}
+
 .bg-faded-accent {
   background-color: rgba(93, 60, 242, 0.1);
 }
@@ -11412,6 +11418,17 @@ a {
 }
 .btn-text:hoer {
   color: #fd390e;
+}
+
+.btn-tag {
+  padding: 6px 16px;
+  border: 1px solid #ced4da;
+  border-radius: 40px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.btn-tag:hover {
+  background-color: #e9ecef;
 }
 
 .icon-star-default {
@@ -12515,6 +12532,20 @@ a {
 .news-insights h1, .news-insights .h1 {
   font-weight: 700;
   font-size: 40px;
+}
+
+.blog-posts .blog__right-posts .card-post .card-top {
+  max-width: 500px;
+  width: 100%;
+}
+
+.stay-informed-blog p:first-child {
+  font-weight: 400;
+  font-size: 14px;
+}
+.stay-informed-blog p:last-child {
+  font-weight: 400;
+  font-size: 12px;
 }
 
 /* `xl` applies to large devices (Desktop, less than 1200px) */

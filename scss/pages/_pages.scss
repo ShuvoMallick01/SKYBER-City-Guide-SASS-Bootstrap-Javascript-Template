@@ -142,17 +142,41 @@
     }
   }
 }
-
 // === /ABOUT PAGE ===
 
-// === BLOG ===
+// === BLOG PAGE ===
 .news-insights {
   h1 {
     font-weight: 700;
     font-size: 40px;
   }
 }
-// === /BLOG ===
+
+.blog-posts {
+  .blog__right-posts {
+    .card-post {
+      .card-top {
+        max-width: 500px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.stay-informed-blog {
+  p {
+    &:first-child {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    &:last-child {
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+}
+// === /BLOG PAGE ===
 
 // === S ===
 // === /E ===
