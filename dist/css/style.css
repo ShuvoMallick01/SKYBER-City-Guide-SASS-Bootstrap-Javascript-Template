@@ -12634,6 +12634,17 @@ a {
   font-size: 24px;
 }
 
+.body-404 {
+  background-color: #e5e5e5;
+}
+.body-404 img {
+  width: 856px;
+}
+.body-404 h4, .body-404 .h4 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
 /* `xl` applies to large devices (Desktop, less than 1200px) */
 @media (max-width: 1400px) {
   .custom-navbar .logo {

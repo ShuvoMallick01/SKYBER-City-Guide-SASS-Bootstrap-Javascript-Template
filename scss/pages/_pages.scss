@@ -178,7 +178,7 @@
 }
 // === /BLOG PAGE ===
 
-// === HELP CENTER ===
+// === HELP CENTER PAGE ===
 .help-center-body {
   background-color: $gray-300;
 }
@@ -264,9 +264,9 @@
     font-size: 32px;
   }
 }
-// === /HELP CENTER ===
+// === /HELP CENTER PAGE ===
 
-// === CONTACT ===
+// === CONTACT PAGE ===
 .contact-form {
   h2 {
     font-weight: 700;
@@ -302,10 +302,22 @@
     }
   }
 }
-// === /CONTACT ===
+// === /CONTACT PAGE ===
 
-// === S ===
-// === /E ===
+// === 404 PAGE ===
+.body-404 {
+  background-color: #e5e5e5;
+
+  img {
+    width: 856px;
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 28px;
+  }
+}
+// === /404 PAGE ===
 
 // === S ===
 // === /E ===
