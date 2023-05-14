@@ -26,10 +26,11 @@
 }
 // === NAVBAR END ===
 
-// === BANNER/HERO START ===
+// === BANNER-HERO ===
 .banner {
   .left-side {
     z-index: 2;
+
     h1 {
       font-weight: 700;
       font-size: 48px;
@@ -84,6 +85,23 @@
         padding: 14px 32px;
       }
     }
+
+    .banner-search {
+      &__what-looking-input {
+        &::after {
+          z-index: 10;
+          content: "";
+          position: absolute !important;
+          background-color: $gray-300 !important;
+          width: 1px !important;
+          height: 50%;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+        }
+      }
+    }
   }
 
   .right-side {
@@ -116,7 +134,7 @@
     }
   }
 }
-// === BANNER/HERO END ===
+// === /BANNER-HERO ===
 
 // === CATEGORIES START ===
 .categories {

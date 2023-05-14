@@ -164,8 +164,24 @@
                       >Notification</a
                     >
                   </li>
-                  <li><a class="dropdown-item" href="#">Sign In</a></li>
-                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#sign-in-Modal"
+                      >Sign In</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#signup-Modal"
+                      >Sign Up</a
+                    >
+                  </li>
                 </ul>
               </li>
 
@@ -245,7 +261,8 @@
                   alt="title"
                 />
               </a>
-              <!-- SIGN IN MODAL START -->
+
+              <!-- SIGN IN MODAL -->
               <div
                 class="modal fade"
                 id="sign-in-Modal"
@@ -374,9 +391,9 @@
                   </div>
                 </div>
               </div>
-              <!-- SIGN IN MODAL END -->
+              <!-- /SIGN IN MODAL -->
 
-              <!-- SIGN UP MODAL START -->
+              <!-- SIGN UP MODAL -->
               <div
                 class="modal signup-modal fade"
                 id="signup-Modal"
@@ -575,12 +592,11 @@
                   </div>
                 </div>
               </div>
-              <!-- SIGN UP MODAL END -->
+              <!-- /SIGN UP MODAL -->
 
               <a
                 class="btn btn-primary btn-sm text-white text-nowrap"
-                href="add-business.html"
-                data-bs-toggle="modal"
+                href="./vendor-add-business.html"
                 ><i class="icon-plus me-1 align-baseline"></i>Add business</a
               >
             </div>

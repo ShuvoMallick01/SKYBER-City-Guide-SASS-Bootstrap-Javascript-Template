@@ -100,3 +100,60 @@
   }
 }
 // === /FEATURE CARD ===
+
+// === ICON BOX MULTICOLOR ===
+.iconbox {
+  &__default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    border-radius: 100px;
+  }
+
+  i {
+    font-size: 20px;
+  }
+
+  &:hover &__default {
+    transition: all 300ms ease-in-out;
+
+    i {
+      color: $white !important;
+      transition: all 300ms ease-in-out;
+    }
+  }
+
+  // accent color
+  &__accent {
+    color: $accent;
+    background-color: $faded-accent !important;
+  }
+
+  &:hover &__accent {
+    background-color: $accent !important;
+  }
+
+  // warning color
+  &__warning {
+    color: $warning;
+    background-color: $faded-warning !important;
+  }
+
+  &:hover &__warning {
+    background-color: $warning !important;
+  }
+
+  // Primary color
+  &__primary {
+    color: $warning;
+    background-color: $faded-primary !important;
+  }
+
+  &:hover &__primary {
+    background-color: $primary !important;
+  }
+}
+// === /ICON BOX MULTICOLOR ===
