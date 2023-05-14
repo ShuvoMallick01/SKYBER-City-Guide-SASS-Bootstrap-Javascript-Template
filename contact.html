@@ -215,10 +215,12 @@
                     <a class="dropdown-item" href="about.html">About</a>
                   </li>
                   <li>
-                    <a class="dropdown-item active" href="blog.html">Blog</a>
+                    <a class="dropdown-item" href="blog.html">Blog</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="contact.html">Contact</a>
+                    <a class="dropdown-item active" href="contact.html"
+                      >Contact</a
+                    >
                   </li>
                   <li>
                     <a class="dropdown-item" href="help-center.html"
@@ -259,19 +261,176 @@
     </header>
     <!-- /NAVBAR -->
 
-    <!-- START -->
-    <!-- <section class="mb-5 pb-lg-4">
+    <!-- FORM -->
+    <section class="mb-5 pb-lg-4 mt-5">
       <div class="container">
-        <div class="row"></div>
-      </div>
-    </section> -->
-    <!-- END -->
+        <div class="row">
+          <!-- Breadcrumb -->
+          <nav
+            class="mb-2"
+            style="--bs-breadcrumb-divider: '>'"
+            aria-label="breadcrumb"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
 
-    <!-- <img
-      src="./assets/images/where-eat/"
-      class="img-fluid"
-      alt="title"
-    /> -->
+              <li class="breadcrumb-item active" aria-current="page">
+                Contact
+              </li>
+            </ol>
+          </nav>
+
+          <!-- image -->
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/more/contact-us-img.png"
+              class="img-fluid"
+              alt="title"
+            />
+          </div>
+
+          <!-- form -->
+          <div class="col-lg-5 offset-lg-1 p-4 p-lg-0 mt-4 mt-lg-0">
+            <div class="contact-form">
+              <h2 class="mb-3">Contact us</h2>
+              <p class="mb-4 me-lg-5">
+                Fill out the form and out team will try to get back to you
+                within 24 hours.
+              </p>
+
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="inputEmail4" />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputPassword4"
+                  />
+                </div>
+
+                <!-- phone -->
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Phone</label>
+                  <input type="text" class="form-control" id="inputEmail4" />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Subject</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Choose subject</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                <div class="col-12 mb-4">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="Leave your message"
+                  ></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">
+                    Submit form
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /FORM -->
+
+    <!-- CONTACT INFO -->
+    <section class="mb-5 pb-lg-4">
+      <div class="container">
+        <div class="row contact-info g-4">
+          <!-- Item -->
+          <div class="col-lg-4 contact-info__item">
+            <a
+              class="iconbox card card-body border-0 shadow-sm card-hover text-center"
+              href="mailto:example@email.com"
+            >
+              <!-- iconbox -->
+              <div
+                class="iconbox__default iconbox__accent mb-3 align-self-start align-self-center"
+              >
+                <i class="icon-mail"></i>
+              </div>
+
+              <span class="d-block mb-1 text-body">Drop us a line</span>
+              <h3 class="">example@email.com</h3></a
+            >
+          </div>
+
+          <!-- Item -->
+          <div class="col-lg-4 contact-info__item">
+            <a
+              class="iconbox card card-body border-0 shadow-sm card-hover text-center"
+              href="mailto:example@email.com"
+            >
+              <!-- iconbox -->
+              <div
+                class="iconbox__default iconbox__warning mb-3 align-self-start align-self-center"
+              >
+                <i class="icon-security"></i>
+              </div>
+
+              <span class="d-block mb-1 text-body">Call us any time</span>
+              <h3 class="">(406) 555-0120</h3></a
+            >
+          </div>
+
+          <!-- Item -->
+          <div class="col-lg-4 contact-info__item">
+            <a
+              class="iconbox card card-body border-0 shadow-sm card-hover text-center"
+              href="mailto:example@email.com"
+            >
+              <!-- iconbox -->
+              <div
+                class="iconbox__default iconbox__primary mb-3 align-self-start align-self-center"
+              >
+                <i class="icon-instagram"></i>
+              </div>
+
+              <span class="d-block mb-1 text-body">Follow us</span>
+              <h3 class="">@skyber_company</h3></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /CONTACT INFO -->
+
+    <!-- START -->
+    <section class="mb-5 pb-lg-5">
+      <div class="container">
+        <div class="row">
+          <img
+            src="./assets/images/more/contact-us-map.png"
+            class="img-fluid"
+            alt="title"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- END -->
 
     <!-- FOOTER START -->
     <section class="footer mt-5">

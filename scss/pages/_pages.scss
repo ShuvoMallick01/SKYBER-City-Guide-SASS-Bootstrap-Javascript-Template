@@ -135,7 +135,7 @@
   &__form-group {
     border: 1px solid #efecf3;
     border-radius: 40px;
-    padding: 10px;
+    padding: 8px;
 
     .form-control {
       padding-left: 8px;
@@ -178,11 +178,131 @@
 }
 // === /BLOG PAGE ===
 
-// === S ===
-// === /E ===
+// === HELP CENTER ===
+.help-center-body {
+  background-color: $gray-300;
+}
 
-// === S ===
-// === /E ===
+.help-center {
+  &__search {
+    .form-control {
+      padding-left: 20px;
+    }
+  }
+}
+
+.faq {
+  background-color: $white;
+
+  &__questions {
+    &__question {
+    }
+  }
+}
+
+// iconbox component
+.iconbox {
+  &__default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    border-radius: 100px;
+  }
+
+  i {
+    font-size: 20px;
+  }
+
+  &:hover &__default {
+    transition: all 300ms ease-in-out;
+
+    i {
+      color: $white !important;
+      transition: all 300ms ease-in-out;
+    }
+  }
+
+  // accent color
+  &__accent {
+    color: $accent;
+    background-color: $faded-accent !important;
+  }
+
+  &:hover &__accent {
+    background-color: $accent !important;
+  }
+
+  // warning color
+  &__warning {
+    color: $warning;
+    background-color: $faded-warning !important;
+  }
+
+  &:hover &__warning {
+    background-color: $warning !important;
+  }
+
+  // Primary color
+  &__primary {
+    color: $warning;
+    background-color: $faded-primary !important;
+  }
+
+  &:hover &__primary {
+    background-color: $primary !important;
+  }
+}
+
+.we-need-help {
+  background-color: $gray-200;
+
+  h3 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+}
+// === /HELP CENTER ===
+
+// === CONTACT ===
+.contact-form {
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  textarea {
+    height: 128px;
+  }
+}
+
+.contact-info {
+  .iconbox__default {
+    width: 48px;
+    height: 48px;
+  }
+
+  .contact-info__item {
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      color: $gray-700;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+}
+// === /CONTACT ===
 
 // === S ===
 // === /E ===
