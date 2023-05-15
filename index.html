@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
     <!-- Fontawesome CSS -->
     <link
       rel="stylesheet"
@@ -21,13 +22,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- SWIPER JS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <!-- SASS COMPILE CSS -->
     <link rel="stylesheet" href="./dist/css/style.css" />
     <!-- ICON FONTS -->
     <link rel="stylesheet" href="./assets/fonts.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./dist/css/home.css" />
+
+    <!-- SWIPER JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+      defer
+    ></script>
     <!-- Custom JS -->
     <script src="js/app.js" defer></script>
     <!-- Website Title -->
@@ -606,7 +617,7 @@
     </header>
     <!-- NAVBAR END -->
 
-    <!-- BANNER/HERO START -->
+    <!-- BANNER-HERO -->
     <section class="banner py-4 mb-lg-3">
       <div class="container">
         <div class="row align-items-center">
@@ -714,15 +725,16 @@
         </div>
       </div>
     </section>
-    <!-- BANNER/HERO END -->
+    <!-- /BANNER-HERO -->
 
-    <!-- CATEGORYIES START -->
+    <!-- CATEGORYIES  -->
     <section class="categories pb-5 mb-lg-3">
       <div class="container">
         <div class="d-flex flex-wrap justify-content-between gap-3 px-4">
           <!-- accommodation single -->
           <a
             class="category accommodation d-flex flex-shrink-0 shadow-sm text-decoration-none align-items-center rounded-pill p-2"
+            href="catalog-categories-filters.html"
           >
             <div
               class="icon-box text-accent d-flex align-items-center justify-content-center p-3 me-2"
@@ -735,6 +747,7 @@
           <!-- Food & Drink single -->
           <a
             class="category food-drink d-flex flex-shrink-0 shadow-sm text-decoration-none align-items-center rounded-pill p-2"
+            href="catalog-categories-filters.html"
           >
             <div
               class="icon-box text-accent d-flex align-items-center justify-content-center p-3 me-2"
@@ -747,6 +760,7 @@
           <!-- Shopping single -->
           <a
             class="category shopping d-flex flex-shrink-0 shadow-sm text-decoration-none align-items-center rounded-pill p-2"
+            href="catalog-categories-filters.html"
           >
             <div
               class="icon-box text-accent d-flex align-items-center justify-content-center p-3 me-2"
@@ -759,6 +773,7 @@
           <!-- Art & History single -->
           <a
             class="category art-history d-flex flex-shrink-0 shadow-sm text-decoration-none align-items-center rounded-pill p-2"
+            href="catalog-categories-filters.html"
           >
             <div
               class="icon-box text-accent d-flex align-items-center justify-content-center p-3 me-2"
@@ -771,6 +786,7 @@
           <!-- Entertainment single -->
           <a
             class="category entertainment d-flex flex-shrink-0 shadow-sm text-decoration-none align-items-center rounded-pill p-2"
+            href="catalog-categories-filters.html"
           >
             <div
               class="icon-box text-accent d-flex align-items-center justify-content-center p-3 me-2"
@@ -783,6 +799,7 @@
           <!-- More single -->
           <a
             class="category more d-flex flex-shrink-0 shadow-sm text-decoration-none align-items-center rounded-pill p-2"
+            href="catalog-categories-filters.html"
           >
             <div
               class="icon-box text-accent d-flex align-items-center justify-content-center p-3 me-2"
@@ -796,9 +813,9 @@
         </div>
       </div>
     </section>
-    <!-- CATEGORY END -->
+    <!-- /CATEGORYIES -->
 
-    <!-- Where to stay in Berlin START -->
+    <!-- WHERE TO STAY -->
     <section class="where-stay mb-5 pb-lg-4">
       <div class="container">
         <!-- heading -->
@@ -806,130 +823,224 @@
           class="d-flex justify-content-between align-items-center mb-4 pb-2"
         >
           <h3>Where to stay in Berlin</h3>
-          <a>View All <i class="icon-arrow-long-right align-middle"></i></a>
+          <a class="btn-t" href="catalog-categories-filters.html"
+            >View All <i class="icon-arrow-long-right align-middle"></i
+          ></a>
         </div>
 
-        <div class="row d-flex gy-4 gy-xl-0">
-          <!-- single stay -->
-          <div class="col-xl-4 col-md-6">
-            <div class="card card-hotel overflow-hidden">
-              <div class="card-top position-relative">
-                <img
-                  src="./assets/images/catalog/stay-room-1.png"
-                  class="card-img-top"
-                  alt="hote-room"
-                />
-                <!-- Heart Badge -->
-                <button
-                  class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
-                >
-                  <i class="fa-regular fa-heart"></i>
-                </button>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Card/Slide -->
+            <div class="swiper-slide">
+              <div class="card card-hotel overflow-hidden">
+                <div class="card-top position-relative">
+                  <img
+                    src="./assets/images/catalog/stay-room-1.png"
+                    class="card-img-top"
+                    alt="hote-room"
+                  />
+                  <!-- Heart Badge -->
+                  <button
+                    class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+
+                <!-- card body -->
+                <div class="card-body px-0">
+                  <a class="nav-link card-title mb-2" href="#"
+                    >Berlin Business Hotel</a
+                  >
+
+                  <div class="hotel-details d-flex align-items-center gap-2">
+                    <p class="mb-0">
+                      <i class="icon-star-filled text-warning ps-0 ms-0"></i>
+                      5.0
+                      <span class="text-muted">(48)</span>
+                    </p>
+
+                    <p class="mb-0"><i class="icon-credit-card ms-1"></i> $$</p>
+                    <p class="mb-0">
+                      <i class="icon-pin ms-1"></i> 1.4 km from center
+                    </p>
+                  </div>
+                </div>
               </div>
+            </div>
 
-              <!-- card body -->
-              <div class="card-body px-0">
-                <a class="nav-link card-title mb-2" href="#"
-                  >Berlin Business Hotel</a
-                >
+            <!-- Card/Slide -->
+            <div class="swiper-slide">
+              <div class="card card-hotel overflow-hidden">
+                <div class="card-top position-relative">
+                  <img
+                    src="./assets/images/catalog/stay-room-2.png"
+                    class="card-img-top"
+                    alt="hote-room"
+                  />
+                  <!-- Heart Badge -->
+                  <button
+                    class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
 
-                <div class="hotel-details d-flex align-items-center gap-2">
-                  <p class="mb-0">
-                    <i class="icon-star-filled text-warning ps-0 ms-0"></i>
-                    5.0
-                    <span class="text-muted">(48)</span>
-                  </p>
+                <!-- card body -->
+                <div class="card-body px-0">
+                  <a class="nav-link card-title mb-2" href="#"
+                    >Big Tree Cottage</a
+                  >
 
-                  <p class="mb-0"><i class="icon-credit-card ms-1"></i> $$</p>
-                  <p class="mb-0">
-                    <i class="icon-pin ms-1"></i> 1.4 km from center
-                  </p>
+                  <div class="hotel-details d-flex align-items-center gap-2">
+                    <p class="mb-0">
+                      <i class="icon-star-filled text-warning ps-0 ms-0"></i>
+                      5.0
+                      <span class="text-muted">(48)</span>
+                    </p>
+
+                    <p class="mb-0"><i class="icon-credit-card ms-1"></i> $$</p>
+                    <p class="mb-0">
+                      <i class="icon-pin ms-1"></i> 0.5 km from center
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card/Slide -->
+            <div class="swiper-slide">
+              <div class="card card-hotel overflow-hidden">
+                <div class="card-top position-relative">
+                  <img
+                    src="./assets/images/catalog/stay-room-3.png"
+                    class="card-img-top"
+                    alt="hote-room"
+                  />
+                  <!-- Heart Badge -->
+                  <button
+                    class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+
+                <!-- card body -->
+                <div class="card-body px-0">
+                  <a class="nav-link card-title mb-2" href="#"
+                    >Berlin Business Hotel</a
+                  >
+
+                  <div class="hotel-details d-flex align-items-center gap-2">
+                    <p class="mb-0">
+                      <i class="icon-star-filled text-warning ps-0 ms-0"></i>
+                      5.0
+                      <span class="text-muted">(48)</span>
+                    </p>
+
+                    <p class="mb-0"><i class="icon-credit-card ms-1"></i> $$</p>
+                    <p class="mb-0">
+                      <i class="icon-pin ms-1"></i> 1.4 km from center
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card/Slide -->
+            <div class="swiper-slide">
+              <div class="card card-hotel overflow-hidden">
+                <div class="card-top position-relative">
+                  <img
+                    src="./assets/images/catalog/stay-room-1.png"
+                    class="card-img-top"
+                    alt="hote-room"
+                  />
+                  <!-- Heart Badge -->
+                  <button
+                    class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+
+                <!-- card body -->
+                <div class="card-body px-0">
+                  <a class="nav-link card-title mb-2" href="#"
+                    >Big Tree Cottage</a
+                  >
+
+                  <div class="hotel-details d-flex align-items-center gap-2">
+                    <p class="mb-0">
+                      <i class="icon-star-filled text-warning ps-0 ms-0"></i>
+                      5.0
+                      <span class="text-muted">(48)</span>
+                    </p>
+
+                    <p class="mb-0"><i class="icon-credit-card ms-1"></i> $$</p>
+                    <p class="mb-0">
+                      <i class="icon-pin ms-1"></i> 0.5 km from center
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card/Slide -->
+            <div class="swiper-slide">
+              <div class="card card-hotel overflow-hidden">
+                <div class="card-top position-relative">
+                  <img
+                    src="./assets/images/catalog/stay-room-3.png"
+                    class="card-img-top"
+                    alt="hote-room"
+                  />
+                  <!-- Heart Badge -->
+                  <button
+                    class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+
+                <!-- card body -->
+                <div class="card-body px-0">
+                  <a class="nav-link card-title mb-2" href="#"
+                    >Berlin Business Hotel</a
+                  >
+
+                  <div class="hotel-details d-flex align-items-center gap-2">
+                    <p class="mb-0">
+                      <i class="icon-star-filled text-warning ps-0 ms-0"></i>
+                      5.0
+                      <span class="text-muted">(48)</span>
+                    </p>
+
+                    <p class="mb-0"><i class="icon-credit-card ms-1"></i> $$</p>
+                    <p class="mb-0">
+                      <i class="icon-pin ms-1"></i> 1.4 km from center
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- single stay -->
-          <div class="col-xl-4 col-md-6">
-            <div class="card card-hotel overflow-hidden">
-              <div class="card-top position-relative">
-                <img
-                  src="./assets/images/catalog/stay-room-2.png"
-                  class="card-img-top"
-                  alt="hote-room"
-                />
-                <!-- Heart Badge -->
-                <button
-                  class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
-                >
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-              </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-              <!-- card body -->
-              <div class="card-body px-0">
-                <a class="nav-link card-title mb-2" href="#"
-                  >Big Tree Cottage</a
-                >
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
 
-                <div class="hotel-details d-flex align-items-center gap-2">
-                  <p class="mb-0">
-                    <i class="icon-star-filled text-warning ps-0 ms-0"></i>
-                    5.0
-                    <span class="text-muted">(48)</span>
-                  </p>
-
-                  <p class="mb-0"><i class="icon-credit-card ms-1"></i> $$</p>
-                  <p class="mb-0">
-                    <i class="icon-pin ms-1"></i> 0.5 km from center
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- single stay -->
-          <div class="col-xl-4 col-md-6">
-            <div class="card card-hotel overflow-hidden">
-              <div class="card-top position-relative">
-                <img
-                  src="./assets/images/catalog/stay-room-3.png"
-                  class="card-img-top"
-                  alt="hote-room"
-                />
-                <!-- Heart Badge -->
-                <button
-                  class="favorite-btn position-absolute top-0 end-0 d-flex justify-content-center align-items-center"
-                >
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-              </div>
-
-              <!-- card body -->
-              <div class="card-body px-0">
-                <a class="nav-link card-title mb-2" href="#"
-                  >Berlin Business Hotel</a
-                >
-
-                <div class="hotel-details d-flex align-items-center gap-2">
-                  <p class="mb-0">
-                    <i class="icon-star-filled text-warning ps-0 ms-0"></i>
-                    5.0
-                    <span class="text-muted">(48)</span>
-                  </p>
-
-                  <p class="mb-0"><i class="icon-credit-card ms-1"></i> $$</p>
-                  <p class="mb-0">
-                    <i class="icon-pin ms-1"></i> 1.4 km from center
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
       </div>
     </section>
-    <!-- Where to stay in Berlin END -->
+    <!-- /WHERE TO STAY -->
 
     <!-- WHERE TO EAT START -->
     <section class="mb-5 mb-lg-3 pb-lg-4">

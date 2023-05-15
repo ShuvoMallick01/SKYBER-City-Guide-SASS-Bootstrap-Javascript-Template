@@ -89,12 +89,12 @@
     .banner-search {
       &__what-looking-input {
         &::after {
-          z-index: 10;
+          // z-index: 10;
           content: "";
           position: absolute !important;
           background-color: $gray-300 !important;
           width: 1px !important;
-          height: 50%;
+          height: 60%;
           top: 0;
           bottom: 0;
           left: 0;
@@ -266,6 +266,11 @@
 }
 // === CATEGORIES END ===
 
+// === WHERE TO STAY ===
+// Swiper CSS Styles
+
+// === /WHERE TO STAY ===
+
 // === WHERE TO EAT START ===
 .taxi-488 {
   .taxi {
@@ -310,7 +315,6 @@
     }
   }
 }
-
 // === WHERE TO EAT END ===
 
 // === Upcoming events in Berlin START ===

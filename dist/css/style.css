@@ -11622,12 +11622,11 @@ a {
   padding: 14px 32px;
 }
 .banner .left-side .banner-search__what-looking-input::after {
-  z-index: 10;
   content: "";
   position: absolute !important;
   background-color: #dee2e6 !important;
   width: 1px !important;
-  height: 50%;
+  height: 60%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -12612,47 +12611,6 @@ a {
 .faq {
   background-color: #fff;
 }
-.iconbox__default {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  cursor: pointer;
-  border-radius: 100px;
-}
-.iconbox i {
-  font-size: 20px;
-}
-.iconbox:hover .iconbox__default {
-  transition: all 300ms ease-in-out;
-}
-.iconbox:hover .iconbox__default i {
-  color: #fff !important;
-  transition: all 300ms ease-in-out;
-}
-.iconbox__accent {
-  color: #5d3cf2;
-  background-color: rgba(93, 60, 242, 0.1) !important;
-}
-.iconbox:hover .iconbox__accent {
-  background-color: #5d3cf2 !important;
-}
-.iconbox__warning {
-  color: #fdbc31;
-  background-color: rgba(253, 188, 49, 0.1019607843) !important;
-}
-.iconbox:hover .iconbox__warning {
-  background-color: #fdbc31 !important;
-}
-.iconbox__primary {
-  color: #fdbc31;
-  background-color: rgba(253, 86, 49, 0.1) !important;
-}
-.iconbox:hover .iconbox__primary {
-  background-color: #fd5631 !important;
-}
-
 .we-need-help {
   background-color: #e9ecef;
 }
