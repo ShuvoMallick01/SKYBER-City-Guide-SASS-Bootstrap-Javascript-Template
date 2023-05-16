@@ -11778,6 +11778,24 @@ a {
   font-family: "icomoon" !important;
   content: "\e91e";
 }
+.swiper-container .swiper-wrapper {
+  margin-bottom: 3rem;
+}
+.swiper-container .swiper-pagination {
+  bottom: 0;
+}
+.swiper-container .swiper-pagination-bullet {
+  width: 16px;
+  height: 6px;
+  background-color: #495057;
+  opacity: 0.4;
+  border-radius: 40px;
+  transition: width 300ms;
+}
+.swiper-container .swiper-pagination-bullet-active {
+  width: 32px;
+  opacity: 1;
+}
 
 .taxi-488 .taxi {
   height: 95%;

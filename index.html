@@ -1321,7 +1321,7 @@
     </section>
     <!-- WHERE TO EAT END -->
 
-    <!-- Upcoming events in Berlin START -->
+    <!-- Upcoming events in Berlin -->
     <section class="upcoming-events mb-5 pb-lg-4">
       <div class="container">
         <!-- heading -->
@@ -1357,54 +1357,115 @@
         </div>
 
         <!-- slider -->
-        <div class="row d-flex gy-4 gy-xl-0">
+        <div
+          class="swiper-container position-relative"
+          data-per-view="1"
+          data-disable-pagination="true"
+          data-effect="fade"
+        >
           <!-- item -->
-          <div class="col-md-8 m-auto">
-            <div class="event-card card border-0 position-relative">
-              <img
-                src="./assets/images/events/events-1.png"
-                class="img-fluid"
-                alt="title"
-              />
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide -->
+              <div class="swiper-slide">
+                <div class="event-card card border-0 position-relative">
+                  <img
+                    src="./assets/images/events/events-1.png"
+                    class="img-fluid"
+                    alt="title"
+                  />
 
-              <!-- body -->
-              <div
-                class="card-body position-absolute text-white bottom-0 w-100 px-4"
-              >
-                <div
-                  class="d-flex flex-wrap justify-content-between align-items-center"
-                >
-                  <div class="left-side">
+                  <div
+                    class="card-body position-absolute text-white bottom-0 w-100 px-4"
+                  >
                     <div
-                      class="d-flex justify-content-center justify-content-md-start mb-2"
+                      class="d-flex flex-wrap justify-content-between align-items-center"
                     >
-                      <div class="text-nowrap me-3">
-                        <i class="icon-calendar-clean me-1 align-middle"></i
-                        ><span class="align-middle fw-light">Nov 15</span>
+                      <div class="left-side">
+                        <div
+                          class="d-flex justify-content-center justify-content-md-start mb-2"
+                        >
+                          <div class="text-nowrap me-3">
+                            <i class="icon-calendar-clean me-1 align-middle"></i
+                            ><span class="align-middle fw-light">Nov 15</span>
+                          </div>
+
+                          <div class="text-nowrap">
+                            <i class="icon-clock me-1 align-middle"></i
+                            ><span class="align-middle">21:00</span>
+                          </div>
+                        </div>
+                        <h3 class="">Simon Rock Concert</h3>
                       </div>
 
-                      <div class="text-nowrap">
-                        <i class="icon-clock me-1 align-middle"></i
-                        ><span class="align-middle">21:00</span>
+                      <!-- right btn -->
+                      <div class="btn-group me-3">
+                        <a
+                          class="btn btn-primary fist-btn rounded-end-0 px-3"
+                          href="#"
+                          >Tickets from $50</a
+                        >
+
+                        <button
+                          class="btn heart-btn btn-primary rounded-start-0 px-3"
+                          type="button"
+                        >
+                          <i class="fa-regular fa-heart"></i>
+                        </button>
                       </div>
                     </div>
-                    <h3 class="">Simon Rock Concert</h3>
                   </div>
+                </div>
+              </div>
 
-                  <!-- right btn -->
-                  <div class="btn-group me-3">
-                    <a
-                      class="btn btn-primary fist-btn rounded-end-0 px-3"
-                      href="#"
-                      >Tickets from $50</a
-                    >
+              <!-- Slide -->
+              <div class="swiper-slide">
+                <div class="event-card card border-0 position-relative">
+                  <img
+                    src="./assets/images/events/events-1.png"
+                    class="img-fluid"
+                    alt="title"
+                  />
 
-                    <button
-                      class="btn heart-btn btn-primary rounded-start-0 px-3"
-                      type="button"
+                  <div
+                    class="card-body position-absolute text-white bottom-0 w-100 px-4"
+                  >
+                    <div
+                      class="d-flex flex-wrap justify-content-between align-items-center"
                     >
-                      <i class="fa-regular fa-heart"></i>
-                    </button>
+                      <div class="left-side">
+                        <div
+                          class="d-flex justify-content-center justify-content-md-start mb-2"
+                        >
+                          <div class="text-nowrap me-3">
+                            <i class="icon-calendar-clean me-1 align-middle"></i
+                            ><span class="align-middle fw-light">Nov 15</span>
+                          </div>
+
+                          <div class="text-nowrap">
+                            <i class="icon-clock me-1 align-middle"></i
+                            ><span class="align-middle">21:00</span>
+                          </div>
+                        </div>
+                        <h3 class="">Simon Rock Concert</h3>
+                      </div>
+
+                      <!-- right btn -->
+                      <div class="btn-group me-3">
+                        <a
+                          class="btn btn-primary fist-btn rounded-end-0 px-3"
+                          href="#"
+                          >Tickets from $50</a
+                        >
+
+                        <button
+                          class="btn heart-btn btn-primary rounded-start-0 px-3"
+                          type="button"
+                        >
+                          <i class="fa-regular fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1413,61 +1474,126 @@
         </div>
       </div>
     </section>
-    <!-- Upcoming events in Berlin  END -->
+    <!-- /Upcoming events in Berlin -->
 
-    <!-- What’s new in Berlin START -->
+    <!-- What’s new in Berlin -->
     <section class="whats-new-berlin mb-5 pb-lg-4">
       <div class="container">
         <!-- heading -->
         <h3 class="mb-4 pb-2">What’s new in Berlin</h3>
 
-        <div class="sliders">
-          <!-- slide -->
-          <div class="row whats-new-slide">
-            <!-- left image -->
-            <div class="col-md-7">
-              <img
-                src="./assets/images/more/park-1.png"
-                class="img-fluid"
-                alt="title"
-              />
-            </div>
+        <!-- Swiper Sliders -->
+        <div
+          class="swiper-container position-relative"
+          data-per-view="1"
+          data-disable-pagination="true"
+          data-effect="fade"
+        >
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- slide -->
+              <div class="swiper-slide">
+                <div class="row whats-new-slide">
+                  <!-- left image -->
+                  <div class="col-md-7">
+                    <img
+                      src="./assets/images/more/park-1.png"
+                      class="img-fluid"
+                      alt="title"
+                    />
+                  </div>
 
-            <!-- right details -->
-            <div class="details col-md-5">
-              <a class="nav-link card-title mb-3" href="#">Amusement Park</a>
+                  <!-- right details -->
+                  <div class="details col-md-5">
+                    <a class="nav-link card-title mb-3" href="#"
+                      >Amusement Park</a
+                    >
 
-              <div class="hotel-details align-items-start mb-3">
-                <p class="mb-0">
-                  <i class="icon-pin"></i>
-                  Ollenhauer Str. 29, 10118
-                  <span class="text-muted">(48)</span>
-                </p>
+                    <div class="hotel-details align-items-start mb-3">
+                      <p class="mb-0">
+                        <i class="icon-pin"></i>
+                        Ollenhauer Str. 29, 10118
+                        <span class="text-muted">(48)</span>
+                      </p>
 
-                <p class="mb-0"><i class="icon-clock"></i> 9:00 – 23:00</p>
-                <p class="mb-0"><i class="icon-credit-card"></i> $$</p>
+                      <p class="mb-0">
+                        <i class="icon-clock"></i> 9:00 – 23:00
+                      </p>
+                      <p class="mb-0"><i class="icon-credit-card"></i> $$</p>
+                    </div>
+
+                    <p class="pb-2">
+                      Blandit lorem dictum in velit. Et nisi at faucibus mauris
+                      pretium enim. Risus sapien nisi aliquam egestas leo
+                      dignissim ut quis ac. Amet, cras orci justo, tortor nisl
+                      aliquet. Enim tincidunt tellus nunc, nulla arcu posuere
+                      quis. Velit turpis orci venenatis risus felis, volutpat
+                      convallis varius. Enim non euismod adipiscing a enim.
+                    </p>
+
+                    <a class="btn btn-primary rounded-pill" href="#"
+                      >View more<i
+                        class="icon-arrow-single-right align-middle ms-2"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
               </div>
 
-              <p class="pb-2">
-                Blandit lorem dictum in velit. Et nisi at faucibus mauris
-                pretium enim. Risus sapien nisi aliquam egestas leo dignissim
-                ut quis ac. Amet, cras orci justo, tortor nisl aliquet. Enim
-                tincidunt tellus nunc, nulla arcu posuere quis. Velit turpis
-                orci venenatis risus felis, volutpat convallis varius. Enim non
-                euismod adipiscing a enim.
-              </p>
+              <!-- slide -->
+              <div class="swiper-slide">
+                <div class="row whats-new-slide">
+                  <!-- left image -->
+                  <div class="col-md-7">
+                    <img
+                      src="./assets/images/more/park-1.png"
+                      class="img-fluid"
+                      alt="title"
+                    />
+                  </div>
 
-              <a class="btn btn-primary rounded-pill" href="#"
-                >View more<i
-                  class="icon-arrow-single-right align-middle ms-2"
-                ></i
-              ></a>
+                  <!-- right details -->
+                  <div class="details col-md-5">
+                    <a class="nav-link card-title mb-3" href="#"
+                      >Amusement Park</a
+                    >
+
+                    <div class="hotel-details align-items-start mb-3">
+                      <p class="mb-0">
+                        <i class="icon-pin"></i>
+                        Ollenhauer Str. 29, 10118
+                        <span class="text-muted">(48)</span>
+                      </p>
+
+                      <p class="mb-0">
+                        <i class="icon-clock"></i> 9:00 – 23:00
+                      </p>
+                      <p class="mb-0"><i class="icon-credit-card"></i> $$</p>
+                    </div>
+
+                    <p class="pb-2">
+                      Blandit lorem dictum in velit. Et nisi at faucibus mauris
+                      pretium enim. Risus sapien nisi aliquam egestas leo
+                      dignissim ut quis ac. Amet, cras orci justo, tortor nisl
+                      aliquet. Enim tincidunt tellus nunc, nulla arcu posuere
+                      quis. Velit turpis orci venenatis risus felis, volutpat
+                      convallis varius. Enim non euismod adipiscing a enim.
+                    </p>
+
+                    <a class="btn btn-primary rounded-pill" href="#"
+                      >View more<i
+                        class="icon-arrow-single-right align-middle ms-2"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- What’s new in Berlin END -->
+    <!-- /What’s new in Berlin -->
 
     <!-- Get Our App START -->
     <section class="mb-5 pb-lg-4">

@@ -267,8 +267,7 @@
 // === CATEGORIES END ===
 
 // === WHERE TO STAY ===
-// Swiper CSS Styles
-
+// Swiper JS
 .swiper-container {
   // .swiper {
   //   position: static;
@@ -333,8 +332,31 @@
       content: "\e91e";
     }
   }
-}
 
+  .swiper-wrapper {
+    margin-bottom: 3rem;
+  }
+
+  .swiper-pagination {
+    // margin-bottom: -45px;
+    bottom: 0;
+  }
+
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 6px;
+    background-color: $gray-700;
+    opacity: 0.4;
+    border-radius: 40px;
+    transition: width 300ms;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 32px;
+    opacity: 1;
+  }
+}
+// /Swiper JS
 // === /WHERE TO STAY ===
 
 // === WHERE TO EAT START ===

@@ -19,8 +19,9 @@ for (let i = 0; i < swiperContainer.length; i++) {
   console.log(slider);
   const prevButton = createElement("swiper-button-prev");
   const nextButton = createElement("swiper-button-next");
+  const pagination = createElement("swiper-pagination");
 
-  slider.append(prevButton, nextButton);
+  slider.append(prevButton, nextButton, pagination);
 
   const swiperE1 = slider.querySelector(".swiper");
 
@@ -30,7 +31,7 @@ for (let i = 0; i < swiperContainer.length; i++) {
 
   // SWIPER
   const swiper = new Swiper(swiperE1, {
-    // effect: slideEffect || "slide",
+    effect: slideEffect || "slide",
 
     // Default parameters
     // slidesPerView: 3,
@@ -40,6 +41,15 @@ for (let i = 0; i < swiperContainer.length; i++) {
     navigation: {
       nextEl: slider.querySelector(".swiper-button-next"),
       prevEl: slider.querySelector(".swiper-button-prev"),
+    },
+
+    // Pagination
+    pagination: {
+      el: Boolean(disablePagination === true)
+        ? null
+        : slider.querySelector(".swiper-pagination"),
+      type: "bullets",
+      clickable: true,
     },
 
     // Responsive breakpoints
