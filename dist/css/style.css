@@ -11984,6 +11984,11 @@ a {
   color: #fd5631;
 }
 
+.btn-date {
+  width: 102px;
+  height: 37px;
+}
+
 /* ==== Sign In Modal START ==== */
 .modal .modal-dialog {
   max-width: 950px !important;

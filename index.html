@@ -815,7 +815,7 @@
     </section>
     <!-- /CATEGORYIES -->
 
-    <!-- WHERE TO STAY -->
+    <!-- WHERE TO STAY - CARDS -->
     <section class="where-stay mb-5 pb-lg-4">
       <div class="container">
         <!-- heading -->
@@ -829,7 +829,11 @@
         </div>
 
         <!-- Slider main container -->
-        <div class="swiper-container position-relative">
+        <div
+          class="swiper-container position-relative"
+          data-per-view="3"
+          data-disable-pagination="false"
+        >
           <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -1041,8 +1045,8 @@
           </div>
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
         </div>
       </div>
     </section>
@@ -1327,7 +1331,13 @@
           <h3>Upcoming events in Berlin</h3>
 
           <div class="d-flex flex-wrap align-items-center gap-2">
-            <div class="btn-filter d-flex gap-3 me-4">
+            <div class="btn-filter d-flex align-items-center gap-2 me-4">
+              <input
+                class="form-control btn btn-pill-gray btn-date btn-xsm"
+                type="datetime-local"
+                placeholder="Date"
+              />
+
               <a class="btn btn-pill-gray btn-xsm fw-normal" href="#">Date</a>
               <a class="btn btn-pill-gray btn-xsm fw-normal" href="#">Today</a>
               <a class="btn btn-pill-gray btn-xsm fw-normal" href="#"
@@ -1783,20 +1793,6 @@
       </div>
     </section>
     <!-- FOOTER END -->
-
-    <!-- START -->
-    <!-- <section class="mb-5 pb-lg-4">
-      <div class="container">
-        <div class="row"></div>
-      </div>
-    </section> -->
-    <!-- END -->
-
-    <!-- <img
-      src="./assets/images/where-eat/"
-      class="img-fluid"
-      alt="title"
-    /> -->
 
     <!-- Bootstrap JS JavaScript Bundle with Popper -->
     <script
