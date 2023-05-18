@@ -23,12 +23,18 @@
       }
     }
   }
+
+  .dropdown-toggle {
+    &:hover {
+    }
+  }
 }
+
 // === NAVBAR END ===
 
 // === BANNER-HERO ===
 .banner {
-  .left-side {
+  &__left-side {
     z-index: 2;
 
     h1 {
@@ -61,6 +67,7 @@
 
       .input-group:first-child {
         border-radius: 0px !important;
+        width: 130%;
       }
 
       .input-group {
@@ -89,9 +96,7 @@
     .banner-search {
       &__what-looking-input {
         &::after {
-          // z-index: 10;
           content: "";
-          position: absolute !important;
           background-color: $gray-300 !important;
           width: 1px !important;
           height: 60%;
@@ -104,7 +109,7 @@
     }
   }
 
-  .right-side {
+  &__right-side {
     .first-img {
       width: 440px;
       .img {
@@ -496,6 +501,23 @@
     }
   }
 }
+
+// Swiper JS
+.whats-new-berlin {
+  .swiper-container {
+    .swiper-button-prev {
+      position: static;
+    }
+
+    .swiper-button-next {
+      position: static;
+      margin-left: 50px;
+      margin-top: -37px;
+    }
+  }
+}
+// /Swiper JS
+
 // === What’s new in Berlin END ===
 
 // === Get Our App START ===
@@ -683,7 +705,3 @@
   }
 }
 // === footer END ===
-.btn-date {
-  width: 102px;
-  height: 37px;
-}

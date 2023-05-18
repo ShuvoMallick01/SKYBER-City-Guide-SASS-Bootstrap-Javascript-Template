@@ -1,16 +1,15 @@
-/* `xl` applies to large devices (Desktop, less than 1200px) */
+/* === `xxl` applies to large devices (Desktop, less than 1200px) === */
 @media (max-width: 1400px) {
-  // Navbar start
+  // Navbar
   .custom-navbar {
     .logo {
       width: 115px;
       margin-right: 0px !important;
     }
   }
-  // Navbar End
 }
 
-/* `xl` applies to large devices (Desktop, less than 1200px) */
+/* === `xl` applies to large devices (Desktop, less than 1200px) === */
 @media (max-width: 1200px) {
   .custom-navbar {
     .logo {
@@ -20,7 +19,7 @@
   }
 }
 
-/* 'lg' applies to medium devices (Tablets, less than 992px) */
+/* === 'lg' applies to medium devices (Tablets, less than 992px) === */
 @media (max-width: 992px) {
   // navbar
   .custom-navbar {
@@ -57,9 +56,9 @@
     }
   }
 
-  // Banner/hero start
+  // Banner / Home Page
   .banner {
-    .left-side {
+    &__left-side {
       p {
         margin-right: 0;
       }
@@ -69,23 +68,53 @@
       }
     }
   }
-  // Banner/hero end
 }
 
-/* 'md' applies to small device (Landscape Phones, loess then 768px) */
+/* === 'md' applies to small device (Landscape Phones, loess then 768px) === */
 @media (max-width: 768px) {
-  // navbar start
-  // .me-lg-2 {
-  //   border-right: transparent !important;
-  //   padding: 0px;
-  // }
-  // navbar end
+  // Banner / Home Page
+  .banner {
+    &__left-side {
+      .banner-search {
+        .banner-search__what-looking-input {
+          width: 100% !important;
+        }
+        .form-group {
+          border-radius: 10px;
+          padding: 15px;
+        }
 
-  // .rounded-md-pill {
-  //   border-radius: 50rem !important;
-  // }
+        .search-btn {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  // Categories / Home Page
+  .categories {
+    .category {
+      flex: 1;
+    }
+  }
 }
 
-/* sm applies to x-small devices (Mobile, Portrait phones, less than 576px)  */
+/* === sm applies to x-small devices (Mobile, Portrait phones, less than 576px) ===  */
 @media (max-width: 576px) {
+}
+
+// Min Width Nav bar
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
 }

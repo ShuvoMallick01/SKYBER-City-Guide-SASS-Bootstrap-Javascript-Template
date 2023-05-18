@@ -11431,6 +11431,11 @@ a {
   background-color: #e9ecef;
 }
 
+.btn-date {
+  width: 102px;
+  height: 37px;
+}
+
 .icon-star-default {
   color: #6c757d !important;
 }
@@ -11575,26 +11580,25 @@ a {
 .custom-navbar .navbar-nav .dropdown .dropdown-menu {
   margin-top: 10px;
 }
-
-.banner .left-side {
+.banner__left-side {
   z-index: 2;
 }
-.banner .left-side h1, .banner .left-side .h1 {
+.banner__left-side h1, .banner__left-side .h1 {
   font-weight: 700;
   font-size: 48px;
 }
-.banner .left-side h1 .dropdown-toggle::after, .banner .left-side .h1 .dropdown-toggle::after {
+.banner__left-side h1 .dropdown-toggle::after, .banner__left-side .h1 .dropdown-toggle::after {
   font-size: 20px !important;
   margin-left: 5px !important;
 }
-.banner .left-side p {
+.banner__left-side p {
   margin-right: 30px;
 }
-.banner .left-side .dropdown > a {
+.banner__left-side .dropdown > a {
   font-weight: 700;
   font-size: 48px;
 }
-.banner .left-side .form-group {
+.banner__left-side .form-group {
   padding: 0.4rem;
   border: 1px solid #e9ecef;
   background-color: #fff;
@@ -11603,27 +11607,27 @@ a {
   font-weight: 400;
   margin-right: -100px;
 }
-.banner .left-side .form-group .input-group:first-child {
+.banner__left-side .form-group .input-group:first-child {
   border-radius: 0px !important;
+  width: 130%;
 }
-.banner .left-side .form-group .input-group .all-categories {
+.banner__left-side .form-group .input-group .all-categories {
   color: #6c757d;
 }
-.banner .left-side .form-group .input-group .icon-search {
+.banner__left-side .form-group .input-group .icon-search {
   padding: 0 10px;
 }
-.banner .left-side .form-group .input-group .icon-list {
+.banner__left-side .form-group .input-group .icon-list {
   padding: 0 5px;
 }
-.banner .left-side .form-group .form-control {
+.banner__left-side .form-group .form-control {
   padding-left: 0px;
 }
-.banner .left-side .form-group .search-btn {
+.banner__left-side .form-group .search-btn {
   padding: 14px 32px;
 }
-.banner .left-side .banner-search__what-looking-input::after {
+.banner__left-side .banner-search__what-looking-input::after {
   content: "";
-  position: absolute !important;
   background-color: #dee2e6 !important;
   width: 1px !important;
   height: 60%;
@@ -11632,26 +11636,26 @@ a {
   left: 0;
   margin: auto;
 }
-.banner .right-side .first-img {
+.banner__right-side .first-img {
   width: 440px;
 }
-.banner .right-side .first-img .img {
+.banner__right-side .first-img .img {
   width: 100%;
 }
-.banner .right-side .second-row-imgs {
+.banner__right-side .second-row-imgs {
   margin-top: -175px;
 }
-.banner .right-side .second-row-imgs .second-img {
+.banner__right-side .second-row-imgs .second-img {
   width: 400px !important;
   margin-bottom: -80px;
 }
-.banner .right-side .second-row-imgs .second-img img {
+.banner__right-side .second-row-imgs .second-img img {
   width: 100% !important;
 }
-.banner .right-side .second-row-imgs .third-img {
+.banner__right-side .second-row-imgs .third-img {
   width: 306px;
 }
-.banner .right-side .second-row-imgs .third-img img {
+.banner__right-side .second-row-imgs .third-img img {
   width: 100% !important;
 }
 
@@ -11880,6 +11884,15 @@ a {
   margin-bottom: 3px !important;
 }
 
+.whats-new-berlin .swiper-container .swiper-button-prev {
+  position: static;
+}
+.whats-new-berlin .swiper-container .swiper-button-next {
+  position: static;
+  margin-left: 50px;
+  margin-top: -37px;
+}
+
 .our-app {
   background-color: rgba(93, 60, 242, 0.1);
   border-radius: 12px;
@@ -12000,11 +12013,6 @@ a {
 .footer-lower .social-icon .btn-icon:hover {
   background-color: white;
   color: #fd5631;
-}
-
-.btn-date {
-  width: 102px;
-  height: 37px;
 }
 
 /* ==== Sign In Modal START ==== */
@@ -12547,8 +12555,8 @@ a {
   background-size: cover;
   background-position: center;
 }
-.about-banner__banner-overlay {
-  background: linear-gradient(90deg, rgba(31, 27, 45, 0.5) 0%, rgba(31, 27, 45, 0.36) 31.25%, rgba(31, 27, 45, 0) 100%);
+.about-banner::after {
+  background: linear-gradient(90deg, rgba(31, 27, 45, 0.5) 0%, rgba(31, 27, 45, 0.36) 31.25%, rgba(31, 27, 45, 0) 100%) !important;
   height: 577px;
   width: 100%;
   background-size: cover;
@@ -12708,21 +12716,21 @@ a {
   font-size: 28px;
 }
 
-/* `xl` applies to large devices (Desktop, less than 1200px) */
+/* === `xxl` applies to large devices (Desktop, less than 1200px) === */
 @media (max-width: 1400px) {
   .custom-navbar .logo {
     width: 115px;
     margin-right: 0px !important;
   }
 }
-/* `xl` applies to large devices (Desktop, less than 1200px) */
+/* === `xl` applies to large devices (Desktop, less than 1200px) === */
 @media (max-width: 1200px) {
   .custom-navbar .logo {
     width: 115px !important;
     margin-right: 0px !important;
   }
 }
-/* 'lg' applies to medium devices (Tablets, less than 992px) */
+/* === 'lg' applies to medium devices (Tablets, less than 992px) === */
 @media (max-width: 992px) {
   .custom-navbar .navbar-nav {
     gap: 0.4rem;
@@ -12750,15 +12758,42 @@ a {
   .custom-navbar .navbar-nav .nav-item:first-child {
     display: none;
   }
-  .banner .left-side p {
+  .banner__left-side p {
     margin-right: 0;
   }
-  .banner .left-side .form-group {
+  .banner__left-side .form-group {
     margin-right: 0px !important;
   }
 }
-/* 'md' applies to small device (Landscape Phones, loess then 768px) */
-/* sm applies to x-small devices (Mobile, Portrait phones, less than 576px)  */
+/* === 'md' applies to small device (Landscape Phones, loess then 768px) === */
+@media (max-width: 768px) {
+  .banner__left-side .banner-search .banner-search__what-looking-input {
+    width: 100% !important;
+  }
+  .banner__left-side .banner-search .form-group {
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .banner__left-side .banner-search .search-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .categories .category {
+    flex: 1;
+  }
+}
+/* === sm applies to x-small devices (Mobile, Portrait phones, less than 576px) ===  */
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
 /* ===== IMPORT INDEX ===== */
 
 /*# sourceMappingURL=style.css.map */
