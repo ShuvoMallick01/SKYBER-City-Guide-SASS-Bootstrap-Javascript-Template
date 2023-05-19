@@ -1,4 +1,16 @@
 // === NAVBAR START ===
+body {
+  padding-top: 70px;
+
+  header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $white;
+  }
+}
+
 .custom-navbar {
   .navbar-brand {
     width: 115px;
@@ -12,6 +24,10 @@
   }
 
   .navbar-nav {
+    .nav-link {
+      padding: 10px 15px !important;
+    }
+
     .me-lg-2 {
       padding-right: 1rem !important;
       border-right: 1px solid $gray-300 !important;
@@ -19,7 +35,7 @@
 
     .dropdown {
       .dropdown-menu {
-        margin-top: 10px;
+        // margin-top: 5px;
       }
     }
   }

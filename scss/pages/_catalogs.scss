@@ -245,6 +245,55 @@
     }
   }
 }
+
+// noUiSlider Range
+.noui-slider-range {
+  #steps-slider {
+    all: unset;
+
+    .noUi-base {
+      border: 4px solid #d5d2dc;
+      color: $gray-400;
+      height: 8px;
+      min-width: 6.5rem;
+      border-radius: 1rem;
+
+      .noUi-connects {
+        border-radius: 1rem;
+
+        .noUi-connect {
+          background-color: $primary;
+        }
+      }
+
+      .noUi-handle {
+        width: 16px;
+        height: 16px;
+        background-color: $white;
+        top: -8px;
+        right: -9px;
+        border-radius: 9px;
+        border: 4px solid $primary;
+
+        &::before,
+        &::after {
+          display: none;
+        }
+
+        .noUi-tooltip {
+          bottom: 200%;
+          font-size: 14px;
+          color: $gray-700;
+          border: 0;
+          box-shadow: $box-shadow-sm;
+          padding: 4px 12px;
+        }
+      }
+    }
+  }
+}
+// / noUiSlider Range
+
 // === FILTER END ===
 
 // === SINGLE PLACE - GALLERY PAGE START ===

@@ -21,13 +21,39 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- SWIPER JS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <!-- SASS COMPILE CSS -->
     <link rel="stylesheet" href="./dist/css/style.css" />
-    <!-- ICON FONTS -->
+    <!-- ICON FONTS CSS -->
     <link rel="stylesheet" href="./assets/fonts.css" />
+    <!-- GLIGHT BOX CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <!-- NoUiSlider CSS -->
+    <link rel="stylesheet" href="./dist/plugin-css/nouislider.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./dist/css/home.css" />
+
+    <!-- SWIPER JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+      defer
+    ></script>
+    <!-- noUiSlider Plugin JS -->
+    <script src="js/nouislider.min.js" defer></script>
+    <!-- GLIGHT BOX JS -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"
+      defer
+    ></script>
+    <!-- wNumb js Libarary JS -->
+    <script src="js/wNumb.min.js" defer></script>
     <!-- Custom JS -->
     <script src="js/app.js" defer></script>
     <!-- Website Title -->
@@ -621,10 +647,16 @@
                 <input
                   type="text"
                   class="form-control border-0"
-                  id=""
+                  id="search-field"
                   placeholder="What are you looking for?"
                 />
-                <button type="submit" class="btn btn-primary">Search</button>
+                <button
+                  type="submit"
+                  for="search-field"
+                  class="btn btn-primary"
+                >
+                  Search
+                </button>
               </div>
             </form>
 
@@ -669,7 +701,7 @@
             <div class="tab-content" id="myTabContent">
               <!-- Categories Contents -->
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade"
                 id="categories-tab-pane"
                 role="tabpanel"
                 aria-labelledby="home-tab"
@@ -824,7 +856,7 @@
 
               <!-- Filters Contents -->
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show active"
                 id="filters-tab-pane"
                 role="tabpanel"
                 aria-labelledby="profile-tab"
@@ -988,22 +1020,24 @@
 
                   <!-- Price -->
                   <div class="price pb-4 mb-2">
-                    <h4 class="mb-3">Price</h4>
+                    <h4 class="mb-5">Price</h4>
 
-                    <div>
-                      <input
-                        type="range"
-                        class="form-range mb-3"
-                        id="customRange1"
-                      />
+                    <div class="noui-slider-range">
+                      <!-- Range -->
+                      <div
+                        id="steps-slider"
+                        class="custom-price-range mb-4"
+                      ></div>
 
-                      <div class="d-flex align-items-center">
+                      <!-- Inputs -->
+                      <div class="d-flex align-items-center mt-4">
                         <div class="input-group">
                           <span class="input-group-text" id="basic-addon1"
                             >$</span
                           >
                           <input
                             type="text"
+                            id="input-with-keypress-0"
                             class="form-control"
                             placeholder="Username"
                             aria-label="Username"
@@ -1020,11 +1054,12 @@
                           >
                           <input
                             type="text"
+                            id="input-with-keypress-1"
                             class="form-control"
                             placeholder="Username"
                             aria-label="Username"
                             aria-describedby="basic-addon1"
-                            value="50"
+                            value="500"
                           />
                         </div>
                       </div>
