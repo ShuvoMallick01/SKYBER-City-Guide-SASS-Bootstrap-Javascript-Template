@@ -11896,12 +11896,15 @@ body header {
 }
 
 .whats-new-berlin .swiper-container .swiper-button-prev {
-  position: static;
+  position: relative;
+  bottom: 0;
+  left: 0;
 }
 .whats-new-berlin .swiper-container .swiper-button-next {
-  position: static;
-  margin-left: 50px;
-  margin-top: -37px;
+  position: relative;
+  bottom: 0;
+  left: 3rem;
+  top: -14px;
 }
 
 .our-app {

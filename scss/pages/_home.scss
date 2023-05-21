@@ -521,14 +521,27 @@ body {
 // Swiper JS
 .whats-new-berlin {
   .swiper-container {
+    .swiper-wrapper {
+      // margin-bottom: 1rem !important;
+    }
+
     .swiper-button-prev {
-      position: static;
+      position: relative;
+      bottom: 0;
+      left: 0;
+
+      // position: static;
+      // margin-top: 1rem;
     }
 
     .swiper-button-next {
-      position: static;
-      margin-left: 50px;
-      margin-top: -37px;
+      position: relative;
+      bottom: 0;
+      left: 3rem;
+      top: -14px;
+      // position: static;
+      // margin-left: 50px;
+      // margin-top: -36px;
     }
   }
 }

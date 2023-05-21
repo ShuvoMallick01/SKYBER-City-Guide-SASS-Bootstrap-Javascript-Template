@@ -10,19 +10,18 @@ function createElement(className) {
 }
 
 for (let i = 0; i < swiperContainer.length; i++) {
-  // console.log(swiperContainer[i]);
   const slider = swiperContainer[i];
 
   const prevButton = createElement("swiper-button-prev");
   const nextButton = createElement("swiper-button-next");
   const pagination = createElement("swiper-pagination");
-
   slider.append(prevButton, nextButton, pagination);
 
   const swiperE1 = slider.querySelector(".swiper");
-
   const slidePerView = slider.getAttribute("data-per-view");
-  const disablePagination = slider.getAttribute("data-disable-pagination");
+  const slideLgPerView = slider.getAttribute("data-lg-per-view");
+  const isDisablePagination =
+    slider.getAttribute("data-disable-pagination") === "true" ? true : false;
   const slideEffect = slider.getAttribute("data-slide-effect");
 
   // SWIPER
@@ -45,10 +44,9 @@ for (let i = 0; i < swiperContainer.length; i++) {
 
     // Pagination
     pagination: {
-      el:
-        Boolean(disablePagination) == true
-          ? null
-          : slider.querySelector(".swiper-pagination"),
+      el: isDisablePagination
+        ? null
+        : slider.querySelector(".swiper-pagination"),
       type: "bullets",
       clickable: true,
     },
@@ -61,12 +59,12 @@ for (let i = 0; i < swiperContainer.length; i++) {
       },
 
       992: {
-        slidesPerView: 2,
+        slidesPerView: slideLgPerView ? Number(slideLgPerView) : 2,
         spaceBetween: 20,
       },
 
       1200: {
-        slidesPerView: 3,
+        slidesPerView: slideLgPerView ? Number(slideLgPerView) : 3,
         spaceBetween: 20,
       },
       1400: {
@@ -76,13 +74,13 @@ for (let i = 0; i < swiperContainer.length; i++) {
     },
   });
 }
-// /Swiper JS
+// === /Swiper JS
 
-// G Light Box JS / Single Place Gallery Catalog
+// === G Light Box JS / Single Place Gallery Catalog
 const lightbox = GLightbox();
-// /G Light Box JS / Single Place Gallery Catalog
+// === /G Light Box JS / Single Place Gallery Catalog
 
-// NoUISlider Range / Catalog Filter & Categories Page
+// === NoUISlider Range / Catalog Filter & Categories Page ===
 const stepsSlider = document.getElementById("steps-slider");
 const input0 = document.getElementById("input-with-keypress-0");
 const input1 = document.getElementById("input-with-keypress-1");
@@ -163,4 +161,4 @@ inputs.forEach(function (input, handle) {
     }
   });
 });
-// / NoUISlider Range / Catalog Filter & Categories Page
+// === / NoUISlider Range / Catalog Filter & Categories Page
