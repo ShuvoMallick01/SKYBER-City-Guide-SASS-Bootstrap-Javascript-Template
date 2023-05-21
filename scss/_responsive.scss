@@ -104,15 +104,18 @@
 @media (max-width: 576px) {
 }
 
+// === Extra Code ====
 // Min Width Nav bar
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
     display: none;
   }
   .navbar .nav-item:hover .nav-link {
+    transition: all 300ms ease;
   }
   .navbar .nav-item:hover .dropdown-menu {
     display: block;
+    transition: all 300ms ease;
   }
   .navbar .nav-item .dropdown-menu {
     margin-top: 0;

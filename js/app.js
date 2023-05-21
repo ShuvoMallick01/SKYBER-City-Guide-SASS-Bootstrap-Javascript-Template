@@ -32,8 +32,10 @@ for (let i = 0; i < swiperContainer.length; i++) {
     // Default parameters
     // slidesPerView: 3,
     spaceBetween: 20,
-    // centeredSlides: true,
+    centeredSlides: true,
     initialSlide: 1,
+    slidesPerView: "auto",
+    rewind: true,
 
     // // Navigation arrows
     navigation: {
@@ -43,9 +45,10 @@ for (let i = 0; i < swiperContainer.length; i++) {
 
     // Pagination
     pagination: {
-      el: Boolean(disablePagination === true)
-        ? null
-        : slider.querySelector(".swiper-pagination"),
+      el:
+        Boolean(disablePagination) == true
+          ? null
+          : slider.querySelector(".swiper-pagination"),
       type: "bullets",
       clickable: true,
     },
