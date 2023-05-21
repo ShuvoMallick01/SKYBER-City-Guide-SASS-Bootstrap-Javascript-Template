@@ -249,15 +249,12 @@
 // noUiSlider Range
 .noui-slider-range {
   #steps-slider {
-    all: unset;
+    background-color: $gray-400;
+    height: 8px;
+    min-width: 6.5rem;
+    border-radius: 1rem;
 
     .noUi-base {
-      border: 4px solid #d5d2dc;
-      color: $gray-400;
-      height: 8px;
-      min-width: 6.5rem;
-      border-radius: 1rem;
-
       .noUi-connects {
         border-radius: 1rem;
 
@@ -270,7 +267,7 @@
         width: 16px;
         height: 16px;
         background-color: $white;
-        top: -8px;
+        top: -5px;
         right: -9px;
         border-radius: 9px;
         border: 4px solid $primary;
