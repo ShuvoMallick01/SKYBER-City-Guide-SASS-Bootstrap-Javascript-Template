@@ -1,4 +1,3 @@
-// === NAVBAR START ===
 body {
   padding-top: 70px;
 
@@ -11,6 +10,7 @@ body {
   }
 }
 
+// === NAVBAR START ===
 .custom-navbar {
   .navbar-brand {
     width: 115px;
@@ -28,9 +28,20 @@ body {
       padding: 10px 15px !important;
     }
 
-    .me-lg-2 {
-      padding-right: 1rem !important;
-      border-right: 1px solid $gray-300 !important;
+    .location-item {
+      padding-right: 13px;
+
+      ::after {
+        content: "";
+        position: absolute;
+        background-color: $gray-300;
+        width: 1px;
+        height: 50%;
+        top: 5px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+      }
     }
 
     .dropdown {
@@ -45,8 +56,7 @@ body {
     }
   }
 }
-
-// === NAVBAR END ===
+// === / NAVBAR ===
 
 // === BANNER-HERO ===
 .banner {

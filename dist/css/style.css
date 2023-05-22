@@ -11587,9 +11587,19 @@ body header {
 .custom-navbar .navbar-nav .nav-link {
   padding: 10px 15px !important;
 }
-.custom-navbar .navbar-nav .me-lg-2 {
-  padding-right: 1rem !important;
-  border-right: 1px solid #dee2e6 !important;
+.custom-navbar .navbar-nav .location-item {
+  padding-right: 13px;
+}
+.custom-navbar .navbar-nav .location-item ::after {
+  content: "";
+  position: absolute;
+  background-color: #dee2e6;
+  width: 1px;
+  height: 50%;
+  top: 5px;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 .banner__left-side {
   z-index: 2;

@@ -22,6 +22,9 @@ for (let i = 0; i < swiperContainer.length; i++) {
   const slideLgPerView = slider.getAttribute("data-lg-per-view");
   const isDisablePagination =
     slider.getAttribute("data-disable-pagination") === "true" ? true : false;
+  const isDisableCenterslide =
+    slider.getAttribute("data-disable-center-slide") === "true" ? true : false;
+
   const slideEffect = slider.getAttribute("data-slide-effect");
 
   // SWIPER
@@ -31,7 +34,7 @@ for (let i = 0; i < swiperContainer.length; i++) {
     // Default parameters
     // slidesPerView: 3,
     spaceBetween: 20,
-    centeredSlides: true,
+    centeredSlides: isDisableCenterslide ? false : true,
     initialSlide: 1,
     slidesPerView: "auto",
     rewind: true,
