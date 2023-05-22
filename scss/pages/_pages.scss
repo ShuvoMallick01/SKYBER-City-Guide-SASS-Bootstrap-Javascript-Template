@@ -42,15 +42,19 @@
   &__contents {
     z-index: 2;
   }
+
+  &__bottom {
+    height: 2rem !important;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
 }
 
 // The values we live by
 .values-we-live {
-  &__heading {
-    // background-color: $white !important;
-    // margin-top: -4rem !important;
-    // z-index: 99999 !important;
-  }
 }
 
 .feature-cards {

@@ -12635,6 +12635,14 @@ body header {
 .about-banner__contents {
   z-index: 2;
 }
+.about-banner__bottom {
+  height: 2rem !important;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
 
 .feature-cards .safety-priority .feature-card__iconbox {
   background-color: rgba(93, 60, 242, 0.1);
