@@ -11564,15 +11564,12 @@ a {
   background-color: #fd5631 !important;
 }
 
-body {
-  padding-top: 70px;
-}
 body header {
-  z-index: 100;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   background-color: #fff;
+  z-index: 99;
 }
 
 .custom-navbar .navbar-brand {
