@@ -12617,7 +12617,6 @@ body header {
   width: 100%;
   background-size: cover;
   background-position: center;
-  overflow: hidden !important;
 }
 .about-banner h1, .about-banner .h1 {
   font-weight: 700;
@@ -12638,6 +12637,11 @@ body header {
   position: absolute;
   bottom: 0;
   width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.values-we-live {
+  margin-top: -2rem;
   border-radius: 15px 15px 0 0;
 }
 

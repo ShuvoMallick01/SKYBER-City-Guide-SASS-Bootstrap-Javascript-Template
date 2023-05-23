@@ -21,7 +21,6 @@
     width: 100%;
     background-size: cover;
     background-position: center;
-    overflow: hidden !important;
   }
 
   h1 {
@@ -55,6 +54,8 @@
 
 // The values we live by
 .values-we-live {
+  margin-top: -2rem;
+  border-radius: 15px 15px 0 0;
 }
 
 .feature-cards {
