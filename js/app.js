@@ -12,8 +12,8 @@ function createElement(className) {
 for (let i = 0; i < swiperContainer.length; i++) {
   const slider = swiperContainer[i];
 
-  const prevButton = createElement("swiper-button-prev");
-  const nextButton = createElement("swiper-button-next");
+  const prevButton = createElement("swiper-button-prev d-none d-md-block");
+  const nextButton = createElement("swiper-button-next d-none d-md-block");
   const pagination = createElement("swiper-pagination");
   slider.append(prevButton, nextButton, pagination);
 
@@ -39,7 +39,7 @@ for (let i = 0; i < swiperContainer.length; i++) {
     slidesPerView: "auto",
     rewind: true,
 
-    // // Navigation arrows
+    // Navigation arrows
     navigation: {
       nextEl: slider.querySelector(".swiper-button-next"),
       prevEl: slider.querySelector(".swiper-button-prev"),
@@ -59,6 +59,11 @@ for (let i = 0; i < swiperContainer.length; i++) {
       0: {
         slidesPerView: 1,
         spaceBetween: 20,
+
+        pagination: {
+          nextEl: null,
+          prevEl: null,
+        },
       },
 
       992: {
