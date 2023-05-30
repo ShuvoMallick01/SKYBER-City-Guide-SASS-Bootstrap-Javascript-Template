@@ -11603,7 +11603,7 @@ body header {
 }
 .banner__left-side h1, .banner__left-side .h1 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 46px;
 }
 .banner__left-side h1 .dropdown-toggle::after, .banner__left-side .h1 .dropdown-toggle::after {
   font-size: 20px !important;
@@ -11614,7 +11614,7 @@ body header {
 }
 .banner__left-side .dropdown > a {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 46px;
 }
 .banner__left-side .form-group {
   padding: 0.4rem;
